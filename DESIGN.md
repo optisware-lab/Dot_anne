@@ -1,273 +1,329 @@
 ---
 name: DOT ANNE HOME LODGE
-description: The estate plan sheet for Plot 473, Golf Estate, Tema. Four inks on drafting paper.
+description: Tema coastal architectural hospitality. Night-navy photo heroes, cool white surfaces, crimson for booking only.
 colors:
-  green-950: "#0f2118"
-  green-900: "#142a1f"
-  green-800: "#1e3a2c"
-  green-700: "#2b4d3c"
-  green-600: "#3d634f"
-  green-200: "#c9d6cc"
-  on-green-2: "#cfd6cb"
-  gold-300: "#ddc595"
-  gold-400: "#cfb07a"
-  gold-500: "#c4a266"
-  gold-600: "#b8955a"
-  gold-700: "#8a6c38"
-  ivory-50: "#fbf8f1"
-  ivory-100: "#f5f0e4"
-  ivory-200: "#ece4d2"
-  ivory-300: "#ddd2bb"
-  ink-900: "#24272b"
-  ink-700: "#45423b"
-  ink-500: "#6b6558"
+  navy-950: "#011d35"
+  navy-900: "#0f2942"
+  navy-700: "#314863"
+  royal: "#1e3a8a"
+  maritime: "#2563eb"
+  red: "#d32f2f"
+  red-hover: "#c62828"
+  red-active: "#b71c1c"
+  red-on-dark: "#ffb3ac"
+  white: "#ffffff"
+  surface: "#faf8ff"
+  surface-low: "#f2f3ff"
+  surface-mid: "#eaedff"
+  surface-high: "#e2e7ff"
+  surface-top: "#dae2fd"
+  ink: "#131b2e"
+  ink-2: "#49607c"
+  ink-3: "#5d6f86"
+  on-dark: "#ffffff"
+  on-dark-2: "#c9d4ee"
+  line: "#e2e7ff"
 typography:
   display:
-    fontFamily: "Gloock, Iowan Old Style, Georgia, serif"
-    fontSize: "clamp(2.25rem, 1.5rem + 2.3vw, 3.75rem)"
-    fontWeight: 400
-    lineHeight: 1.04
-    letterSpacing: "-0.01em"
-  headline:
-    fontFamily: "Gloock, Iowan Old Style, Georgia, serif"
-    fontSize: "clamp(2.125rem, 1.7rem + 2.1vw, 3.5rem)"
-    fontWeight: 400
+    fontFamily: "Space Grotesk, Helvetica Neue, Arial, sans-serif"
+    fontSize: "clamp(2.25rem, 1.6rem + 2.6vw, 3.5rem)"
+    fontWeight: 600
     lineHeight: 1.08
-    letterSpacing: "-0.01em"
+    letterSpacing: "-0.03em"
+  headline:
+    fontFamily: "Space Grotesk, Helvetica Neue, Arial, sans-serif"
+    fontSize: "clamp(1.75rem, 1.4rem + 1.4vw, 2.5rem)"
+    fontWeight: 600
+    lineHeight: 1.12
+    letterSpacing: "-0.02em"
+  headline-sm:
+    fontFamily: "Space Grotesk, Helvetica Neue, Arial, sans-serif"
+    fontSize: "clamp(1.5rem, 1.3rem + 0.8vw, 2rem)"
+    fontWeight: 600
+    lineHeight: 1.12
+    letterSpacing: "-0.02em"
   title:
-    fontFamily: "Gloock, Iowan Old Style, Georgia, serif"
-    fontSize: "clamp(1.375rem, 1.25rem + 0.6vw, 1.75rem)"
-    fontWeight: 400
-    lineHeight: 1.15
-    letterSpacing: "-0.01em"
-  lede:
-    fontFamily: "Archivo, Helvetica Neue, Arial, system-ui, sans-serif"
-    fontSize: "clamp(1.125rem, 1.07rem + 0.3vw, 1.3125rem)"
-    fontWeight: 400
-    lineHeight: 1.5
-  body:
-    fontFamily: "Archivo, Helvetica Neue, Arial, system-ui, sans-serif"
-    fontSize: "clamp(1rem, 0.97rem + 0.15vw, 1.0625rem)"
+    fontFamily: "Space Grotesk, Helvetica Neue, Arial, sans-serif"
+    fontSize: "1.5rem"
+    fontWeight: 600
+    lineHeight: 1.12
+    letterSpacing: "-0.02em"
+  title-sm:
+    fontFamily: "Space Grotesk, Helvetica Neue, Arial, sans-serif"
+    fontSize: "1.25rem"
+    fontWeight: 600
+    lineHeight: 1.25
+    letterSpacing: "-0.02em"
+  body-lg:
+    fontFamily: "Hanken Grotesk, Helvetica Neue, Arial, system-ui, sans-serif"
+    fontSize: "1.125rem"
     fontWeight: 400
     lineHeight: 1.6
-    fontVariation: "'wdth' 100"
+  body:
+    fontFamily: "Hanken Grotesk, Helvetica Neue, Arial, system-ui, sans-serif"
+    fontSize: "1rem"
+    fontWeight: 400
+    lineHeight: 1.625
+  body-sm:
+    fontFamily: "Hanken Grotesk, Helvetica Neue, Arial, system-ui, sans-serif"
+    fontSize: "0.875rem"
+    fontWeight: 400
+    lineHeight: 1.5
   label:
-    fontFamily: "Archivo, Helvetica Neue, Arial, system-ui, sans-serif"
+    fontFamily: "Hanken Grotesk, Helvetica Neue, Arial, system-ui, sans-serif"
     fontSize: "0.75rem"
+    fontWeight: 700
+    lineHeight: 1.3
+    letterSpacing: "0.1em"
+  button:
+    fontFamily: "Hanken Grotesk, Helvetica Neue, Arial, system-ui, sans-serif"
+    fontSize: "0.9375rem"
     fontWeight: 600
-    lineHeight: 1.2
-    letterSpacing: "0.12em"
-    fontVariation: "'wdth' 72"
+    lineHeight: 1.1
+    letterSpacing: "0.02em"
 rounded:
-  hairline: "2px"
-  marker: "50%"
+  chip: "4px"
+  btn: "6px"
+  tile: "8px"
+  card: "10px"
+  dialog: "14px"
+  circle: "50%"
 spacing:
-  s-1: "0.25rem"
-  s-2: "0.5rem"
-  s-3: "0.75rem"
-  s-4: "1rem"
-  s-5: "1.5rem"
-  s-6: "2rem"
-  s-7: "3rem"
-  s-8: "4rem"
-  s-9: "6rem"
-  section: "clamp(4.5rem, 3rem + 6vw, 8.5rem)"
-  gutter: "clamp(16px, 4vw, 48px)"
+  xs: "0.25rem"
+  sm: "0.5rem"
+  md: "1rem"
+  lg: "1.5rem"
+  xl: "2.5rem"
+  2xl: "4rem"
+  section: "clamp(3.5rem, 2.5rem + 4vw, 6rem)"
+  gutter: "clamp(1.25rem, 3vw, 1.5rem)"
+  maxw: "1320px"
 components:
-  button-gold:
-    backgroundColor: "{colors.gold-500}"
-    textColor: "{colors.green-900}"
-    rounded: "{rounded.hairline}"
-    padding: "0.875rem 1.375rem"
+  button-book:
+    backgroundColor: "{colors.red}"
+    textColor: "{colors.white}"
+    typography: "{typography.button}"
+    rounded: "{rounded.btn}"
+    padding: "0.75rem 1.5rem"
     height: "48px"
-  button-gold-hover:
-    backgroundColor: "{colors.gold-400}"
-    textColor: "{colors.green-900}"
-  button-line:
+  button-book-hover:
+    backgroundColor: "{colors.red-hover}"
+  button-book-active:
+    backgroundColor: "{colors.red-active}"
+  button-navy:
+    backgroundColor: "{colors.navy-900}"
+    textColor: "{colors.white}"
+    typography: "{typography.button}"
+    rounded: "{rounded.btn}"
+    padding: "0.75rem 1.5rem"
+    height: "48px"
+  button-navy-hover:
+    backgroundColor: "{colors.red}"
+  button-outline:
     backgroundColor: "transparent"
-    textColor: "{colors.green-800}"
-    rounded: "{rounded.hairline}"
-    padding: "0.875rem 1.375rem"
+    textColor: "{colors.navy-900}"
+    typography: "{typography.button}"
+    rounded: "{rounded.btn}"
+    padding: "0.75rem 1.5rem"
     height: "48px"
-  button-line-hover:
-    backgroundColor: "{colors.green-800}"
-    textColor: "{colors.ivory-100}"
-  button-line-light:
-    backgroundColor: "transparent"
-    textColor: "{colors.ivory-100}"
-    rounded: "{rounded.hairline}"
-    padding: "0.875rem 1.375rem"
+  button-outline-hover:
+    backgroundColor: "{colors.surface-low}"
+  button-soft:
+    backgroundColor: "{colors.surface-mid}"
+    textColor: "{colors.ink}"
+    rounded: "{rounded.btn}"
+    padding: "0.75rem 1.5rem"
     height: "48px"
-  input-field:
-    backgroundColor: "{colors.ivory-100}"
-    textColor: "{colors.ink-900}"
-    rounded: "{rounded.hairline}"
-    padding: "0.75rem 0.875rem"
+  card:
+    backgroundColor: "{colors.white}"
+    rounded: "{rounded.card}"
+    padding: "1.5rem"
+  card-dark:
+    backgroundColor: "{colors.navy-950}"
+    textColor: "{colors.on-dark}"
+    rounded: "{rounded.card}"
+    padding: "1.5rem"
+  input:
+    backgroundColor: "{colors.surface-low}"
+    textColor: "{colors.ink}"
+    rounded: "{rounded.btn}"
+    padding: "0.7rem 0.9rem"
     height: "48px"
-  copy-button:
-    backgroundColor: "transparent"
-    textColor: "{colors.gold-300}"
-    rounded: "{rounded.hairline}"
-    padding: "0.25rem 0.625rem"
-    height: "32px"
-  title-block:
-    backgroundColor: "{colors.green-800}"
-    textColor: "{colors.ivory-100}"
-    width: "min(100%, 640px)"
-  booking-slip:
-    backgroundColor: "{colors.ivory-50}"
-    textColor: "{colors.ink-900}"
-    padding: "clamp(1.5rem, 4vw, 3rem)"
+  input-focus:
+    backgroundColor: "{colors.white}"
+  tag:
+    backgroundColor: "{colors.navy-900}"
+    textColor: "{colors.white}"
+    rounded: "{rounded.chip}"
+    padding: "0.3rem 0.6rem"
+  nav-link-current:
+    backgroundColor: "{colors.surface-high}"
+    textColor: "{colors.ink}"
+    rounded: "{rounded.chip}"
+    padding: "0.4rem 0.7rem"
 ---
 
 # Design System: DOT ANNE HOME LODGE
 
 ## Overview
 
-**Creative North Star: "The Estate Plan"**
+**Creative North Star: "The Harbour Night Desk"**
 
-The site is the plan sheet for one plot, No. 473 Golf Estate. Ivory drafting paper is the ground; forest green is the land and fills the big fields (the hero title block, the location sheet, the booking preview, the footer); muted gold is reserved for survey hairlines, the route line, plot markers and the primary action; charcoal is the ink. Everything is drawn with hairline rules, registration ticks and labelled cells, as a surveyor would letter a sheet, not as a hotel brochure would decorate a page.
+A small Tema lodge presented with the clarity of a port authority notice and the warmth of a front desk that never closes. Every page opens on a night-navy band laid over a real photograph of the lodge, desaturated through a luminosity blend and pulled down by a navy gradient, then steps onto cool, faintly blue-white surfaces where cards, specs and forms sit in a disciplined 12-column world (1320px max). Headings are uppercase Space Grotesk set tight; reading text is Hanken Grotesk at a relaxed 1.625 leading.
 
-Density is calm and generous: one strict 12-column grid, large section breathing room, content arranged as plan legends, spec tables and schedules rather than cards. Real photographs of the lodge are pinned to the sheet as plates, with corner ticks and a caption strip. Motion is plan ink: lines draw with stroke-dashoffset, plates wipe in with clip-path, all on one ease-out-expo curve, once, and every piece of content is visible with motion off.
+Colour does a job or stays out. Navy carries structure and trust (heroes, the dialog head, the How-to-book panel, mobile menu, dark CTA band). Crimson means "book": it fills the booking buttons and the location pin and almost nothing else. Royal and maritime blues handle links, icons and focus. The surfaces are a five-step cool-white ladder, so sections are separated by tone, not ornament.
+
+This world was adopted from the Google Stitch design "Tema Coastal Architectural Hospitality" and then grounded in the property: real photographs instead of renders, inline SVG line icons instead of an icon font, and no testimonial or badge furniture. The Google rating appears as a measured score card linking out to the reviews.
 
 **Key Characteristics:**
-- Four inks only: forest green, ivory, gold, charcoal.
-- Hairline rules (1px gold at partial strength) do the structural work that borders, cards and shadows do elsewhere.
-- Labelled cells in condensed caps carry data (Plot, Estate, Plus Code, Front desk).
-- Corner registration ticks frame title blocks and photo plates.
-- Near-square corners (2px) throughout.
-- Gloock serif headlines in forest green; Archivo variable sans for everything else.
+- Night-navy photo heroes (luminosity-blended photo, navy gradient from bottom and left) on every page.
+- Cool white surface ladder (#faf8ff → #dae2fd) for section rhythm; hairline #e2e7ff dividers.
+- Uppercase Space Grotesk headings at -0.02em to -0.03em; Hanken Grotesk body.
+- Crimson reserved for booking actions; navy and royal for everything structural.
+- Restrained corners (4 / 6 / 10px), soft ambient shadows, gentle lift on hover.
+- Direct-contact devices are first-class: front-desk phone in the header, WhatsApp preview bubble, mobile action bar.
 
 ## Colors
 
-A restricted four-ink palette, each ink in a short ramp, with gold confined to lines and the one primary action.
+A maritime palette: deep navies and cool blue-whites, with one hot crimson that only ever says "book".
 
 ### Primary
-- **Brand Forest** (green-800): The land. Headline color on ivory, the hero title block, location sheet, booking preview panel, mobile menu, outline-button stroke, input underline, and `theme-color`.
-- **Night Forest** (green-900): Footer ground, the course sheet behind the route map, and text on gold fills.
-- **Deep Forest** (green-950): Road casing on the route map only.
-- **Moss** (green-700): Photo placeholder ground and scrollbar thumb.
+- **Booking Crimson** (red): fill of every booking CTA ("Book Your Stay", dialog submit, action-bar Book), the map pin disc and the room "tag" chip. Hover deepens to **Harbour Brick** (red-hover); press to **Signal Red** (red-active), which also serves as the error colour, the star colour and red text labels on light surfaces.
+- **Coral Lamp** (red-on-dark): the crimson tint used where red must read on navy: the current page in the mobile menu and alternating trust-bar icons.
 
 ### Secondary
-- **Survey Gold** (gold-500): The primary action fill and the home plot marker. Nothing else is filled gold.
-- **Field Gold** (gold-400): Gold on green: the route line, control rings, north arrow, primary hover fill.
-- **Pale Gold** (gold-300): Labels and values lettered on green (cell labels, address terms, copy button), selection highlight, ticks on the title block.
-- **Hairline Gold** (gold-600): Rules on ivory (via the `--rule` mix at 55% and `--rule-strong` at full), link underlines, focus outline, FAQ chevrons.
-- **Ink Gold** (gold-700): The only gold allowed as small text on ivory (AA): wordmark sub-line, spec-table terms, direct-line label.
+- **Harbour Night** (navy-950): the dark band. Hero and page-hero base, CTA band, booking-dialog head, How-to-book panel, contact preview panel, mobile menu.
+- **Classic Navy** (navy-900): navy buttons, outline-button stroke, room tags, photo captions, field focus border, selected thumbnail border, checklist ticks, `accent-color`.
+- **Slate Navy** (navy-700): scrollbar thumb; quiet structural tone.
+
+### Tertiary
+- **Royal Ink** (royal): text links, feature and amenity icons, `label--royal`, FAQ summary hover, copy button.
+- **Maritime Blue** (maritime): focus rings (2px outline) and the 3px input focus halo at 18% alpha. Never a fill.
 
 ### Neutral
-- **Drafting Paper** (ivory-100): Page ground, header, input fields, text on green.
-- **Sheet Shade** (ivory-200): Alternating "sheet" sections.
-- **Light Paper** (ivory-50): The booking slip, legend marks, headlines and values on green, the WhatsApp bubble.
-- **Plate Ground** (ivory-300): Photo placeholders and input side strokes.
-- **Charcoal Ink** (ink-900): Body text.
-- **Warm Ink** (ink-700): Secondary text on ivory (ledes, descriptions).
-- **Faded Ink** (ink-500): Tertiary, large text only.
-- **Sage Text** (on-green-2): Secondary text on green.
-- **Sage Mist** (green-200): Defined; the estate-plot tint on the map derives from it.
+- **Cool Paper** (surface): page background and translucent header base.
+- **Mist** (surface-low): alternating section tone, footer, input fill, address card, nav hover.
+- **Haze** (surface-mid): icon tiles, image placeholders, info notes, soft buttons.
+- **Tide** (surface-high): rating section tone, current nav item, map placeholder; doubles as the **Hairline** (line) colour.
+- **Fog Blue** (surface-top): input stroke, selection highlight, light-button hover.
+- **Pure White** (white): cards, FAQ items, dialog body, chips on light sections.
+- **Night Ink** (ink): headings and body text. **Slate Ink** (ink-2): secondary copy, labels, ledes. **Muted Slate** (ink-3): optional-field hints.
+- **On-dark** / **Pale Steel** (on-dark-2): primary and secondary text on navy. Dividers on navy use white at 12%.
 
 ### Named Rules
-**The Four Inks Rule.** Green, ivory, gold, charcoal. No fifth hue enters the system; the only exceptions are functional signals (the live "open" dot and form-error red) and they never decorate.
+**The Crimson Means Book Rule.** A crimson fill marks a booking action (or the lodge's own map pin). Navigation, decoration, section backgrounds and secondary buttons never take a crimson fill. The navy button turns crimson on hover because it is itself a booking action ("Inquire about this room").
 
-**The Gold Is Survey Rule.** Gold appears only as hairlines, the route, plot markers, labels on green, and the one primary button. Never a gold background panel, never gold body text on ivory below gold-700.
-
-**The Land Is Green Rule.** Large fields of colour are forest green and they are architectural (title block, location sheet, slip preview, footer). Ivory is paper; green is land; nothing else gets a field.
+**The Tone-Not-Line Rule.** Sections separate by stepping the surface ladder (surface → surface-low → surface-high → white), not by rules or ornaments. Hairlines are for inside a block: section heads, card footers, spec rows.
 
 ## Typography
 
-**Display Font:** Gloock (with Iowan Old Style, Georgia, serif)
-**Body Font:** Archivo variable, width axis (with Helvetica Neue, Arial, system-ui)
-**Label Font:** Archivo at condensed width (`wdth` 72)
+**Display Font:** Space Grotesk (with Helvetica Neue, Arial)
+**Body Font:** Hanken Grotesk (with Helvetica Neue, Arial, system-ui)
 
-**Character:** A high-contrast editorial serif set at weight 400 for every heading, against a plain, sturdy grotesque that narrows into condensed caps when it letters a plan cell. The serif speaks; the sans labels and informs.
+**Character:** Space Grotesk in uppercase gives the architectural, signage-like voice of a harbour city; Hanken Grotesk keeps descriptions and forms calm and highly legible. Weights loaded: 500/600/700 head, 400/600/700 body.
 
 ### Hierarchy
-- **Display** (400, clamp 2.25rem to 3.75rem, 1.04): The hero headline inside the title block only, max 16ch.
-- **Headline** (400, step-4, 1.08): Section h2s. Location and FAQ questions also use Gloock (FAQ summaries at step-1); the direct phone number is set in Gloock at step-3 with tabular figures.
-- **Title** (400, step-2 to step-3, 1.15): Legend h3s at step-2; room name at step-3; big cell values at 1.75rem.
-- **Lede** (400, step-1, 1.5): Section intros in Warm Ink, 40 to 58ch.
-- **Body** (400, step-0, 1.6): Running text, max about 48 to 62ch.
-- **Label** (600, 0.75rem, 0.12em, uppercase, `wdth` 72): Cell labels, spec-table and address terms, schedule terms, footer column heads, map labels. The wordmark sub-line uses the same lettering at 0.6875rem / 0.16em.
+- **Display** (600, clamp 2.25–3.5rem, 1.08, -0.03em, uppercase): home hero h1 only.
+- **Headline** (600, clamp 1.75–2.5rem, 1.12, -0.02em, uppercase): section h2, page-hero h1 (max 22ch), CTA band, room names on the Rooms page.
+- **Headline small** (600, clamp 1.5–2rem): h2 inside long-form prose.
+- **Title** (600, 1.5rem): room-card names, How-to-book heading, dialog heading. **Title small** (600, 1.25rem): pillar h3, address, score count.
+- **Body large** (400, 1.125rem, 1.6): ledes on light and dark; ledes cap at 42–44rem.
+- **Body** (400, 1rem, 1.625): running text; prose column max 44rem at 1.0625rem.
+- **Body small** (0.875rem): feature lists, step notes, footer base (0.8125rem).
+- **Label** (700, 0.75rem, 0.1em, uppercase, ink-2): names a value: trust-bar items, "Rate", spec terms, field labels (0.06em), "Lodge address", "Reviews".
+- **Button** (600, 0.9375rem, 0.02em, sentence case).
 
 ### Named Rules
-**The Lettered Cell Rule.** Condensed caps labels name a value that sits directly beside or beneath them (a cell, a definition term, a map feature). They are never placed above a section heading as decoration.
+**The Uppercase Heading Rule.** Every h1–h4, FAQ summary, step title, gallery caption and mobile-menu link is uppercase Space Grotesk 600 with negative tracking. Body copy, buttons and links are never uppercase.
 
-**The One Weight Serif Rule.** Gloock is set at 400 only. Emphasis comes from size and the green ink, not weight.
+**The Label Names A Value Rule.** A tracked-caps label sits beside or above the datum it names (a time, an address, a rate, a code). It does not introduce a heading.
+
+**The Tabular Figures Rule.** Phone numbers, ratings, review counts and the live clock use `tabular-nums`.
 
 ## Layout
 
-One strict 12-column grid inside a 1320px max container with a fluid gutter (16px to 48px). Sections are split asymmetrically along that grid (5/6 cols, 7/4, 6/5, 4/7 with a column of air between), and collapse to a single column at 960px. Section padding is fluid (`section` token); section heads sit max 46rem wide with clamp(2.5rem, 5vw, 4rem) below.
+A centred `.wrap` container: max 1320px plus a fluid gutter (1.25–1.5rem). Sections pad vertically by `--section` (3.5–6rem). The header is fixed, 80px (64px under 640px), translucent cool paper with a 16px backdrop blur; main content offsets by the header height.
 
-Spacing follows an 8pt-derived scale (s-1 to s-9). Data is laid out as ruled rows: legends, spec tables (7.5rem term column), schedules, address blocks, numbered controls, each row separated by a hairline rather than boxed.
+Grids: 12-column bento for the gallery (8+4 then 4+4+4), 4-up pillars, 3-up and 2-up card grids, and asymmetric splits of 7fr/5fr (featured room + How-to-book, contact form + preview) and 5fr/7fr (rating + amenities, address + map). Grids collapse to 2 columns at 1080px and 1 column at 640px; splits stack at 960px; bento cells become 4:3 tiles at 760px. Section heads are a flex row (heading left, short supporting paragraph right, ≤28rem) closed by a hairline, or centred for FAQ and CTA.
 
-Header is fixed at 76px, shrinking to 64px on scroll; nav collapses to a full-height green menu at 1100px. On phones (760px) the hero photo becomes a 16:10 band with the title block overlapping it by 56px at full width, the desktop "desk" cell is replaced by an open-now line under the lede, and a fixed bottom action bar (Call / WhatsApp) slides up after the hero. Hit targets are 44px minimum, buttons 48px.
+Desktop nav collapses to a hamburger at 1240px; the full-screen navy mobile menu sits below the header. Under 760px a fixed three-button action bar (Call, WhatsApp, Book) slides up once the hero is passed; under 640px the header's phone and Book button hide in its favour.
+
+Spacing steps: 0.25 / 0.5 / 1 / 1.5 / 2.5 / 4rem. Card padding is 1.5rem; card grids gap 1.5rem; bento gaps 1rem.
 
 ## Elevation & Depth
 
-Mostly flat paper. Depth comes from tonal fields (ivory vs sheet shade vs green) and hairline rules, with soft green-tinted shadows reserved for objects that sit on the sheet: the hero title block, photo plates, the booking slip, the scrolled header and the mobile action bar.
+A light hybrid: tonal surfaces carry most separation, and three soft navy-tinted shadows add lift. Depth on dark bands comes from the photograph and gradient, not shadows.
 
 ### Shadow Vocabulary
-- **Pinned** (`box-shadow: 0 1px 2px rgb(20 42 31 / 0.08), 0 6px 18px -8px rgb(20 42 31 / 0.18)`): Photo plates and the booking slip.
-- **Plate Lift** (`box-shadow: 0 2px 4px rgb(20 42 31 / 0.08), 0 24px 48px -20px rgb(20 42 31 / 0.35)`): The hero title block over the photograph (dropped on phones).
-- **Gold Press** (`box-shadow: 0 1px 0 rgb(255 255 255 / 0.35) inset, 0 8px 20px -10px rgb(20 42 31 / 0.55)`): The gold primary button; deepens on hover.
+- **Rest** (`0 1px 3px rgb(15 23 42 / 0.05), 0 1px 2px rgb(15 23 42 / 0.03)`): cards and FAQ items at rest.
+- **Lift** (`0 8px 24px -4px rgb(15 23 42 / 0.08), 0 4px 8px -2px rgb(15 23 42 / 0.04)`): card hover (with -2px translate), framed photos, the map and its pin.
+- **Dialog** (`0 24px 48px -16px rgb(1 29 53 / 0.35)`): the booking dialog only, over a `rgb(15 23 42 / 0.65)` scrim with 3px blur.
+- **Crimson glow** (`0 6px 16px -6px rgb(211 47 47 / 0.55)`, hover `0 10px 22px -8px … / 0.6`): booking buttons only.
 
 ### Named Rules
-**The Pinned Not Floating Rule.** Shadows are soft, green-tinted and short; they say "pinned to the sheet", never "floating card". Ruled lists and sections carry no shadow.
+**The Rest-Then-Lift Rule.** Cards are nearly flat at rest and lift only on hover (Lift shadow, translateY(-2px), image scale 1.03–1.04 over 0.7s).
 
 ## Shapes
 
-Near-square everything: a 2px radius on buttons, inputs and the copy button; images, plates, title blocks, the slip and section fields are square. Circles appear only as plan markers (numbered route controls, the live dot). The recurring geometry is the survey frame: an inner 1px hairline inset 10px from the edge of green fields, and corner registration ticks (16px arms, 1.5px stroke) at the four corners of title blocks and photo plates. The route map adds a 48px grid, dashed estate boundary and rounded road strokes.
-
-**The Survey Frame Rule.** A framed object gets the 10px inset hairline and/or corner ticks, not a thicker border or a rounded card.
+Restrained, architectural corners: 4px for chips, tags, nav items and the copy button; 6px for buttons and inputs; 8px for icon tiles, thumbnails, notes and the map pin card; 10px for cards, photos, bento tiles, FAQ items and the map; 14px for the booking dialog. Circles are reserved for icon discs (trust bar, map pin, step numbers, the dialog close button) and status dots. Borders are 1px hairlines (#e2e7ff on light, white 12% on navy); buttons carry a 1.5px stroke slot so outline and filled variants share a size.
 
 ## Components
 
 ### Buttons
-Confident, flat, slightly pressed.
-- **Shape:** Near-square (2px), min-height 48px (42px small, 54px large), 600 weight, 1rem.
-- **Primary (gold):** Survey Gold fill, Night Forest text, Gold Press shadow; hover shifts to Field Gold with a deeper shadow; active nudges down 1px.
-- **Line (on ivory):** 1px Brand Forest stroke and text; hover fills green with ivory text.
-- **Line light (on green):** ivory stroke at 55% mix; hover firms the stroke and adds an 8% ivory wash.
-- **Focus:** 2px Hairline Gold outline, 3px offset (global).
-- **Text link:** Brand Forest text at weight 600 with a Hairline Gold underline that thickens to 2px on hover.
+Confident, compact, never pill-shaped.
+- **Shape:** gently squared (6px); min-height 48px (42px small, 54px large); 0.75rem × 1.5rem padding; icon gap 0.5em.
+- **Book (crimson):** red fill, white text, crimson glow; hover red-hover with a deeper glow; active red-active and `scale(0.98)`.
+- **Navy:** navy-900 fill for room inquiries; hover turns crimson.
+- **Outline:** 1.5px navy stroke, navy text, transparent; hover Mist fill.
+- **Ghost on dark:** white 8% fill, white 32% stroke, on heroes and the CTA band (phone call-outs).
+- **Light / Soft:** white or Haze fills for secondary actions on dark and light bands respectively.
+- **Text link:** royal, 600, 1px underline at 35% alpha; hover becomes Signal Red with a full-strength underline.
+
+### Chips
+- **Tag:** navy-900 (or crimson for room status) 4px chip, 0.6875rem 700 caps at 0.1em, pinned top-left on room media and as photo captions.
+- **Area chip:** white, 1px hairline, 4px, navy-900 600 text, for neighbourhood lists.
+
+### Cards / Containers
+- **Corner Style:** 10px.
+- **Background:** white on light bands; Harbour Night for the How-to-book and contact preview panels.
+- **Shadow Strategy:** Rest, Lift on hover (see Elevation).
+- **Border:** 1px hairline.
+- **Internal Padding:** 1.5rem; card footers split off by a hairline.
+- **Pillar card:** 48px Haze icon tile (8px) that flips to navy/white on card hover.
+- **Room card:** 16:10 media, title, two-column feature list with royal icons, footer with rate row and full-width navy button.
 
 ### Inputs / Fields
-- **Style:** Drafting Paper fill, 1px Plate Ground sides, a 1.5px Brand Forest underline (the ruled line you write on), 2px radius, 48px min height. Labels sit above in Brand Forest, weight 600, 0.9375rem.
-- **Hover / Focus:** Hover lightens to ivory-50; focus goes white with a Hairline Gold border and a 3px gold-500 halo at 35%.
-- **Error:** Border turns brick red with a 500-weight message below.
+- **Style:** Mist fill, 1px Fog Blue stroke, 6px, 48px tall; uppercase 0.75rem labels at 0.06em; optional hints in Muted Slate, sentence case.
+- **Focus:** fill turns white, border Classic Navy, 3px maritime halo at 18%.
+- **Error:** Signal Red border and 0.8125rem 600 message.
 
 ### Navigation
-Ivory bar, wordmark left (Gloock name over condensed caps sub-line in Ink Gold), links in charcoal at weight 500, 0.9375rem, with a gold hairline that draws in from the left on hover and stays under the current item, phone number and small gold button right. Below 1100px a 44px menu toggle opens a full green sheet with Gloock links on gold rules.
+Header: wordmark (uppercase Space Grotesk 1.25rem over 0.625rem tracked sub-line), centred link row in 0.875rem 600 ink-2 with 4px-rounded hover (Mist) and current (Tide) pills, then a two-line "Direct desk 24/7" phone and a small Book button. Shadow deepens once scrolled. Mobile: hamburger opens a Harbour Night sheet of uppercase 1.375rem links divided by white-12% hairlines, current link in Coral Lamp, stacked call/WhatsApp/book actions below. Footer: Mist band, four columns (1.4fr / 1fr ×3), a live "open now" line, hairline base row.
 
-### Title Block (signature)
-A forest-green sheet block with an inset hairline frame and gold corner ticks, holding the Gloock display headline, a sage lede, the button pair, and a bottom row of ruled cells (label in Pale Gold condensed caps, value in Light Paper; one big Gloock value). Used for the hero; the same cell grammar repeats in the slip preview and the address block.
+### Photo Hero (signature)
+`.dark` band: navy-950 base, photo at 62% opacity with `mix-blend-mode: luminosity`, overlaid by a bottom-up and left-to-right navy gradient; copy left-aligned, max 50rem. The home hero fills the viewport (≤820px) and ends in a translucent trust bar of four icon-disc + label + value items; inner pages use a shorter page hero with slash breadcrumbs. Copy rises in with a 0.08s stagger; the photo settles from scale 1.05.
 
-### Photo Plate (signature)
-A real photograph pinned to the sheet: Pinned shadow, ivory corner ticks and a faint ivory inset frame, and a green 82% caption strip along the bottom in slightly condensed (`wdth` 80) 0.8125rem text. Reveals with a clip-path wipe.
+### Booking Dialog and WhatsApp Preview (signature)
+Native `<dialog>`, 560px max, 14px radius, Harbour Night head with a circular close button, white scrolling body holding the shared booking form; the form composes a WhatsApp message. On the Contact page the same form sits beside a sticky navy preview panel showing the message in a WhatsApp-green bubble (#e7ffdb, 12/12/3/12px corners) above direct-contact rows.
 
-### Ruled Lists
-Legends, spec tables, schedules, address blocks and route controls share one pattern: a strong gold top rule, lighter gold row rules, a fixed term column in condensed caps, values in 500 weight. Legend rows carry a 56px square ivory mark with a 1.5px line icon. Route controls carry 28px gold-ringed numbers; the destination is filled gold.
-
-### Booking Slip
-An ivory-50 sheet with a strong gold border and Pinned shadow, split 7:5 into fields and a green preview panel that composes the WhatsApp message live in a chat bubble (the bubble's 10px/2px tail radius imitates WhatsApp and is the one rounded shape in the system). Stacks to fields-then-preview below 900px.
-
-### Route Sheet
-Night Forest map on a 48px hairline grid with a radial vignette, ivory roads on dark casings, dashed estate outline, and a gold route that draws from Kpone Barrier to No. 473 while numbered controls light in sequence.
+### Gallery Bento
+12-column grid of 10px photo tiles with a bottom navy gradient and an uppercase caption over a place label.
 
 ## Do's and Don'ts
 
 ### Do:
-- **Do** keep to the four inks; use gold-700 when gold must be small text on ivory, gold-300 when it letters green.
-- **Do** separate content with hairline rules (`--rule` for rows, `--rule-strong` for the top of a ruled list) instead of boxes.
-- **Do** letter data with condensed caps labels (0.75rem, 600, 0.12em, `wdth` 72) placed beside or above their value.
-- **Do** frame real photographs as plates with corner ticks and a caption strip.
-- **Do** animate with `cubic-bezier(0.16, 1, 0.3, 1)` once, as ink drawing or clip-path reveals, and leave everything visible under reduced motion.
-- **Do** keep corners at 2px and hit targets at 44px or more.
+- **Do** open every page on the navy photo hero with a real photograph of the lodge, luminosity-blended at 62% under the navy gradient.
+- **Do** keep crimson fills for booking actions (red #d32f2f, hover #c62828, active #b71c1c).
+- **Do** separate sections by stepping the cool surface ladder, and use #e2e7ff hairlines inside blocks.
+- **Do** set headings in uppercase Space Grotesk 600 with -0.02em tracking; body in Hanken Grotesk 400 at 1.625.
+- **Do** keep corners at 4 / 6 / 10px (14px for the dialog) and buttons at a 48px minimum height.
+- **Do** use inline SVG line icons from the shared icon set, coloured royal or navy on light surfaces.
+- **Do** use tabular figures for phone numbers, rates, ratings and times.
 
 ### Don't:
-- **Don't** fill any panel or background with gold; gold fills belong to the primary button and the home plot marker only.
-- **Don't** set a centred headline directly over a full-bleed photo; headlines sit in a green title block or on the paper.
-- **Don't** lay out features as rows of equal cards; use ruled legends, spec tables and schedules.
-- **Don't** put condensed caps labels above section headings as kickers or eyebrows.
-- **Don't** use stock imagery presented as the lodge, or round cards, pill buttons and heavy floating shadows.
-- **Don't** bold Gloock; it is set at 400.
+- **Don't** use crimson for navigation, decoration or section backgrounds.
+- **Don't** use pill-shaped or fully rounded buttons.
+- **Don't** use AI-rendered or stock imagery in place of the lodge's own photographs.
+- **Don't** use an icon font (Material Symbols or similar) or emoji/glyph icons.
+- **Don't** add testimonial carousels or award/verification badges; the rating stays a score card that links to Google.
+- **Don't** put a tracked-caps label or a pill chip above a heading as a kicker.

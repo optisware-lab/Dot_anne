@@ -52,14 +52,18 @@ Unknown, must not be invented: room prices, room count, room categories beyond t
 
 - Name written as DOT ANNE HOME LODGE (wordmark may set it in mixed case for display, but the name is fixed).
 - No official logo exists; a typographic wordmark is acceptable and must not be presented as an official logo.
-- Client-pinned palette: deep forest green / emerald, warm ivory, muted gold/champagne, charcoal text. Editorial serif headings + clean sans body.
+- Visual design (client-pinned 2026-10-28, replacing the earlier green/ivory/gold direction): the Google Stitch "Tema Coastal Architectural Hospitality" system. Navy + crimson (crimson only for booking actions) on cool white surfaces, Space Grotesk uppercase headings + Hanken Grotesk body. See DESIGN.md.
 - Hero headline (client-pinned): "Comfortable, Safe & Affordable Accommodation in Golf Estate, Tema".
+
+## Site Structure
+
+Multi-page for search: / (home), /rooms, /gallery, /about, /location, /faq, /contact. Each page targets its own keyword cluster (src/config/seo.ts). No thin per-area doorway pages.
 
 ## Evidence on Hand
 
 - Real property photos sourced from the lodge's public Google Maps listing (`public/images/property/`, provenance in `public/images/property/SOURCES.md`): exterior courtyard, front garden, a bedroom, two bathrooms with shower enclosures, guest lounge. Owner must confirm rights before launch.
 - Rating 4.2/5 from 47 Google reviews (owner-supplied, matches Google Maps Oct 2026).
-- No testimonials, no prices, no room inventory. Do not fabricate any of these.
+- No testimonials, no prices, no room inventory, no certifications (e.g. Ghana Tourism Authority) on hand. Do not fabricate any of these. The Stitch comp included invented testimonials, a GTA badge and AI photos; all were deliberately left out.
 
 ## Product Principles
 

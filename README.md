@@ -39,7 +39,7 @@ To replace a photo, save the new one over the same file name in `public/images/p
 
 ## Before launch: owner checklist
 
-1. Confirm the lodge owns the five photos (or replace them). Guest uploads on Google belong to the guest.
+1. Confirm the lodge owns the six photos (or replace them). Guest uploads on Google belong to the guest.
 2. Remove the three 3D-render images from the Google Maps listing; they are not the lodge.
 3. Confirm or switch on: air conditioning, breakfast, TV, mini fridge.
 4. Add room rates, check-in/check-out times and any other room types.
@@ -48,11 +48,42 @@ To replace a photo, save the new one over the same file name in `public/images/p
 7. After launch, add the website link to the Google Business Profile and submit the sitemap
    (`/sitemap.xml`) in Google Search Console.
 
+## Pages
+
+| Page | Path | Targets searches like |
+|---|---|---|
+| Home | / | lodge in Tema, guest house Tema, Golf Estate accommodation |
+| Rooms | /rooms | rooms in Tema, deluxe double room Tema, room rates |
+| Gallery | /gallery | Dot Anne Home Lodge photos |
+| About | /about | home-style / quiet guest house Tema |
+| Location | /location | lodge at Kpone Barrier, hotel near BOST Road, nearby areas |
+| FAQ | /faq | late check-in Tema, how to book |
+| Contact | /contact | book lodge Tema, Dot Anne phone / WhatsApp |
+
+Page titles, descriptions and keyword clusters live in `src/config/seo.ts`; FAQ answers in `src/content/faq.ts`.
+
 ## SEO included
 
-- Title and description targeting "lodge / guest house in Tema", "Kpone Barrier", "Golf Estate", "BOST Road".
-- `LodgingBusiness` structured data (address, geo, 24h hours, phone, amenities, rating) and `FAQPage` data.
-- Open Graph image, sitemap, robots.txt, geo meta tags.
+- Separate pages, each with its own title (under 60 characters), description (under 155), H1, canonical URL and social card.
+- Keywords used naturally in titles, headings, copy and image alt text (no hidden or stuffed keyword lists, which Google penalises).
+- One linked schema.org graph on every page: Hotel / LodgingBusiness / BedAndBreakfast with address, geo, Plus Code map link,
+  24h hours, phone, amenities, rating, areas served, booking action; plus WebSite, WebPage, BreadcrumbList, FAQPage,
+  HotelRoom and ImageGallery where relevant.
+- Sitemap with image entries, robots.txt, web manifest, `/llms.txt` (plain-text facts for AI search assistants),
+  geo meta tags, AVIF/WebP images, a 404 page.
+- Search Console / Bing verification: set `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION` / `NEXT_PUBLIC_BING_SITE_VERIFICATION`.
+
+### What decides local ranking (do these after launch)
+
+No website can promise position 1. For a lodge, Google's local results depend mostly on the **Google Business Profile**:
+
+1. Add this website link to the Google Business Profile, and keep name, address and phone identical everywhere.
+2. Upload the real photos there and remove the three 3D renders that are not the lodge.
+3. Ask happy guests for Google reviews and reply to every review.
+4. Pick the right categories (Lodge, Guest house, Bed & breakfast) and keep hours as "Open 24 hours".
+5. Submit `/sitemap.xml` in Google Search Console and Bing Webmaster Tools.
+6. List the lodge with the same details on Tripadvisor, Booking.com, Facebook and Ghana directories; add each link to
+   `site.sameAs` in `src/config/site.ts`.
 
 ## Design
 

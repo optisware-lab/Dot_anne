@@ -13,9 +13,10 @@ If any photo cannot be confirmed, replace it with a new photo of the same subjec
 | garden-frontage.jpg | Flower beds along the room wing | ANWiy9T50Izq… | Resized |
 | bedroom-double.jpg | Guest bedroom with double bed | ANWiy9RBAuSP… | Resized |
 | bathroom-shower.jpg | Private bathroom with shower enclosure | ANWiy9RJrMxf… | Resized |
+| bathroom-vanity.jpg | Private bathroom, second angle | ANWiy9RVqUWd… | Resized |
 | guest-lounge.jpg | Shared guest lounge | ANWiy9QbgYNB… | Resized |
 
-Also on the listing: a second bathroom photo (kept in .assets-src/property/, not shipped). Not used: three images on the same listing are 3D interior renders of other buildings (not the lodge).
+Not used: three images on the same listing are 3D interior renders of other buildings (not the lodge).
 They should be removed from the Google listing too, because guests may treat them as false advertising.
 
 Original full-resolution downloads are kept in `.assets-src/property/` (not deployed).

@@ -12,8 +12,8 @@ function tema() {
   }).format(new Date());
 }
 
-/** The current time in Tema. The desk is always open, so the clock is the proof. */
-export function LiveClock({ className }: { className?: string }) {
+/** "Open now · 23:14 in Tema". The desk is always open, so the clock is the proof. */
+export function LiveClock() {
   const [time, setTime] = useState<string | null>(null);
 
   useEffect(() => {
@@ -22,16 +22,11 @@ export function LiveClock({ className }: { className?: string }) {
     return () => window.clearInterval(id);
   }, []);
 
-  return (
-    <span className={className}>
-      <span className="live-dot" aria-hidden="true" />
-      {time ? (
-        <>
-          Open now · <time suppressHydrationWarning>{time}</time> in Tema
-        </>
-      ) : (
-        "Open 24 hours"
-      )}
-    </span>
+  return time ? (
+    <>
+      Open now · <time suppressHydrationWarning>{time}</time> in Tema
+    </>
+  ) : (
+    <>Open 24 hours</>
   );
 }

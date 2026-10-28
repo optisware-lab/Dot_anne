@@ -1,76 +1,82 @@
 import type { Metadata, Viewport } from "next";
-import { Gloock, Archivo } from "next/font/google";
+import { Hanken_Grotesk, Space_Grotesk } from "next/font/google";
 import { site } from "@/config/site";
-import { JsonLd } from "@/components/JsonLd";
+import { BookingProvider } from "@/components/Booking";
+import { SiteHeader } from "@/components/SiteHeader";
+import { SiteFooter } from "@/components/SiteFooter";
+import { ActionBar } from "@/components/ActionBar";
 import "./globals.css";
 
-const display = Gloock({
-  weight: "400",
+const head = Space_Grotesk({
   subsets: ["latin"],
+  weight: ["500", "600", "700"],
   display: "swap",
-  variable: "--font-display",
+  variable: "--font-head",
 });
 
-const sans = Archivo({
+const body = Hanken_Grotesk({
   subsets: ["latin"],
+  weight: ["400", "600", "700"],
   display: "swap",
-  axes: ["wdth"],
-  variable: "--font-sans",
+  variable: "--font-body",
 });
-
-const title = "DOT ANNE HOME LODGE | Guest House in Golf Estate, Tema (Kpone Barrier)";
-const description =
-  "Quiet, home-style rooms at 473 Golf Estate, off BOST Road near Kpone Barrier, Tema. Private bathrooms, free Wi-Fi, on-site parking. Open 24/7. Call or WhatsApp +233 24 349 0990 to book.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
-  title: { default: title, template: "%s | DOT ANNE HOME LODGE" },
-  description,
-  applicationName: site.name,
-  keywords: [
-    "lodge in Tema",
-    "guest house Tema",
-    "Kpone Barrier lodge",
-    "Golf Estate Tema accommodation",
-    "hotel near BOST Road",
-    "bed and breakfast Tema",
-    "Kpone accommodation",
-    "24 hour lodge Tema",
-  ],
-  alternates: { canonical: "/" },
-  openGraph: {
-    type: "website",
-    locale: site.locale,
-    url: "/",
-    siteName: site.name,
-    title,
-    description,
-    images: [{ url: "/images/og.jpg", width: 1200, height: 630, alt: "DOT ANNE HOME LODGE, Golf Estate, Tema" }],
+  title: { default: "Dot Anne Home Lodge | Guest House in Golf Estate, Tema", template: "%s | Dot Anne Home Lodge" },
+  description:
+    "Affordable, quiet lodge at Golf Estate, Kpone Barrier, off BOST Road, Tema. Private bathrooms, free Wi-Fi, parking, 24/7 desk.",
+  applicationName: site.displayName,
+  authors: [{ name: site.displayName, url: site.url }],
+  creator: site.displayName,
+  publisher: site.displayName,
+  category: "travel",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 },
   },
-  twitter: { card: "summary_large_image", title, description, images: ["/images/og.jpg"] },
-  robots: { index: true, follow: true },
-  formatDetection: { telephone: true, address: true },
+  formatDetection: { telephone: true, address: true, email: false },
+  appleWebApp: { title: site.shortName, capable: true, statusBarStyle: "default" },
+  // TODO(owner): paste the Google Search Console / Bing verification codes here after launch.
+  verification: {
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
+    other: process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION ? { "msvalidate.01": process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION } : undefined,
+  },
   other: {
     "geo.region": "GH-AA",
-    "geo.placename": "Tema",
+    "geo.placename": "Tema, Kpone Barrier",
     "geo.position": `${site.geo.lat};${site.geo.lng}`,
     ICBM: `${site.geo.lat}, ${site.geo.lng}`,
+    "business:contact_data:street_address": site.address.street,
+    "business:contact_data:locality": site.address.city,
+    "business:contact_data:region": site.address.region,
+    "business:contact_data:country_name": site.address.country,
+    "business:contact_data:phone_number": site.phone.tel,
+    "place:location:latitude": String(site.geo.lat),
+    "place:location:longitude": String(site.geo.lng),
   },
 };
 
 export const viewport: Viewport = {
-  themeColor: "#1E3A2C",
+  themeColor: "#011d35",
   width: "device-width",
   initialScale: 1,
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en-GH" className={`${display.variable} ${sans.variable}`}>
+    <html lang="en-GH" className={`${head.variable} ${body.variable}`}>
       <body>
-        <a className="skip-link" href="#main">Skip to content</a>
-        {children}
-        <JsonLd />
+        <a className="skip-link" href="#main">
+          Skip to content
+        </a>
+        <BookingProvider>
+          <SiteHeader />
+          <main id="main">{children}</main>
+          <SiteFooter />
+          <ActionBar />
+        </BookingProvider>
       </body>
     </html>
   );
