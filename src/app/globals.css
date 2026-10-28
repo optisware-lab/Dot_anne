@@ -68,6 +68,17 @@
   --shadow-2: 0 8px 24px -4px rgb(15 23 42 / 0.08), 0 4px 8px -2px rgb(15 23 42 / 0.04);
   --shadow-3: 0 24px 48px -16px rgb(1 29 53 / 0.35);
   --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1); /* UI under 600ms */
+  --ease-expo: cubic-bezier(0.16, 1, 0.3, 1); /* reveals 800ms+ */
+  --ease-in-out: cubic-bezier(0.76, 0, 0.24, 1); /* wipes, things that travel */
+  --ease-soft: cubic-bezier(0.33, 1, 0.68, 1); /* slow photo settle */
+  --ease-exit: cubic-bezier(0.55, 0.055, 0.675, 0.19); /* leaving for good, short */
+  --t-press: 140ms;
+  --t-hover: 180ms;
+  --t-ui: 240ms;
+  --t-reveal: 800ms;
+  --t-open: 1150ms;
+  --stagger-item: 70ms;
 }
 
 /* ---------- Base ---------- */
@@ -228,15 +239,15 @@ a {
   white-space: nowrap;
   cursor: pointer;
   transition:
-    background-color 0.2s var(--ease),
-    color 0.2s var(--ease),
-    border-color 0.2s var(--ease),
-    box-shadow 0.3s var(--ease),
-    transform 0.2s var(--ease);
+    background-color var(--t-hover) ease,
+    color var(--t-hover) ease,
+    border-color var(--t-hover) ease,
+    box-shadow 300ms var(--ease-out),
+    transform var(--t-press) var(--ease-out);
 }
 
 .btn:active {
-  transform: scale(0.98);
+  transform: scale(0.97);
 }
 
 .btn--red {
@@ -634,16 +645,6 @@ main {
   box-shadow: 0 0 0 3px rgb(74 222 128 / 0.2);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .dot--pulse {
-    animation: pulse 2s ease-in-out infinite;
-  }
-  @keyframes pulse {
-    50% {
-      opacity: 0.45;
-    }
-  }
-}
 
 /* ---------- Home hero ---------- */
 
@@ -687,34 +688,6 @@ main {
   padding-top: var(--s-sm);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .hero__copy > * {
-    animation: rise 0.9s var(--ease) both;
-  }
-  .hero__copy > :nth-child(2) {
-    animation-delay: 0.08s;
-  }
-  .hero__copy > :nth-child(3) {
-    animation-delay: 0.16s;
-  }
-  .hero__copy > :nth-child(4) {
-    animation-delay: 0.24s;
-  }
-  .dark__photo img {
-    animation: settle 1.6s var(--ease) both;
-  }
-  @keyframes rise {
-    from {
-      opacity: 0.001;
-      transform: translateY(14px);
-    }
-  }
-  @keyframes settle {
-    from {
-      transform: scale(1.05);
-    }
-  }
-}
 
 .trust-bar {
   border-top: 1px solid var(--line-dark);
@@ -944,11 +917,6 @@ main {
     transform 0.3s var(--ease);
 }
 
-.card--hover:hover {
-  box-shadow: var(--shadow-2);
-  transform: translateY(-2px);
-}
-
 .grid-4 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -1048,10 +1016,6 @@ main {
 .room-card__media img {
   object-fit: cover;
   transition: transform 0.7s var(--ease);
-}
-
-.room-card:hover .room-card__media img {
-  transform: scale(1.03);
 }
 
 .tag {
@@ -1221,10 +1185,6 @@ main {
 .shot img {
   object-fit: cover;
   transition: transform 0.7s var(--ease);
-}
-
-.shot:hover img {
-  transform: scale(1.04);
 }
 
 .shot::after {
@@ -1827,17 +1787,6 @@ main {
   backdrop-filter: blur(3px);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .booking-dialog[open] {
-    animation: dialog-in 0.35s var(--ease);
-  }
-  @keyframes dialog-in {
-    from {
-      opacity: 0;
-      transform: translateY(12px) scale(0.98);
-    }
-  }
-}
 
 .booking-dialog__head {
   display: flex;
@@ -2235,4 +2184,440 @@ main {
 
 .not-found h1 {
   font-size: var(--t-xl);
+}
+
+
+/* ==========================================================================
+   MOTION
+   One signature moment (the hero opening, then receding on scroll), section
+   entrances that vary with their content, fast feedback under the hand.
+   Rules (Taste skill + Emil Kowalski + impeccable):
+   - every hidden starting state lives under html.js AND no-preference, so
+     no-JS and reduced-motion visitors get the finished page;
+   - only transform, opacity and clip-path move;
+   - ease-out for UI, expo for long reveals, no bounce; exits faster than entries;
+   - hover motion only on devices with a real pointer.
+   ========================================================================== */
+
+/* ---------- Feedback under the hand ---------- */
+
+.text-link svg,
+.mobile-menu li a svg {
+  transition: transform var(--t-ui) var(--ease-out);
+}
+
+.copy-btn,
+.icon-btn,
+.thumb,
+.menu-toggle,
+.faq summary {
+  transition:
+    background-color var(--t-hover) ease,
+    color var(--t-hover) ease,
+    opacity var(--t-hover) ease,
+    border-color var(--t-hover) ease,
+    transform var(--t-press) var(--ease-out);
+}
+
+.copy-btn:active,
+.icon-btn:active,
+.thumb:active,
+.menu-toggle:active {
+  transform: scale(0.95);
+}
+
+.site-nav a {
+  position: relative;
+}
+
+.site-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0.7rem;
+  right: 0.7rem;
+  bottom: 3px;
+  height: 1.5px;
+  border-radius: 1px;
+  background: var(--red);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--t-ui) var(--ease-out);
+}
+
+.site-nav a[aria-current="page"]::after {
+  transform: scaleX(1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .text-link:hover svg,
+  .mobile-menu li a:hover svg {
+    transform: translateX(3px);
+  }
+
+  .site-nav a:hover::after {
+    transform: scaleX(1);
+  }
+
+  .card--hover:hover {
+    box-shadow: var(--shadow-2);
+    transform: translateY(-3px);
+  }
+
+  .shot:hover img,
+  .js .shot[data-reveal="shutter"].is-in:hover img {
+    transform: scale(1.04);
+    transition: transform 600ms var(--ease-out);
+    transition-delay: 0s;
+  }
+
+  .btn--red:hover {
+    transform: translateY(-1px);
+  }
+
+  .btn--red:hover:active {
+    transform: scale(0.97);
+  }
+}
+
+/* ---------- Signature: the hero opens, then recedes ---------- */
+
+.hero,
+.page-hero {
+  view-timeline-name: --hero;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  /* Load sequence, settled by ~1.2s, four steps: headline, line, actions, trust bar */
+  .js .hero h1,
+  .js .page-hero h1 {
+    clip-path: inset(0 0 100% 0);
+    transform: translateY(28%);
+    animation: mask-up 900ms var(--ease-expo) 120ms forwards;
+  }
+
+  .js .hero .place-chip,
+  .js .page-hero .crumbs {
+    opacity: 0;
+    animation: fade-in 500ms var(--ease-out) 60ms forwards;
+  }
+
+  .js .hero .hero__lede,
+  .js .page-hero h1 + p {
+    opacity: 0;
+    transform: translateY(12px);
+    animation: rise-in 600ms var(--ease-out) 380ms forwards;
+  }
+
+  .js .hero .hero__ctas,
+  .js .page-hero .hero__ctas {
+    opacity: 0;
+    transform: translateY(12px);
+    animation: rise-in 600ms var(--ease-out) 480ms forwards;
+  }
+
+  .js .trust-bar li {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: rise-in 600ms var(--ease-out) forwards;
+    animation-delay: calc(620ms + var(--i, 0) * 60ms);
+  }
+
+  .trust-bar li:nth-child(2) {
+    --i: 1;
+  }
+  .trust-bar li:nth-child(3) {
+    --i: 2;
+  }
+  .trust-bar li:nth-child(4) {
+    --i: 3;
+  }
+
+  /* The real photo settles into place */
+  .js .dark__photo img {
+    transform: scale(1.08);
+    animation: settle 1600ms var(--ease-soft) forwards;
+  }
+}
+
+/* As the first screen leaves, the photo sinks and the words lift away (CSS scroll timeline) */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .hero .dark__photo {
+      animation: hero-sink linear both;
+      animation-timeline: --hero;
+      animation-range: exit 0% exit 100%;
+    }
+    .hero .hero__copy {
+      animation: hero-lift linear both;
+      animation-timeline: --hero;
+      animation-range: exit 0% exit 75%;
+    }
+  }
+}
+
+@keyframes mask-up {
+  to {
+    clip-path: inset(-12% 0 -12% 0);
+    transform: none;
+  }
+}
+
+@keyframes fade-in {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes rise-in {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes settle {
+  to {
+    transform: none;
+  }
+}
+
+@keyframes hero-sink {
+  to {
+    transform: translateY(7%) scale(1.05);
+    filter: brightness(0.7);
+  }
+}
+
+@keyframes hero-lift {
+  to {
+    transform: translateY(-8%);
+    opacity: 0.2;
+  }
+}
+
+/* ---------- Section entrances (once, as they come into view) ---------- */
+
+@media (prefers-reduced-motion: no-preference) {
+  /* Headings arrive like set type: a short mask wipe */
+  .js [data-reveal="mask"] {
+    clip-path: inset(0 0 100% 0);
+    transform: translateY(24%);
+    transition:
+      clip-path var(--t-reveal) var(--ease-expo),
+      transform var(--t-reveal) var(--ease-expo);
+  }
+  .js [data-reveal="mask"].is-in {
+    clip-path: inset(-12% 0 -12% 0);
+    transform: none;
+  }
+
+  /* Plain rise for single blocks */
+  .js [data-reveal="rise"] {
+    opacity: 0;
+    transform: translateY(24px);
+    transition:
+      opacity 700ms var(--ease-out),
+      transform 900ms var(--ease-expo);
+  }
+  .js [data-reveal="rise"].is-in {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* Lists arrive item by item (cap: 4 steps, 70ms apart) */
+  .js [data-reveal="stagger"] > * {
+    opacity: 0;
+    transform: translateY(20px);
+    transition:
+      opacity 600ms var(--ease-out),
+      transform 800ms var(--ease-expo);
+    transition-delay: calc(min(var(--i, 0), 3) * var(--stagger-item));
+  }
+  .js [data-reveal="stagger"].is-in > * {
+    opacity: 1;
+    transform: none;
+  }
+  .js [data-reveal="stagger"] > :nth-child(2) {
+    --i: 1;
+  }
+  .js [data-reveal="stagger"] > :nth-child(3) {
+    --i: 2;
+  }
+  .js [data-reveal="stagger"] > :nth-child(n + 4) {
+    --i: 3;
+  }
+
+  /* Photos open like a shutter from the bottom edge and settle from a slight zoom */
+  .js [data-reveal="shutter"] {
+    clip-path: inset(0 0 100% 0);
+    transition: clip-path var(--t-open) var(--ease-in-out);
+    transition-delay: calc(var(--i, 0) * 90ms);
+  }
+  .js [data-reveal="shutter"] img {
+    transform: scale(1.12);
+    transition: transform 1500ms var(--ease-soft);
+    transition-delay: calc(var(--i, 0) * 90ms);
+  }
+  .js [data-reveal="shutter"].is-in {
+    /* negative inset so the card shadow is not clipped once open */
+    clip-path: inset(-2.5rem);
+  }
+  .js [data-reveal="shutter"].is-in img {
+    transform: none;
+  }
+}
+
+/* Gallery shots open one after another */
+.bento > .shot:nth-child(2) {
+  --i: 1;
+}
+.bento > .shot:nth-child(3) {
+  --i: 2;
+}
+.bento > .shot:nth-child(4) {
+  --i: 3;
+}
+.bento > .shot:nth-child(n + 5) {
+  --i: 4;
+}
+
+/* ---------- Rolling figures (rating 4.2, 47 reviews) ---------- */
+
+.roll__digits {
+  display: inline-flex;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+
+.roll__col {
+  display: inline-block;
+  height: 1em;
+  overflow: clip;
+}
+
+.roll__strip {
+  display: flex;
+  flex-direction: column;
+  transform: translateY(calc(var(--d) * -1em));
+}
+
+.roll__strip > span {
+  height: 1em;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .js [data-reveal="roll"]:not(.is-in) .roll__strip {
+    transform: none;
+  }
+  .js [data-reveal="roll"].is-in .roll__strip {
+    transition: transform 1100ms var(--ease-expo) calc(var(--i) * var(--stagger-item) + 150ms);
+  }
+}
+
+/* ---------- FAQ: answers open to their real height ---------- */
+
+:root {
+  interpolate-size: allow-keywords;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .faq details::details-content {
+    block-size: 0;
+    overflow: clip;
+    transition:
+      block-size 320ms var(--ease-out),
+      content-visibility 320ms allow-discrete;
+  }
+  .faq details[open]::details-content {
+    block-size: auto;
+  }
+}
+
+/* ---------- Booking dialog: in from slightly below, out faster ---------- */
+
+@media (prefers-reduced-motion: no-preference) {
+  .booking-dialog {
+    opacity: 0;
+    transform: translateY(10px) scale(0.97);
+    transition:
+      opacity 160ms var(--ease-exit),
+      transform 160ms var(--ease-exit),
+      overlay 160ms allow-discrete,
+      display 160ms allow-discrete;
+  }
+  .booking-dialog[open] {
+    opacity: 1;
+    transform: none;
+    transition:
+      opacity 260ms var(--ease-out),
+      transform 300ms var(--ease-out),
+      overlay 300ms allow-discrete,
+      display 300ms allow-discrete;
+  }
+  @starting-style {
+    .booking-dialog[open] {
+      opacity: 0;
+      transform: translateY(10px) scale(0.97);
+    }
+  }
+  .booking-dialog::backdrop {
+    opacity: 0;
+    transition:
+      opacity 160ms ease,
+      overlay 160ms allow-discrete,
+      display 160ms allow-discrete;
+  }
+  .booking-dialog[open]::backdrop {
+    opacity: 1;
+    transition:
+      opacity 260ms ease,
+      overlay 300ms allow-discrete,
+      display 300ms allow-discrete;
+  }
+  @starting-style {
+    .booking-dialog[open]::backdrop {
+      opacity: 0;
+    }
+  }
+}
+
+/* ---------- Mobile menu: links follow the panel in ---------- */
+
+@media (prefers-reduced-motion: no-preference) {
+  .mobile-menu {
+    animation: menu-in 280ms var(--ease-out);
+  }
+  .mobile-menu li,
+  .mobile-menu__actions {
+    animation: rise-from 420ms var(--ease-out) both;
+    animation-delay: calc(60ms + var(--i, 0) * 30ms);
+  }
+  .mobile-menu li:nth-child(2) {
+    --i: 1;
+  }
+  .mobile-menu li:nth-child(3) {
+    --i: 2;
+  }
+  .mobile-menu li:nth-child(4) {
+    --i: 3;
+  }
+  .mobile-menu li:nth-child(5) {
+    --i: 4;
+  }
+  .mobile-menu li:nth-child(6) {
+    --i: 5;
+  }
+  .mobile-menu li:nth-child(7) {
+    --i: 6;
+  }
+  .mobile-menu__actions {
+    --i: 7;
+  }
+}
+
+@keyframes rise-from {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
 }

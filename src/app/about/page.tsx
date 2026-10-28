@@ -28,7 +28,9 @@ export default function AboutPage() {
       <section className="section" aria-labelledby="story-title">
         <div className="wrap split">
           <div className="prose">
-            <h2 id="story-title">A home-style lodge in Golf Estate</h2>
+            <h2 id="story-title" data-reveal="mask">
+              A home-style lodge in Golf Estate
+            </h2>
             <p>
               Dot Anne Home Lodge is a guest house and bed &amp; breakfast at No. 473, Golf Estate, in the Kpone Barrier area of
               Tema, Greater Accra. The rooms sit around a paved courtyard with palms and flower beds, behind the compound gate
@@ -48,7 +50,7 @@ export default function AboutPage() {
               </Link>
             </p>
           </div>
-          <figure className="photo">
+          <figure className="photo" data-reveal="shutter">
             <Image src={photos.exterior.src} alt={photos.exterior.alt} fill sizes="(min-width: 960px) 50vw, 100vw" />
             <figcaption>{photos.exterior.caption}</figcaption>
           </figure>

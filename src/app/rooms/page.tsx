@@ -93,7 +93,7 @@ export default function RoomsPage() {
 
       <section className="section section--low" aria-label="How to book">
         <div className="wrap split">
-          <div className="prose">
+          <div className="prose" data-reveal="rise">
             <h2>Booking a room in Tema, the simple way</h2>
             <p>
               Dot Anne Home Lodge takes bookings directly: no booking engine, no card details and no hidden fees on this

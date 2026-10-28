@@ -5,6 +5,7 @@ import { BookingProvider } from "@/components/Booking";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { ActionBar } from "@/components/ActionBar";
+import { Reveal } from "@/components/Reveal";
 import "./globals.css";
 
 const head = Space_Grotesk({
@@ -66,8 +67,13 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en-GH" className={`${head.variable} ${body.variable}`}>
+    <html lang="en-GH" className={`${head.variable} ${body.variable}`} suppressHydrationWarning>
+      <head>
+        {/* Marks JS as available before first paint, so motion start states never apply without it */}
+        <script dangerouslySetInnerHTML={{ __html: "document.documentElement.classList.add('js')" }} />
+      </head>
       <body>
+        <Reveal />
         <a className="skip-link" href="#main">
           Skip to content
         </a>

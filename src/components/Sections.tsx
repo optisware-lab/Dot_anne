@@ -4,6 +4,7 @@ import { amenities, confirmedAmenities, gallery, photos, shownRooms, site, whats
 import type { Faq } from "@/content/faq";
 import { BookButton } from "./Booking";
 import { CopyButton } from "./CopyButton";
+import { RollNumber } from "./RollNumber";
 import {
   IconArrow,
   IconBell,
@@ -108,14 +109,16 @@ export function Pillars({ heading = "A Comfortable Stay, Whenever You Need It", 
       <div className="wrap">
         <div className="sec-head">
           <div>
-            <H id="why-title">{heading}</H>
+            <H id="why-title" data-reveal="mask">
+              {heading}
+            </H>
           </div>
           <p>
             A small guest house in a quiet residential estate, run like a home, for business travellers, late arrivals,
             couples and anyone needing a dependable room in Tema.
           </p>
         </div>
-        <div className="grid-4">
+        <div className="grid-4" data-reveal="stagger">
           {pillars.map((p) => (
             <article key={p.title} className="card card--hover pillar">
               <div>
@@ -153,7 +156,7 @@ export function RoomCard({ roomId, headingLevel = "h3" }: { roomId: string; head
   ];
   return (
     <article className="card card--hover room-card" id={r.id}>
-      <div className="room-card__media">
+      <div className="room-card__media" data-reveal="shutter">
         <Image src={r.photos[0].src} alt={r.photos[0].alt} fill sizes="(min-width: 960px) 55vw, 100vw" />
         {r.tag && <span className="tag tag--red">{r.tag}</span>}
       </div>
@@ -187,7 +190,7 @@ export function HowToBook() {
     <aside className="card steps">
       <h3>Booking takes two minutes</h3>
       <p>No sign-up, no card, no middleman. You talk to the lodge directly.</p>
-      <ol>
+      <ol data-reveal="stagger">
         <li>
           <div>
             <strong>Send your dates</strong>
@@ -224,7 +227,9 @@ export function RoomsSection({ more = true }: { more?: boolean }) {
       <div className="wrap">
         <div className="sec-head sec-head--plain">
           <div>
-            <h2 id="rooms-title">Rooms &amp; Accommodation</h2>
+            <h2 id="rooms-title" data-reveal="mask">
+              Rooms &amp; Accommodation
+            </h2>
             <p className="lede" style={{ marginTop: "0.5rem" }}>
               Clean, quiet rooms with a private bathroom and free Wi-Fi. Rates depend on your dates and length of stay;
               the front desk confirms them directly.
@@ -265,13 +270,15 @@ export function GalleryBento({ heading = "Visual Lodge Gallery", link = true }: 
       <div className="wrap">
         <div className="sec-head">
           <div>
-            <h2 id="gallery-title">{heading}</h2>
+            <h2 id="gallery-title" data-reveal="mask">
+              {heading}
+            </h2>
           </div>
           <p>Every photo was taken at the lodge: the courtyard, a guest room, the lounge and the private bathrooms.</p>
         </div>
         <div className="bento">
           {cells.map(({ p, cls, sizes }) => (
-            <figure key={p.src} className={`shot ${cls}`}>
+            <figure key={p.src} className={`shot ${cls}`} data-reveal="shutter">
               <Image src={p.src} alt={p.alt} fill sizes={sizes} />
               <figcaption>
                 <span className="label">{p.place}</span>
@@ -315,15 +322,17 @@ export function RatingAmenities() {
       <div className="wrap rating-layout">
         <div>
           <span className="label label--red">Rated by guests on {site.rating.source}</span>
-          <h2 id="rating-title">Guest rating &amp; what&rsquo;s included</h2>
+          <h2 id="rating-title" data-reveal="mask">
+            Guest rating &amp; what&rsquo;s included
+          </h2>
           <p className="lede">
             Guests rate Dot Anne Home Lodge {site.rating.value} out of 5 across {site.rating.count} reviews on Google Maps.
             Read them in full before you book.
           </p>
           {site.rating.show && (
-            <div className="card score">
+            <div className="card score" data-reveal="roll">
               <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
-                <span className="score__num tabular">{site.rating.value.toFixed(1)}</span>
+                <RollNumber className="score__num tabular" value={site.rating.value.toFixed(1)} />
                 <div>
                   <Stars value={site.rating.value} />
                   <span className="label" style={{ display: "block", marginTop: 4 }}>
@@ -332,7 +341,9 @@ export function RatingAmenities() {
                 </div>
               </div>
               <div className="score__count">
-                <strong className="tabular">{site.rating.count}</strong>
+                <strong className="tabular">
+                  <RollNumber value={String(site.rating.count)} />
+                </strong>
                 <span className="label">Reviews</span>
               </div>
             </div>
@@ -345,7 +356,7 @@ export function RatingAmenities() {
         </div>
         <div>
           <h3 className="included-title">Included with every stay</h3>
-          <div className="grid-2">
+          <div className="grid-2" data-reveal="stagger">
             {confirmedAmenities.map((a) => {
               const Icon = amenityIcon[a.id];
               return (
@@ -374,7 +385,9 @@ export function LocationBlock({ headingId = "location-title", heading = "Locatio
   return (
     <div className="location-layout">
       <div>
-        <H id={headingId}>{heading}</H>
+        <H id={headingId} data-reveal="mask">
+          {heading}
+        </H>
         <p className="lede">In the quiet residential Golf Estate, reached from Kpone Barrier and just off BOST Road.</p>
 
         <div className="address-card">
@@ -392,7 +405,7 @@ export function LocationBlock({ headingId = "location-title", heading = "Locatio
           </div>
         </div>
 
-        <ul className="checks">
+        <ul className="checks" data-reveal="stagger">
           <li>
             <IconCheckCircle size={18} />
             <span>Head for Kpone Barrier in Tema; Golf Estate sits just off BOST Road.</span>
@@ -419,7 +432,7 @@ export function LocationBlock({ headingId = "location-title", heading = "Locatio
         </div>
       </div>
 
-      <div className="map">
+      <div className="map" data-reveal="shutter">
         <a className="map__fallback" href={site.mapsUrl} target="_blank" rel="noopener">
           <IconPin size={28} />
           Open the map in Google Maps
@@ -451,7 +464,7 @@ export function LocationBlock({ headingId = "location-title", heading = "Locatio
 
 export function FaqList({ items }: { items: Faq[] }) {
   return (
-    <div className="faq">
+    <div className="faq" data-reveal="stagger">
       {items.map((f, i) => (
         <details key={f.q} open={i === 0}>
           <summary>
@@ -473,7 +486,9 @@ export function FaqSection({ items, heading = "Frequently Asked Questions", more
       <div className="wrap">
         <div className="sec-head sec-head--center">
           <div>
-            <h2 id="faq-title">{heading}</h2>
+            <h2 id="faq-title" data-reveal="mask">
+              {heading}
+            </h2>
             <p className="lede" style={{ marginTop: "0.5rem" }}>
               Check-in, rates, parking and directions, answered.
             </p>
@@ -502,7 +517,9 @@ export function CtaBanner({ heading = "Planning a stay in Tema?" }: { heading?: 
       <span className="cta__glow cta__glow--a" aria-hidden="true" />
       <span className="cta__glow cta__glow--b" aria-hidden="true" />
       <div className="wrap">
-        <h2 id="cta-title">{heading}</h2>
+        <h2 id="cta-title" data-reveal="mask">
+          {heading}
+        </h2>
         <p>Talk to the front desk now to check availability, ask a question or arrange a late arrival.</p>
         <div className="hero__ctas">
           <BookButton className="btn btn--red btn--lg">Book your stay</BookButton>

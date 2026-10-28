@@ -10,7 +10,7 @@ export function RoomGallery({ photos, label }: { photos: Photo[]; label: string 
 
   return (
     <div>
-      <figure className="photo" style={{ aspectRatio: "16 / 10" }}>
+      <figure className="photo" style={{ aspectRatio: "16 / 10" }} data-reveal="shutter">
         <Image key={current.src} src={current.src} alt={current.alt} fill sizes="(min-width: 960px) 50vw, 100vw" />
         <figcaption>
           {label} · {i + 1}/{photos.length}

@@ -41,11 +41,20 @@ export function BookingProvider({ children }: { children: React.ReactNode }) {
     const onClick = (e: MouseEvent) => {
       if (e.target === d) d.close(); // backdrop click
     };
+    // Backstop: some browsers ignore Escape on a dialog until the user has interacted inside it.
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape" && d.open) {
+        e.preventDefault();
+        d.close();
+      }
+    };
     d.addEventListener("close", onClose);
     d.addEventListener("click", onClick);
+    document.addEventListener("keydown", onKey);
     return () => {
       d.removeEventListener("close", onClose);
       d.removeEventListener("click", onClick);
+      document.removeEventListener("keydown", onKey);
     };
   }, []);
 

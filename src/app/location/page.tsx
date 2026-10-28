@@ -33,7 +33,7 @@ export default function LocationPage() {
 
       <section className="section section--low" aria-labelledby="getting-title">
         <div className="wrap split split--top">
-          <div className="prose">
+          <div className="prose" data-reveal="rise">
             <h2 id="getting-title">Getting to the lodge</h2>
             <p>
               <strong>By taxi or ride-hailing.</strong> Set the destination to “Dot Anne Home Lodge” or paste the Plus Code{" "}
@@ -49,7 +49,7 @@ export default function LocationPage() {
               and someone will be at the gate.
             </p>
           </div>
-          <div className="prose">
+          <div className="prose" data-reveal="rise">
             <h2>Nearby neighbourhoods</h2>
             <p>
               The lodge is in the Kpone Barrier area of Tema, in the Kpone-Katamanso district of Greater Accra, inside the

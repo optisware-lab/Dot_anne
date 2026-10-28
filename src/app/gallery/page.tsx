@@ -28,7 +28,7 @@ export default function GalleryPage() {
         <div className="wrap">
           <div className="bento">
             {gallery.map((ph, i) => (
-              <figure key={ph.src} className={`shot ${layout[i] ?? "shot--c"}`} style={i === 5 ? { gridColumn: "span 12", height: "auto", aspectRatio: "21 / 9" } : undefined}>
+              <figure key={ph.src} data-reveal="shutter" className={`shot ${layout[i] ?? "shot--c"}`} style={i === 5 ? { gridColumn: "span 12", height: "auto", aspectRatio: "21 / 9" } : undefined}>
                 <Image src={ph.src} alt={ph.alt} fill sizes={i === 0 || i === 5 ? "(min-width: 760px) 66vw, 100vw" : "(min-width: 760px) 33vw, 100vw"} priority={i < 2} />
                 <figcaption>
                   <span className="label">{ph.place}</span>

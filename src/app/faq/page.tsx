@@ -33,7 +33,9 @@ export default function FaqPage() {
           <div className="wrap">
             <div className="sec-head sec-head--center" style={{ marginBottom: "1.5rem" }}>
               <div>
-                <h2 id={`faq-${g.topic}`}>{g.title}</h2>
+                <h2 id={`faq-${g.topic}`} data-reveal="mask">
+                  {g.title}
+                </h2>
               </div>
             </div>
             <FaqList items={faqs.filter((f) => f.topic === g.topic)} />
