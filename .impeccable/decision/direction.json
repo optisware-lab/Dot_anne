@@ -1,0 +1,153 @@
+{
+  "title": "Choose the visual world for DOT ANNE HOME LODGE",
+  "question": "The roll assigned The Estate Plan. Keep it, take the alternate, or re-roll. Your brief's colours (forest green, ivory, gold, charcoal) and serif + sans pairing hold in every option.",
+  "options": [
+    {
+      "id": "assigned",
+      "kind": "assigned",
+      "label": "The Estate Plan",
+      "kicker": "THE ROLL",
+      "lineage": "Tema's numbered town plan and surveyors' estate plot sheets",
+      "thesis": "The site is a plan sheet for one plot: No. 473, Golf Estate, and every section brings you closer to its gate.",
+      "palette": ["#1E3A2C", "#F5F0E4", "#B8955A", "#24272B"],
+      "materials": ["plan-sheet title blocks", "hairline survey rules", "real photos of the lodge", "a gold route line"],
+      "viewport": "Full-bleed photo of the real courtyard; headline and booking actions set in a plan-sheet title block holding plot number, Plus Code, phone and a live 'front desk open' clock.",
+      "risk": "If the plan language is overdone it reads as a surveyor's site, not a warm lodge; photos must carry the warmth.",
+      "raised": [
+        {"from": "notation-diagram-systems-orienteering-map", "raise": "Directions become a numbered course: Kpone Barrier, BOST Road, Golf Estate, No. 473, each control paired with a description row."},
+        {"from": "paper-folds-pleats-deployable-akari-light-sculpture", "raise": "The light is the state: a live Tema clock shows the front desk open at any hour, made for late arrivals."},
+        {"from": "medium-native-algorave-source-floor", "raise": "Changes are visible before they happen: the booking form shows the exact WhatsApp message as you type it."},
+        {"from": "digital-design-canon-mondo-tech-utopian-spread", "raise": "Total palette commitment: rules, icons, map and buttons in the four inks only, no stray greys."},
+        {"from": "clouds-storms-auroras-iridescent-cloud-edge", "raise": "Gold stays on hairlines, the route and the primary action, never on text blocks."},
+        {"from": "broadcast-programming-teletext-service", "raise": "One strict grid with sheet coordinates; nothing breaks the column lines."}
+      ],
+      "wireframe": {"cols": 12, "rows": 10, "regions": [
+        {"label": "nav + Book", "x": 0, "y": 0, "w": 12, "h": 1},
+        {"label": "real courtyard photo, full bleed", "x": 0, "y": 1, "w": 12, "h": 7},
+        {"label": "title block: headline, CTAs, plot 473, clock", "x": 0, "y": 4, "w": 6, "h": 4, "accent": true},
+        {"label": "info strip: 24/7, Golf Estate, 4.2 rating, WhatsApp", "x": 0, "y": 8, "w": 12, "h": 2}
+      ]}
+    },
+    {
+      "id": "model-pick",
+      "kind": "pick",
+      "label": "The Lodge Stationery",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "boutique hotel letterpress stationery: letterhead, key card, compliments slip",
+      "thesis": "The website as the lodge's printed welcome suite, handed to you at the desk.",
+      "palette": ["#1E3A2C", "#F5F0E4", "#B8955A", "#24272B"],
+      "materials": ["cotton paper", "blind deboss", "gold foil rules"],
+      "viewport": "Courtyard photo beside a large letterhead card carrying the headline and the two actions.",
+      "risk": "This is where most hotel sites in this register land; familiar and safe, less memorable.",
+      "wireframe": {"cols": 12, "rows": 10, "regions": [
+        {"label": "nav", "x": 0, "y": 0, "w": 12, "h": 1},
+        {"label": "letterhead card: headline + CTAs", "x": 0, "y": 1, "w": 5, "h": 8, "accent": true},
+        {"label": "courtyard photo", "x": 5, "y": 1, "w": 7, "h": 8},
+        {"label": "badges", "x": 0, "y": 9, "w": 12, "h": 1}
+      ]}
+    },
+    {
+      "id": "challenger-orienteering",
+      "kind": "challenger",
+      "catalogId": "notation-diagram-systems-orienteering-map",
+      "label": "Orienteering Map",
+      "verdict": "declined",
+      "lineage": "ISOM orienteering maps",
+      "thesis": "The lodge as the final control on a purple course.",
+      "palette": ["#FFFFFF", "#9C8B3A", "#B5651D", "#A0228E"],
+      "materials": ["contour texture", "control circles"],
+      "viewport": "Terrain map with the course to the lodge in purple.",
+      "risk": "Guests do not read orienteering maps; it costs warmth.",
+      "case": "Same family as the roll but loses on audience identification.",
+      "kept": "Numbered directions with paired description rows."
+    },
+    {
+      "id": "challenger-akari",
+      "kind": "challenger",
+      "catalogId": "paper-folds-pleats-deployable-akari-light-sculpture",
+      "label": "Akari Workshop",
+      "verdict": "declined",
+      "lineage": "Noguchi akari paper lamps",
+      "thesis": "Rooms as glowing paper volumes in a dim room.",
+      "palette": ["#F3EADA", "#C9A97A", "#2A2A2A", "#C8402E"],
+      "materials": ["washi", "bamboo rib"],
+      "viewport": "Lit paper volumes hanging at different heights.",
+      "risk": "Foreign to Tema and to the lodge's own look.",
+      "case": "Loses both axes.",
+      "kept": "The light is the state: front desk shown open, live."
+    },
+    {
+      "id": "challenger-algorave",
+      "kind": "challenger",
+      "catalogId": "medium-native-algorave-source-floor",
+      "label": "Algorave Floor",
+      "verdict": "declined",
+      "lineage": "live-coded club nights",
+      "thesis": "Booking as live-edited code.",
+      "palette": ["#000000", "#39FF14", "#FF00AA", "#FFB000"],
+      "materials": ["projected code", "phosphor"],
+      "viewport": "A code buffer as the stage.",
+      "risk": "Wrong audience and wrong mood entirely.",
+      "case": "Loses both axes.",
+      "kept": "Show the change before it lands: live WhatsApp message preview."
+    },
+    {
+      "id": "challenger-teletext",
+      "kind": "challenger",
+      "catalogId": "broadcast-programming-teletext-service",
+      "label": "Teletext Service",
+      "verdict": "declined",
+      "lineage": "broadcast teletext",
+      "thesis": "The lodge as numbered teletext pages.",
+      "palette": ["#000000", "#FFFF00", "#00FFFF", "#FFFFFF"],
+      "materials": ["block mosaic", "bitmap type"],
+      "viewport": "P100 index on black.",
+      "risk": "Novelty; breaks the client's palette.",
+      "case": "Loses both axes.",
+      "kept": "A strict, unbroken grid."
+    },
+    {
+      "id": "challenger-mondo",
+      "kind": "challenger",
+      "catalogId": "digital-design-canon-mondo-tech-utopian-spread",
+      "label": "Mondo Spread",
+      "verdict": "declined",
+      "lineage": "early-90s tech magazines",
+      "thesis": "Two fluorescent inks for everything.",
+      "palette": ["#FF6A00", "#00C8FF"],
+      "materials": ["duotone", "angled slabs"],
+      "viewport": "Angled headline over duotone photo.",
+      "risk": "Destroys warmth and the brief's palette.",
+      "case": "Loses both axes.",
+      "kept": "Total commitment to a fixed ink set."
+    },
+    {
+      "id": "challenger-cloud",
+      "kind": "challenger",
+      "catalogId": "clouds-storms-auroras-iridescent-cloud-edge",
+      "label": "Iridescent Cloud",
+      "verdict": "declined",
+      "lineage": "atmospheric optics",
+      "thesis": "Colour only at the edges.",
+      "palette": ["#FFFFFF", "#5A6470", "#9FE3C9", "#C9A0E8"],
+      "materials": ["cloud white", "spectral fringe"],
+      "viewport": "White field, hairline colour bands.",
+      "risk": "Too cold and abstract for a lodge.",
+      "case": "Loses both axes.",
+      "kept": "Accent colour confined to hairlines."
+    }
+  ],
+  "reroll": {"registers": ["safer", "bolder"]},
+  "buildPath": {"value": "code"},
+  "canon": true,
+  "canonCard": {
+    "kind": "canon",
+    "label": "The category standard",
+    "thesis": "A classic boutique-hotel site: big photo hero, room cards, amenity icons, map, footer.",
+    "palette": ["#1E3A2C", "#F5F0E4", "#B8955A", "#24272B"],
+    "materials": ["clean grid", "property photography"],
+    "viewport": "Centred headline over a full-bleed photo with two buttons.",
+    "risk": "Looks like every other lodge site in Accra."
+  },
+  "steer": true
+}
