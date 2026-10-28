@@ -2332,8 +2332,8 @@ main {
     --i: 3;
   }
 
-  /* The real photo settles into place */
-  .js .dark__photo img {
+  /* The real photo settles into place (inner-page heroes; the home slideshow has its own) */
+  .js .dark__photo:not(.hero-slides) img {
     transform: scale(1.08);
     animation: settle 1600ms var(--ease-soft) forwards;
   }
@@ -2620,4 +2620,80 @@ main {
     opacity: 0;
     transform: translateY(10px);
   }
+}
+
+
+/* ---------- Home hero: slow crossfade through the lodge photos ---------- */
+
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  mix-blend-mode: luminosity;
+  transition: opacity 1600ms var(--ease-in-out);
+}
+
+.hero-slide.is-active {
+  opacity: 1;
+}
+
+/* The blend lives on the slide, so the image itself only carries the strength */
+.hero-slides .hero-slide img {
+  mix-blend-mode: normal;
+  opacity: 0.62;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  /* Each photo eases in from a slight zoom while it is shown; reset only after it has faded out */
+  .hero-slide img {
+    transform: scale(1.08);
+    transition: transform 0s linear 1700ms;
+  }
+  .hero-slide.is-active img {
+    transform: scale(1);
+    transition: transform 7600ms var(--ease-soft);
+  }
+  /* First photo: settle on load, visible on the first frame */
+  .js .hero-slide.is-first.is-active img {
+    animation: settle 1600ms var(--ease-soft) both;
+  }
+  .hero-slides:not([data-running]) .hero-slide.is-active img {
+    transition-duration: 1600ms;
+  }
+}
+
+.hero-slides__toggle {
+  position: absolute;
+  top: 1rem;
+  right: var(--gutter);
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  min-height: 36px;
+  padding: 0.35rem 0.75rem;
+  border: 1px solid rgb(255 255 255 / 0.22);
+  border-radius: 999px;
+  background: rgb(1 29 53 / 0.45);
+  color: var(--on-dark);
+  font: inherit;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition:
+    background-color var(--t-hover) ease,
+    border-color var(--t-hover) ease,
+    transform var(--t-press) var(--ease-out);
+}
+
+.hero-slides__toggle:hover {
+  background: rgb(1 29 53 / 0.7);
+  border-color: rgb(255 255 255 / 0.4);
+}
+
+.hero-slides__toggle:active {
+  transform: scale(0.95);
 }

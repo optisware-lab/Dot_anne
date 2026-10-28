@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { photos, site } from "@/config/site";
 import { pages } from "@/config/seo";
 import { homeFaqs } from "@/content/faq";
@@ -6,6 +5,7 @@ import { pageMetadata } from "@/lib/meta";
 import { JsonLdScript, pageGraph } from "@/lib/schema";
 import { BookButton } from "@/components/Booking";
 import { LiveClock } from "@/components/LiveClock";
+import { HeroSlideshow } from "@/components/HeroSlideshow";
 import { IconCar, IconClock, IconPhone, IconPin, IconStar } from "@/components/Icons";
 import { CtaBanner, FaqSection, GalleryBento, LocationBlock, Pillars, RatingAmenities, RoomsSection } from "@/components/Sections";
 
@@ -17,9 +17,14 @@ export default function Home() {
     <>
       {/* 1. Hero */}
       <section className="dark hero" aria-labelledby="hero-title">
-        <div className="dark__photo">
-          <Image src={photos.exterior.src} alt="" fill priority fetchPriority="high" sizes="100vw" quality={70} style={{ objectPosition: "50% 40%" }} />
-        </div>
+        <HeroSlideshow
+          slides={[
+            { ...photos.exterior, position: "50% 40%" },
+            { ...photos.bedroom, position: "55% 55%" },
+            { ...photos.garden, position: "50% 60%" },
+            { ...photos.lounge, position: "50% 45%" },
+          ]}
+        />
         <div className="hero__body">
           <div className="wrap">
             <div className="hero__copy">
