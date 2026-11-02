@@ -24,14 +24,14 @@ export default function RoomsPage() {
       <PageHero
         title={p.h1}
         crumbs={crumbs}
-        photo={photos.bedroom}
+        photo={photos.roomBed}
         lede="Quiet, clean rooms with a private bathroom, free Wi-Fi and parking inside the compound, at Golf Estate, Kpone Barrier."
       />
 
       {shownRooms.map((r) => (
         <section key={r.id} id={r.id} className="section" aria-labelledby={`${r.id}-title`}>
           <div className="wrap split split--top">
-            <RoomGallery photos={[...r.photos, photos.bathroom2]} label={r.name} />
+            <RoomGallery photos={r.photos} label={r.name} />
             <div>
               <span className="label label--red">{r.tag}</span>
               <h2 id={`${r.id}-title`} style={{ fontSize: "var(--t-xl)", marginTop: "0.5rem" }}>

@@ -25,7 +25,7 @@ export default function FaqPage() {
       <PageHero
         title={p.h1}
         crumbs={crumbs}
-        photo={photos.bedroom}
+        photo={photos.roomGold}
         lede="Booking, late check-in, rates, parking, Wi-Fi and directions to Dot Anne Home Lodge at Kpone Barrier, Tema."
       />
       {groups.map((g, i) => (

@@ -21,7 +21,7 @@ export default function LocationPage() {
       <PageHero
         title={p.h1}
         crumbs={crumbs}
-        photo={photos.exterior}
+        photo={photos.garden}
         lede={`473 Golf Estate, Kpone Barrier, off BOST Road, Tema. Plus Code ${site.address.plusCode}. Open 24 hours, so you can arrive at any time.`}
       />
 

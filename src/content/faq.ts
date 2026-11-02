@@ -55,6 +55,12 @@ export const faqs: Faq[] = [
     topic: "stay",
   },
   {
+    q: "Are the rooms air-conditioned?",
+    a: "Yes. Rooms have wall-mounted air conditioning, and the rooms shown in our photos also have a flat-screen TV, a mini fridge, and a kettle with cups for hot drinks. An iron and ironing table are available for guests.",
+    home: true,
+    topic: "stay",
+  },
+  {
     q: "Can I check in late at night?",
     a: `Yes. Because the desk is staffed around the clock you can arrive at any hour. Let the lodge know your arrival time when you book, or call ${site.phone.display} on the way.`,
     topic: "stay",

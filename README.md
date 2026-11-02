@@ -40,7 +40,7 @@ To replace a photo, save the new one over the same file name in `public/images/p
 
 ## Before launch: owner checklist
 
-1. Confirm the lodge owns the six photos (or replace them). Guest uploads on Google belong to the guest.
+1. Confirm the lodge owns the five photos taken from Google Maps (or replace them). Guest uploads on Google belong to the guest. The six photos you supplied on 2026-11-02 are fine.
 2. Remove the three 3D-render images from the Google Maps listing; they are not the lodge.
 3. Confirm or switch on: air conditioning, breakfast, TV, mini fridge.
 4. Add room rates, check-in/check-out times and any other room types.

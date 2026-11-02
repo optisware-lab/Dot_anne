@@ -31,7 +31,7 @@ export function PageHero({
   title,
   lede,
   crumbs,
-  photo = photos.exterior,
+  photo = photos.hallway,
   children,
 }: {
   title: string;
@@ -88,7 +88,7 @@ const pillars = [
     icon: IconHome,
     label: "Home-style",
     title: "Comfortable, home-style rooms",
-    text: "A paved courtyard with palms and flower beds, and simple, restful rooms with their own bathroom for a night, a business trip or a short break.",
+    text: "Calm, air-conditioned rooms with fresh white linen and their own bathroom, for a night, a business trip or a short break.",
     foot: "Private bathrooms",
     footClass: "label--red",
   },
@@ -274,7 +274,7 @@ export function GalleryBento({ heading = "Visual Lodge Gallery", link = true }: 
               {heading}
             </h2>
           </div>
-          <p>Every photo was taken at the lodge: the courtyard, a guest room, the lounge and the private bathrooms.</p>
+          <p>Every photo was taken at the lodge: the guest rooms, the hallway, the lounge and the private bathrooms.</p>
         </div>
         <div className="bento">
           {cells.map(({ p, cls, sizes }) => (
@@ -356,7 +356,7 @@ export function RatingAmenities() {
         </div>
         <div>
           <h3 className="included-title">Included with every stay</h3>
-          <div className="grid-2" data-reveal="stagger">
+          <div className="grid-3 amenity-grid-3" data-reveal="stagger">
             {confirmedAmenities.map((a) => {
               const Icon = amenityIcon[a.id];
               return (

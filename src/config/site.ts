@@ -81,11 +81,14 @@ export const amenities = [
   { id: "wifi", label: "Free Wi-Fi", detail: "Wi-Fi for guests at no extra charge.", confirmed: true },
   { id: "parking", label: "On-site parking", detail: "Park inside the lodge compound.", confirmed: true },
   { id: "desk", label: "24-hour front desk", detail: "Someone answers the phone and the gate at any hour.", confirmed: true },
-  // Listed by Google Maps / seen in photos, waiting for the owner to confirm:
-  { id: "ac", label: "Air conditioning", detail: "Air-conditioned rooms.", confirmed: false },
+  // Confirmed by the owner on 2026-11-02 (visible in the new room photos):
+  { id: "ac", label: "Air conditioning", detail: "Wall-mounted air conditioning in the rooms.", confirmed: true },
+  { id: "tv", label: "Flat-screen TV", detail: "A wall-mounted flat-screen TV.", confirmed: true },
+  { id: "fridge", label: "Mini fridge", detail: "A small fridge in the room for drinks and snacks.", confirmed: true },
+  { id: "kettle", label: "Kettle & tea tray", detail: "Electric kettle with cups for hot drinks.", confirmed: true },
+  { id: "iron", label: "Iron & ironing table", detail: "Press your clothes before a meeting or a night out.", confirmed: true },
+  // Waiting for the owner to confirm:
   { id: "breakfast", label: "Breakfast", detail: "Breakfast served each morning.", confirmed: false },
-  { id: "tv", label: "TV in room", detail: "Flat-screen TV.", confirmed: false },
-  { id: "fridge", label: "Mini fridge", detail: "Small fridge in the room.", confirmed: false },
 ] as const;
 
 export type AmenityId = (typeof amenities)[number]["id"];
@@ -93,14 +96,56 @@ export type AmenityId = (typeof amenities)[number]["id"];
 export type Photo = { src: string; alt: string; w: number; h: number; caption?: string; place?: string };
 
 const P = {
-  exterior: {
-    src: "/images/property/exterior-courtyard.jpg",
-    alt: "Dot Anne Home Lodge in Golf Estate, Tema: green-roofed bungalow and two-storey guest block across the paved courtyard",
-    w: 2400,
-    h: 1800,
-    caption: "The lodge from the courtyard",
-    place: "Golf Estate compound",
+  // Owner photos of the current building (2026-11-02)
+  roomBed: {
+    src: "/images/property/room-double-bed.jpg",
+    alt: "Air-conditioned double room at Dot Anne Home Lodge, Tema, with a large bed, fresh white linen and orange curtains",
+    w: 1964,
+    h: 1104,
+    caption: "Double room",
+    place: "Guest room",
   },
+  roomDesk: {
+    src: "/images/property/room-desk-tv.jpg",
+    alt: "Guest room with a flat-screen TV, work desk, armchair, mini fridge and kettle at Dot Anne Home Lodge",
+    w: 1990,
+    h: 1119,
+    caption: "Desk, TV & fridge",
+    place: "Guest room",
+  },
+  roomGold: {
+    src: "/images/property/room-gold-curtains.jpg",
+    alt: "Double room with gold curtains, air conditioning and a ceiling fan at Dot Anne Home Lodge, Golf Estate",
+    w: 2000,
+    h: 1125,
+    caption: "Double room",
+    place: "Guest room",
+  },
+  roomEntrance: {
+    src: "/images/property/room-entrance-view.jpg",
+    alt: "Spacious guest room seen from the door, with bed, desk, mini fridge and wall-mounted TV",
+    w: 2000,
+    h: 1124,
+    caption: "Room from the door",
+    place: "Guest room",
+  },
+  hallway: {
+    src: "/images/property/hallway.jpg",
+    alt: "Bright tiled hallway leading to the guest rooms at Dot Anne Home Lodge, Tema",
+    w: 2000,
+    h: 1125,
+    caption: "Hallway",
+    place: "Guest wing",
+  },
+  ironing: {
+    src: "/images/property/ironing-station.jpg",
+    alt: "Ironing table with an iron for guests at Dot Anne Home Lodge",
+    w: 2000,
+    h: 1126,
+    caption: "Ironing station",
+    place: "For guests",
+  },
+  // Earlier photos of rooms still in use (from the Google Maps listing)
   garden: {
     src: "/images/property/garden-frontage.jpg",
     alt: "Flower beds along the guest room wing at Dot Anne Home Lodge, Kpone Barrier",
@@ -111,10 +156,10 @@ const P = {
   },
   bedroom: {
     src: "/images/property/bedroom-double.jpg",
-    alt: "Deluxe double room at Dot Anne Home Lodge, Tema, with a double bed, wardrobe and ceiling fan",
+    alt: "Double room at Dot Anne Home Lodge, Tema, with a double bed, wardrobe and ceiling fan",
     w: 2000,
     h: 1500,
-    caption: "Deluxe Double Room",
+    caption: "Double room",
     place: "Guest room",
   },
   bathroom: {
@@ -145,8 +190,20 @@ const P = {
 
 export const photos = P;
 
-/** Every real photo of the lodge, in gallery order. */
-export const gallery: Photo[] = [P.exterior, P.bedroom, P.lounge, P.garden, P.bathroom, P.bathroom2];
+/** Every real photo of the lodge, in gallery order (newest building photos first). */
+export const gallery: Photo[] = [
+  P.roomBed,
+  P.roomDesk,
+  P.hallway,
+  P.roomGold,
+  P.lounge,
+  P.roomEntrance,
+  P.bathroom,
+  P.garden,
+  P.ironing,
+  P.bedroom,
+  P.bathroom2,
+];
 
 /**
  * Rooms. `show: false` keeps a room off the site.
@@ -160,12 +217,12 @@ export const rooms = [
     show: true,
     tag: "Listed room type",
     summary:
-      "A double bed, wardrobe and your own bathroom with a shower. Quiet, simple and clean, for a night or a longer stay.",
+      "A double bed with fresh white linen, air conditioning, your own bathroom with a shower, and a desk with a TV, mini fridge and kettle. Quiet and clean, for a night or a longer stay.",
     sleeps: 2 as number | null,
     bed: "Double bed",
     price: null as string | null, // e.g. "GH₵ 450 / night"
-    features: ["bathroom", "wifi", "parking", "ac", "tv", "fridge"] as AmenityId[],
-    photos: [P.bedroom, P.bathroom] as Photo[],
+    features: ["bathroom", "ac", "wifi", "tv", "fridge", "kettle", "parking"] as AmenityId[],
+    photos: [P.roomBed, P.roomDesk, P.roomEntrance, P.roomGold, P.bathroom, P.bathroom2] as Photo[],
   },
   // Suggested categories from the brief. Not confirmed; hidden until the owner fills them in.
   { id: "standard", name: "Standard Room", show: false, tag: "", summary: "", sleeps: null, bed: "", price: null, features: [] as AmenityId[], photos: [] as Photo[] },

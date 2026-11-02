@@ -33,8 +33,8 @@ export default function AboutPage() {
             </h2>
             <p>
               Dot Anne Home Lodge is a guest house and bed &amp; breakfast at No. 473, Golf Estate, in the Kpone Barrier area of
-              Tema, Greater Accra. The rooms sit around a paved courtyard with palms and flower beds, behind the compound gate
-              and away from the main road.
+              Tema, Greater Accra. The rooms are quiet and air-conditioned, off a bright tiled hallway, with flower beds along the
+              room wing and parking inside the compound.
             </p>
             <p>
               We keep it simple: a clean room, your own bathroom with a shower, free Wi-Fi, a place to park inside the
@@ -51,8 +51,8 @@ export default function AboutPage() {
             </p>
           </div>
           <figure className="photo" data-reveal="shutter">
-            <Image src={photos.exterior.src} alt={photos.exterior.alt} fill sizes="(min-width: 960px) 50vw, 100vw" />
-            <figcaption>{photos.exterior.caption}</figcaption>
+            <Image src={photos.hallway.src} alt={photos.hallway.alt} fill sizes="(min-width: 960px) 50vw, 100vw" />
+            <figcaption>{photos.hallway.caption}</figcaption>
           </figure>
         </div>
       </section>

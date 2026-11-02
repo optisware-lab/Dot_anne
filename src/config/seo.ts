@@ -96,7 +96,7 @@ export const pages = {
     path: "/gallery",
     title: "Photos of Dot Anne Home Lodge, Golf Estate, Tema",
     description:
-      "Real photos of Dot Anne Home Lodge: the courtyard, guest room, private bathrooms and lounge at Golf Estate, Kpone Barrier, Tema.",
+      "Real photos of Dot Anne Home Lodge: air-conditioned guest rooms, private bathrooms, the hallway and lounge at Golf Estate, Kpone Barrier, Tema.",
     keywords: ["Dot Anne Home Lodge photos", "Tema lodge pictures", "Golf Estate Tema guest house photos", "Kpone Barrier lodge rooms"],
     h1: "Photo Gallery",
   },

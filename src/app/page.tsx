@@ -19,8 +19,9 @@ export default function Home() {
       <section className="dark hero" aria-labelledby="hero-title">
         <HeroSlideshow
           slides={[
-            { ...photos.bedroom, position: "55% 55%" },
-            { ...photos.lounge, position: "50% 45%" },
+            { ...photos.roomBed, position: "50% 55%" },
+            { ...photos.roomGold, position: "60% 50%" },
+            { ...photos.roomDesk, position: "55% 50%" },
           ]}
         />
         <div className="hero__body">

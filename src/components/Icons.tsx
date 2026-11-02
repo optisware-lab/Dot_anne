@@ -241,6 +241,21 @@ export const IconCamera = (p: P) => (
   </Base>
 );
 
+export const IconKettle = (p: P) => (
+  <Base {...p}>
+    <path d="M6 20h11l-1-10.5a4 4 0 0 0-4-3.5h-1a4 4 0 0 0-4 3.5L6 20Z" />
+    <path d="M16.3 10.5 19.5 8M9.5 3.5h4M11.5 3.5V6" />
+  </Base>
+);
+
+export const IconIron = (p: P) => (
+  <Base {...p}>
+    <path d="M3 17.5h17v-3a6 6 0 0 0-6-6H9" />
+    <path d="M9 8.5c0-2 1.2-3 3-3h3" />
+    <path d="M3 17.5 6.5 11.5H20" />
+  </Base>
+);
+
 export const amenityIcon = {
   bathroom: IconShower,
   wifi: IconWifi,
@@ -250,4 +265,6 @@ export const amenityIcon = {
   breakfast: IconCup,
   tv: IconTv,
   fridge: IconBox,
+  kettle: IconKettle,
+  iron: IconIron,
 } as const;

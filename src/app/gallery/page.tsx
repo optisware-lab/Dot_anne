@@ -12,7 +12,8 @@ const crumbs = [
   { name: "Gallery", path: "/gallery" },
 ];
 
-const layout = ["shot--a", "shot--b", "shot--c", "shot--c", "shot--c", "shot--b"];
+// Rows that always fill the grid: wide+narrow, three, narrow+wide, wide+narrow, wide+narrow (the portrait bathroom lands in a tall narrow slot)
+const layout = ["shot--a", "shot--b", "shot--c", "shot--c", "shot--c", "shot--b", "shot--a", "shot--a", "shot--b", "shot--a", "shot--b"];
 
 export default function GalleryPage() {
   const p = pages.gallery;
@@ -22,14 +23,14 @@ export default function GalleryPage() {
         title={p.h1}
         crumbs={crumbs}
         photo={photos.garden}
-        lede="Real photos of Dot Anne Home Lodge in Golf Estate, Tema: the courtyard and building, a guest room, the lounge and the private bathrooms."
+        lede="Real photos of Dot Anne Home Lodge in Golf Estate, Tema: the air-conditioned guest rooms, the hallway, the lounge, the private bathrooms and the ironing station."
       />
       <section className="section" aria-label="Photos">
         <div className="wrap">
           <div className="bento">
             {gallery.map((ph, i) => (
-              <figure key={ph.src} data-reveal="shutter" className={`shot ${layout[i] ?? "shot--c"}`} style={i === 5 ? { gridColumn: "span 12", height: "auto", aspectRatio: "21 / 9" } : undefined}>
-                <Image src={ph.src} alt={ph.alt} fill sizes={i === 0 || i === 5 ? "(min-width: 760px) 66vw, 100vw" : "(min-width: 760px) 33vw, 100vw"} priority={i < 2} />
+              <figure key={ph.src} data-reveal="shutter" className={`shot ${layout[i] ?? "shot--c"}`}>
+                <Image src={ph.src} alt={ph.alt} fill sizes={layout[i] === "shot--a" ? "(min-width: 760px) 66vw, 100vw" : "(min-width: 760px) 33vw, 100vw"} priority={i < 2} />
                 <figcaption>
                   <span className="label">{ph.place}</span>
                   <strong>{ph.caption}</strong>

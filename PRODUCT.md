@@ -31,6 +31,7 @@ A quiet, home-style lodge in a residential estate off BOST Road, staffed 24 hour
 - Booking happens by phone or WhatsApp on the same number (+233 24 349 0990 / 233243490990). No online payment, no availability engine.
 - Open 24 hours, 7 days.
 - Google Maps listing: "DOT ANNE HOME LODGE", Plus Code P275+W52 BOST ROAD, Tema; coordinates 5.7153015, 0.0082891; 4.2/5 from 47 reviews (as of Oct 2026).
+- **Open question (2026-11-02):** the owner says the lodge has moved to a new building but has not yet given the new address. The site still shows 473 Golf Estate / P275+W52 until the new address, map pin and directions are supplied.
 - Previously on Booking.com (listing now inactive) and Tripadvisor (no photos).
 
 ## Capabilities and Constraints
@@ -40,11 +41,15 @@ Confirmed by the owner (2026-10-26):
 - Free Wi-Fi
 - On-site parking
 
+Confirmed by the owner (2026-11-02), visible in the new room photos:
+- Air conditioning
+- Flat-screen TV
+- Mini fridge, kettle and tea tray
+- Iron and ironing table for guests
+
 Listed by third parties, NOT yet confirmed by the owner (must stay off or be marked "to confirm"):
-- Air conditioning (Google Maps lists it; a wall-mounted unit is visible in a bedroom photo)
 - Free / continental breakfast (Google Maps, Booking.com)
 - "Deluxe Double Room" as a room type (Booking.com)
-- Room TV, mini fridge, ceiling fan (visible in a bedroom photo)
 
 Unknown, must not be invented: room prices, room count, room categories beyond the above, check-in/out times, payment methods, distances to landmarks, security features, awards.
 
@@ -61,7 +66,9 @@ Multi-page for search: / (home), /rooms, /gallery, /about, /location, /faq, /con
 
 ## Evidence on Hand
 
-- Real property photos sourced from the lodge's public Google Maps listing (`public/images/property/`, provenance in `public/images/property/SOURCES.md`): exterior courtyard, front garden, a bedroom, two bathrooms with shower enclosures, guest lounge. Owner must confirm rights before launch.
+- Six owner photos of the current building (2026-11-02): two double rooms, a room with desk/TV/fridge/kettle, a room seen from the door, the hallway, the ironing station.
+- Five earlier photos from the lodge's Google Maps listing that the owner says still show the lodge: front garden, a bedroom, two bathrooms, guest lounge. Owner must confirm rights before launch. Provenance in `public/images/property/SOURCES.md`.
+- Removed everywhere (2026-11-02): the courtyard photo with the green-roofed bungalow and parked car, which shows a demolished building. Never use it again.
 - Rating 4.2/5 from 47 Google reviews (owner-supplied, matches Google Maps Oct 2026).
 - No testimonials, no prices, no room inventory, no certifications (e.g. Ghana Tourism Authority) on hand. Do not fabricate any of these. The Stitch comp included invented testimonials, a GTA badge and AI photos; all were deliberately left out.
 

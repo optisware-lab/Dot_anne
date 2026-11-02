@@ -19,7 +19,7 @@ export default function ContactPage() {
       <PageHero
         title={p.h1}
         crumbs={crumbs}
-        photo={photos.bedroom}
+        photo={photos.roomDesk}
         lede={`Fill in your dates and we will write the WhatsApp message for you, or call the front desk on ${site.phone.display}, day or night.`}
       />
       <section className="section section--low" aria-label="Booking form">
