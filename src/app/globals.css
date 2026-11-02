@@ -2776,23 +2776,30 @@ main {
 }
 
 .dark__photo::after {
+  /* v3 (less red): a soft neutral shade carries readability; red is only a light tint on the left */
   background:
     linear-gradient(
       90deg,
-      rgb(var(--field-rgb) / 0.92) 0%,
-      rgb(var(--field-rgb) / 0.82) 32%,
-      rgb(var(--field-rgb) / 0.58) 52%,
-      rgb(var(--field-rgb) / 0.22) 66%,
-      rgb(var(--field-rgb) / 0) 80%
+      rgb(var(--field-rgb) / 0.42) 0%,
+      rgb(var(--field-rgb) / 0.26) 34%,
+      rgb(var(--field-rgb) / 0.08) 58%,
+      rgb(var(--field-rgb) / 0) 75%
     ),
-    linear-gradient(to top, rgb(28 10 10 / 0.35) 0%, rgb(28 10 10 / 0) 35%);
+    linear-gradient(
+      90deg,
+      rgb(24 14 14 / 0.62) 0%,
+      rgb(24 14 14 / 0.48) 38%,
+      rgb(24 14 14 / 0.18) 62%,
+      rgb(24 14 14 / 0) 82%
+    ),
+    linear-gradient(to top, rgb(24 14 14 / 0.4) 0%, rgb(24 14 14 / 0) 40%);
 }
 
 @media (max-width: 760px) {
   .dark__photo::after {
     background:
-      linear-gradient(to top, rgb(28 10 10 / 0.72) 0%, rgb(28 10 10 / 0.55) 55%, rgb(28 10 10 / 0.3) 100%),
-      linear-gradient(90deg, rgb(var(--field-rgb) / 0.35) 0%, rgb(var(--field-rgb) / 0) 70%);
+      linear-gradient(to top, rgb(24 14 14 / 0.74) 0%, rgb(24 14 14 / 0.58) 55%, rgb(24 14 14 / 0.34) 100%),
+      linear-gradient(90deg, rgb(var(--field-rgb) / 0.2) 0%, rgb(var(--field-rgb) / 0) 70%);
   }
 }
 
