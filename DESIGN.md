@@ -168,7 +168,7 @@ components:
 
 **Creative North Star: "The Red Front Door"**
 
-A small Tema lodge that is impossible to miss at a glance: deep crimson fields carry the photo heroes, the booking panel and the closing banners, then the page steps onto white and clear light-blue surfaces where cards, specs and forms sit in a disciplined 12-column world (1320px max). Headings are uppercase Space Grotesk set tight; reading text is Hanken Grotesk at a relaxed 1.625 leading.
+A Tema lodge that is impossible to miss at a glance: deep crimson fields carry the photo heroes, the booking panel and the closing banners, then the page steps onto white and clear light-blue surfaces where cards, specs and forms sit in a disciplined 12-column world (1320px max). Headings are uppercase Space Grotesk set tight; reading text is Hanken Grotesk at a relaxed 1.625 leading.
 
 Colour order (owner's direction, 2026-11-02): **red leads, then white, then light blue; dark blue is rare.** Red is the brand field and the booking signal. On a red field the booking button flips to white with red text so it stays the loudest element. Dark navy survives only as body-text ink. Red is paired with white and light blue, never with black or very dark fields, because in Ghana red with black reads as mourning.
 

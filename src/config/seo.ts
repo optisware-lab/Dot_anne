@@ -104,8 +104,8 @@ export const pages = {
     path: "/about",
     title: "About Dot Anne Home Lodge | Home-Style Lodge in Tema",
     description:
-      "A small, home-style guest house in the quiet Golf Estate at Kpone Barrier, Tema. Clean rooms, private bathrooms and a front desk open 24 hours.",
-    keywords: [...brand, "home-style lodge Tema", "family-run guest house Tema", "quiet lodge Kpone Barrier", ...core.slice(0, 4)],
+      "A home-style guest house in the quiet Golf Estate at Kpone Barrier, Tema. Clean, air-conditioned rooms, private bathrooms and a front desk open 24 hours.",
+    keywords: [...brand, "home-style lodge Tema", "guest house in Golf Estate Tema", "quiet lodge Kpone Barrier", ...core.slice(0, 4)],
     h1: "About Dot Anne Home Lodge",
   },
   location: {

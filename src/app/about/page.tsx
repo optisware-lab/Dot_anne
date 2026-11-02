@@ -22,7 +22,7 @@ export default function AboutPage() {
         title={p.h1}
         crumbs={crumbs}
         photo={photos.lounge}
-        lede="A small, home-style guest house in the quiet Golf Estate at Kpone Barrier, Tema, with a front desk that answers at any hour."
+        lede="A home-style guest house in the quiet Golf Estate at Kpone Barrier, Tema, with a front desk that answers at any hour."
       />
 
       <section className="section" aria-labelledby="story-title">

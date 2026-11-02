@@ -114,7 +114,7 @@ export function Pillars({ heading = "A Comfortable Stay, Whenever You Need It", 
             </H>
           </div>
           <p>
-            A small guest house in a quiet residential estate, run like a home, for business travellers, late arrivals,
+            A guest house in a quiet residential estate, run with the care of a home, for business travellers, late arrivals,
             couples and anyone needing a dependable room in Tema.
           </p>
         </div>
