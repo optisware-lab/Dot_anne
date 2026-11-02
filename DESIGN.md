@@ -1,28 +1,27 @@
 ---
 name: DOT ANNE HOME LODGE
-description: Tema coastal architectural hospitality. Night-navy photo heroes, cool white surfaces, crimson for booking only.
+description: Red-led Tema lodge site. Deep-crimson photo heroes and fields, white ground, light-blue bands; dark blue only as text ink.
 colors:
-  navy-950: "#011d35"
-  navy-900: "#0f2942"
-  navy-700: "#314863"
-  royal: "#1e3a8a"
-  maritime: "#2563eb"
+  field: "#a8191b"
+  field-deep: "#861214"
   red: "#d32f2f"
   red-hover: "#c62828"
   red-active: "#b71c1c"
-  red-on-dark: "#ffb3ac"
+  on-red-2: "#ffe1df"
   white: "#ffffff"
-  surface: "#faf8ff"
-  surface-low: "#f2f3ff"
-  surface-mid: "#eaedff"
-  surface-high: "#e2e7ff"
-  surface-top: "#dae2fd"
+  surface: "#ffffff"
+  surface-low: "#eef5ff"
+  surface-mid: "#e2eefe"
+  surface-high: "#d8e8fd"
+  surface-top: "#c4dbfa"
+  sky: "#1d6fd8"
+  royal: "#1d4ed8"
+  maritime: "#2563eb"
   ink: "#131b2e"
   ink-2: "#49607c"
   ink-3: "#5d6f86"
   on-dark: "#ffffff"
-  on-dark-2: "#c9d4ee"
-  line: "#e2e7ff"
+  line: "#dbe7f8"
 typography:
   display:
     fontFamily: "Space Grotesk, Helvetica Neue, Arial, sans-serif"
@@ -167,51 +166,44 @@ components:
 
 ## Overview
 
-**Creative North Star: "The Harbour Night Desk"**
+**Creative North Star: "The Red Front Door"**
 
-A small Tema lodge presented with the clarity of a port authority notice and the warmth of a front desk that never closes. Every page opens on a night-navy band laid over a real photograph of the lodge, desaturated through a luminosity blend and pulled down by a navy gradient, then steps onto cool, faintly blue-white surfaces where cards, specs and forms sit in a disciplined 12-column world (1320px max). Headings are uppercase Space Grotesk set tight; reading text is Hanken Grotesk at a relaxed 1.625 leading.
+A small Tema lodge that is impossible to miss at a glance: deep crimson fields carry the photo heroes, the booking panel and the closing banners, then the page steps onto white and clear light-blue surfaces where cards, specs and forms sit in a disciplined 12-column world (1320px max). Headings are uppercase Space Grotesk set tight; reading text is Hanken Grotesk at a relaxed 1.625 leading.
 
-Colour does a job or stays out. Navy carries structure and trust (heroes, the dialog head, the How-to-book panel, mobile menu, dark CTA band). Crimson means "book": it fills the booking buttons and the location pin and almost nothing else. Royal and maritime blues handle links, icons and focus. The surfaces are a five-step cool-white ladder, so sections are separated by tone, not ornament.
+Colour order (owner's direction, 2026-11-02): **red leads, then white, then light blue; dark blue is rare.** Red is the brand field and the booking signal. On a red field the booking button flips to white with red text so it stays the loudest element. Dark navy survives only as body-text ink. Red is paired with white and light blue, never with black or very dark fields, because in Ghana red with black reads as mourning.
 
-This world was adopted from the Google Stitch design "Tema Coastal Architectural Hospitality" and then grounded in the property: real photographs instead of renders, inline SVG line icons instead of an icon font, and no testimonial or badge furniture. The Google rating appears as a measured score card linking out to the reviews.
+This world started from the Google Stitch design "Tema Coastal Architectural Hospitality" and was grounded in the property: real photographs instead of renders, inline SVG line icons instead of an icon font, and no testimonial or badge furniture. The Google rating appears as a measured score card linking out to the reviews.
 
 **Key Characteristics:**
-- Night-navy photo heroes (luminosity-blended photo, navy gradient from bottom and left) on every page.
-- Cool white surface ladder (#faf8ff → #dae2fd) for section rhythm; hairline #e2e7ff dividers.
+- Photo heroes on every page: the lodge photo in natural colour, with crimson only as a gradient behind the text on the left (fading out by 80% of the width) plus a soft text shadow; phones use a warm-dark wash instead. The home hero crossfades through four lodge photos over a white trust strip with red icon discs.
+- White main ground; light-blue bands (#eef5ff → #c4dbfa) for section rhythm; hairline #dbe7f8 dividers.
 - Uppercase Space Grotesk headings at -0.02em to -0.03em; Hanken Grotesk body.
-- Crimson reserved for booking actions; navy and royal for everything structural.
+- Booking actions: red on white grounds, white on red fields. Secondary actions: white with a red outline.
 - Restrained corners (4 / 6 / 10px), soft ambient shadows, gentle lift on hover.
 - Direct-contact devices are first-class: front-desk phone in the header, WhatsApp preview bubble, mobile action bar.
 
 ## Colors
 
-A maritime palette: deep navies and cool blue-whites, with one hot crimson that only ever says "book".
+Red first, white second, light blue third; dark blue only as text ink.
 
 ### Primary
-- **Booking Crimson** (red): fill of every booking CTA ("Book Your Stay", dialog submit, action-bar Book), the map pin disc and the room "tag" chip. Hover deepens to **Harbour Brick** (red-hover); press to **Signal Red** (red-active), which also serves as the error colour, the star colour and red text labels on light surfaces.
-- **Coral Lamp** (red-on-dark): the crimson tint used where red must read on navy: the current page in the mobile menu and alternating trust-bar icons.
+- **Lodge Crimson** (field, #a8191b; deep variant field-deep #861214): every large red area. Home and page heroes, the closing CTA band, the "Booking takes two minutes" panel, the booking-dialog head, the contact preview panel, the phone menu, the skip link, room tags and photo caption chips. White text on it measures about 6.6:1.
+- **Booking Red** (red, #d32f2f; hover #c62828; press/text #b71c1c): booking buttons on white and light-blue grounds, outline-button strokes, map pin, checklist ticks, nav underline, field caret. **Signal Red** (red-active) is the text red: links, red labels, stars, FAQ hover, copy button, error text.
+- **Blush** (on-red-2, #ffe1df): secondary text and labels on crimson fields; the current page in the phone menu.
 
 ### Secondary
-- **Harbour Night** (navy-950): the dark band. Hero and page-hero base, CTA band, booking-dialog head, How-to-book panel, contact preview panel, mobile menu.
-- **Classic Navy** (navy-900): navy buttons, outline-button stroke, room tags, photo captions, field focus border, selected thumbnail border, checklist ticks, `accent-color`.
-- **Slate Navy** (navy-700): scrollbar thumb; quiet structural tone.
+- **Pure White** (white / surface): the main page ground, cards, FAQ items, dialog body, and the booking button and WhatsApp bubble on red fields.
 
 ### Tertiary
-- **Royal Ink** (royal): text links, feature and amenity icons, `label--royal`, FAQ summary hover, copy button.
-- **Maritime Blue** (maritime): focus rings (2px outline) and the 3px input focus halo at 18% alpha. Never a fill.
+- **Light Blue ladder**: **Sky Mist** (surface-low, #eef5ff) alternating bands, footer, input fill, address card; **Sky Haze** (surface-mid, #e2eefe) icon tiles, placeholders, notes, soft buttons; **Sky Tide** (surface-high, #d8e8fd) rating band and current nav item; **Sky Fog** (surface-top, #c4dbfa) input stroke and selection.
+- **Sky Blue** (sky, #1d6fd8): feature and amenity icons, info-note icons, input focus border. **Maritime Blue** (#2563eb): focus rings only. **Royal** (#1d4ed8): `label--royal` only, used sparingly.
 
 ### Neutral
-- **Cool Paper** (surface): page background and translucent header base.
-- **Mist** (surface-low): alternating section tone, footer, input fill, address card, nav hover.
-- **Haze** (surface-mid): icon tiles, image placeholders, info notes, soft buttons.
-- **Tide** (surface-high): rating section tone, current nav item, map placeholder; doubles as the **Hairline** (line) colour.
-- **Fog Blue** (surface-top): input stroke, selection highlight, light-button hover.
-- **Pure White** (white): cards, FAQ items, dialog body, chips on light sections.
-- **Night Ink** (ink): headings and body text. **Slate Ink** (ink-2): secondary copy, labels, ledes. **Muted Slate** (ink-3): optional-field hints.
-- **On-dark** / **Pale Steel** (on-dark-2): primary and secondary text on navy. Dividers on navy use white at 12%.
+- **Night Ink** (ink, #131b2e): headings and body text (the one place dark blue remains). **Slate Ink** (ink-2): secondary copy, labels, ledes. **Muted Slate** (ink-3): optional-field hints.
+- Photo captions sit on a warm near-black gradient (rgb 40 10 10) so they read on any photo.
 
 ### Named Rules
-**The Crimson Means Book Rule.** A crimson fill marks a booking action (or the lodge's own map pin). Navigation, decoration, section backgrounds and secondary buttons never take a crimson fill. The navy button turns crimson on hover because it is itself a booking action ("Inquire about this room").
+**The Red Front Door Rule.** Red owns the big fields and the booking signal. On a red field the booking button is white with red text; on white or light blue it is red. Never pair red with black or very dark fields.
 
 **The Tone-Not-Line Rule.** Sections separate by stepping the surface ladder (surface → surface-low → surface-high → white), not by rules or ornaments. Hairlines are for inside a block: section heads, card footers, spec rows.
 
@@ -315,16 +307,16 @@ Native `<dialog>`, 560px max, 14px radius, Harbour Night head with a circular cl
 ## Do's and Don'ts
 
 ### Do:
-- **Do** open every page on the navy photo hero with a real photograph of the lodge, luminosity-blended at 62% under the navy gradient.
+- **Do** open every page on the crimson photo hero with a real photograph of the lodge under the crimson gradient.
 - **Do** keep crimson fills for booking actions (red #d32f2f, hover #c62828, active #b71c1c).
-- **Do** separate sections by stepping the cool surface ladder, and use #e2e7ff hairlines inside blocks.
+- **Do** alternate white and light-blue bands, and use #dbe7f8 hairlines inside blocks.
 - **Do** set headings in uppercase Space Grotesk 600 with -0.02em tracking; body in Hanken Grotesk 400 at 1.625.
 - **Do** keep corners at 4 / 6 / 10px (14px for the dialog) and buttons at a 48px minimum height.
-- **Do** use inline SVG line icons from the shared icon set, coloured royal or navy on light surfaces.
+- **Do** use inline SVG line icons from the shared icon set, coloured sky blue or red on light surfaces.
 - **Do** use tabular figures for phone numbers, rates, ratings and times.
 
 ### Don't:
-- **Don't** use crimson for navigation, decoration or section backgrounds.
+- **Don't** use dark navy or black for fills or section backgrounds; dark blue is for body text only.
 - **Don't** use pill-shaped or fully rounded buttons.
 - **Don't** use AI-rendered or stock imagery in place of the lodge's own photographs.
 - **Don't** use an icon font (Material Symbols or similar) or emoji/glyph icons.

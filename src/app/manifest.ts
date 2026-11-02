@@ -8,8 +8,8 @@ export default function manifest(): MetadataRoute.Manifest {
     description: "Guest house in Golf Estate, Kpone Barrier, Tema. Open 24/7. Call or WhatsApp to book.",
     start_url: "/",
     display: "standalone",
-    background_color: "#faf8ff",
-    theme_color: "#011d35",
+    background_color: "#ffffff",
+    theme_color: "#a8191b",
     lang: "en-GH",
     categories: ["travel", "lifestyle"],
     icons: [

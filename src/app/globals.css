@@ -1,7 +1,7 @@
 /* ==========================================================================
    DOT ANNE HOME LODGE: "Tema Coastal Architectural Hospitality"
-   Tokens follow the Stitch design system (navy, crimson for booking,
-   cool white surfaces, Space Grotesk + Hanken Grotesk).
+   Colour order (owner's direction, 2026-11-02): red leads, then white, then
+   light blue; dark blue is rare (body ink only). Space Grotesk + Hanken Grotesk.
    ========================================================================== */
 
 :root {
@@ -9,8 +9,15 @@
   --navy-950: #011d35;
   --navy-900: #0f2942;
   --navy-700: #314863;
-  --royal: #1e3a8a;
+  --royal: #1d4ed8; /* blue accents (labels), used sparingly */
+  --sky: #1d6fd8; /* light-blue family accent for icons */
   --maritime: #2563eb;
+
+  /* Red fields: large red areas use the deep crimson so white text stays easy to read */
+  --field: #a8191b;
+  --field-rgb: 168 25 27;
+  --field-deep: #861214;
+  --on-red-2: #ffe1df;
 
   /* Crimson (booking actions only) */
   --red: #d32f2f;
@@ -20,19 +27,19 @@
 
   /* Surfaces */
   --white: #ffffff;
-  --surface: #faf8ff;
-  --surface-low: #f2f3ff;
-  --surface-mid: #eaedff;
-  --surface-high: #e2e7ff;
-  --surface-top: #dae2fd;
+  --surface: #ffffff; /* white is the main ground */
+  --surface-low: #eef5ff; /* light blue bands */
+  --surface-mid: #e2eefe;
+  --surface-high: #d8e8fd;
+  --surface-top: #c4dbfa;
 
   /* Text */
   --ink: #131b2e;
   --ink-2: #49607c;
   --ink-3: #5d6f86;
   --on-dark: #ffffff;
-  --on-dark-2: #c9d4ee;
-  --line: #e2e7ff;
+  --on-dark-2: var(--on-red-2);
+  --line: #dbe7f8;
   --line-dark: rgb(255 255 255 / 0.12);
 
   /* Type */
@@ -66,7 +73,7 @@
 
   --shadow-1: 0 1px 3px rgb(15 23 42 / 0.05), 0 1px 2px rgb(15 23 42 / 0.03);
   --shadow-2: 0 8px 24px -4px rgb(15 23 42 / 0.08), 0 4px 8px -2px rgb(15 23 42 / 0.04);
-  --shadow-3: 0 24px 48px -16px rgb(1 29 53 / 0.35);
+  --shadow-3: 0 24px 48px -16px rgb(80 10 12 / 0.4);
   --ease: cubic-bezier(0.16, 1, 0.3, 1);
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1); /* UI under 600ms */
   --ease-expo: cubic-bezier(0.16, 1, 0.3, 1); /* reveals 800ms+ */
@@ -93,8 +100,8 @@ html {
   -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
   scroll-padding-top: calc(var(--header-h) + 12px);
-  accent-color: var(--navy-900);
-  scrollbar-color: var(--navy-700) var(--surface-low);
+  accent-color: var(--red);
+  scrollbar-color: var(--field) var(--surface-low);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -151,7 +158,7 @@ a {
 
 ::selection {
   background: var(--surface-top);
-  color: var(--navy-950);
+  color: var(--ink);
 }
 
 :focus-visible {
@@ -178,7 +185,7 @@ a {
   top: -60px;
   z-index: 200;
   padding: 10px 16px;
-  background: var(--navy-900);
+  background: var(--field);
   color: var(--on-dark);
   font-weight: 600;
   border-radius: var(--r-btn);
@@ -265,18 +272,22 @@ a {
   background: var(--red-active);
 }
 
+/* Secondary: white with a red outline (kept the class name; no dark blue fill) */
 .btn--navy {
-  background: var(--navy-900);
-  color: var(--white);
+  background: var(--white);
+  border-color: var(--red);
+  color: var(--red-active);
 }
 
 .btn--navy:hover {
   background: var(--red);
+  border-color: var(--red);
+  color: var(--white);
 }
 
 .btn--outline {
-  border-color: var(--navy-900);
-  color: var(--navy-900);
+  border-color: var(--red);
+  color: var(--red-active);
   background: transparent;
 }
 
@@ -332,10 +343,10 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 0.35em;
-  color: var(--royal);
+  color: var(--red-active);
   font-weight: 600;
   text-decoration: underline;
-  text-decoration-color: rgb(30 58 138 / 0.35);
+  text-decoration-color: rgb(183 28 28 / 0.35);
   text-decoration-thickness: 1px;
 }
 
@@ -489,7 +500,7 @@ a {
   z-index: 59;
   overflow-y: auto;
   padding: var(--s-lg) var(--gutter) calc(var(--s-xl) + env(safe-area-inset-bottom));
-  background: var(--navy-950);
+  background: var(--field);
   color: var(--on-dark);
   animation: menu-in 0.35s var(--ease);
 }
@@ -530,7 +541,7 @@ a {
 }
 
 .mobile-menu li a[aria-current="page"] {
-  color: #ffb3ac;
+  color: var(--on-red-2);
 }
 
 .mobile-menu__actions {
@@ -582,7 +593,7 @@ main {
   position: relative;
   isolation: isolate;
   overflow: hidden;
-  background: var(--navy-950);
+  background: var(--field);
   color: var(--on-dark);
 }
 
@@ -613,8 +624,8 @@ main {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(to top, var(--navy-950) 0%, rgb(1 29 53 / 0.55) 30%, rgb(1 29 53 / 0.05) 100%),
-    linear-gradient(to right, rgb(1 29 53 / 0.94) 0%, rgb(1 29 53 / 0.55) 48%, transparent 85%);
+    linear-gradient(to top, var(--field) 0%, rgb(var(--field-rgb) / 0.55) 30%, rgb(var(--field-rgb) / 0.05) 100%),
+    linear-gradient(to right, rgb(var(--field-rgb) / 0.94) 0%, rgb(var(--field-rgb) / 0.55) 48%, transparent 85%);
 }
 
 .place-chip {
@@ -725,11 +736,11 @@ main {
   flex-shrink: 0;
   border-radius: 50%;
   background: rgb(255 255 255 / 0.1);
-  color: #ffb3ac;
+  color: var(--white);
 }
 
 .trust-bar li:nth-child(even) .trust-bar__icon {
-  color: #b4c5ff;
+  color: var(--white);
 }
 
 .trust-bar strong {
@@ -973,7 +984,7 @@ main {
 }
 
 .pillar:hover .pillar__icon {
-  background: var(--navy-900);
+  background: var(--red);
   color: var(--white);
 }
 
@@ -1025,7 +1036,7 @@ main {
   z-index: 1;
   padding: 0.3rem 0.6rem;
   border-radius: var(--r-chip);
-  background: var(--navy-900);
+  background: var(--field);
   color: var(--white);
   font-size: 0.6875rem;
   font-weight: 700;
@@ -1069,7 +1080,7 @@ main {
 }
 
 .feature-grid svg {
-  color: var(--royal);
+  color: var(--sky);
   flex-shrink: 0;
 }
 
@@ -1096,8 +1107,8 @@ main {
 
 .steps {
   padding: var(--s-lg);
-  background: var(--navy-950);
-  border-color: var(--navy-950);
+  background: var(--field);
+  border-color: var(--field);
   color: var(--on-dark);
 }
 
@@ -1191,7 +1202,7 @@ main {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgb(1 29 53 / 0.82) 0%, rgb(1 29 53 / 0.1) 45%, transparent 70%);
+  background: linear-gradient(to top, rgb(40 10 10 / 0.78) 0%, rgb(40 10 10 / 0.12) 45%, transparent 70%);
   pointer-events: none;
 }
 
@@ -1299,7 +1310,7 @@ main {
 
 .amenity .pillar__icon {
   margin-bottom: 0;
-  color: var(--royal);
+  color: var(--sky);
 }
 
 .amenity h4 {
@@ -1390,7 +1401,7 @@ main {
   border: 0;
   border-radius: var(--r-chip);
   background: transparent;
-  color: var(--royal);
+  color: var(--red-active);
   font: inherit;
   font-size: 0.75rem;
   font-weight: 700;
@@ -1421,7 +1432,7 @@ main {
 
 .checks svg {
   margin-top: 3px;
-  color: var(--navy-900);
+  color: var(--red);
 }
 
 .btn-row {
@@ -1454,7 +1465,7 @@ main {
   place-content: center;
   justify-items: center;
   gap: var(--s-sm);
-  color: var(--navy-900);
+  color: var(--ink);
   font-weight: 600;
   text-decoration: none;
 }
@@ -1523,7 +1534,7 @@ main {
   border: 1px solid var(--line);
   border-radius: var(--r-chip);
   background: var(--white);
-  color: var(--navy-900);
+  color: var(--ink);
   font-size: 0.875rem;
   font-weight: 600;
 }
@@ -1576,7 +1587,7 @@ main {
 }
 
 .faq summary:hover {
-  color: var(--royal);
+  color: var(--red-active);
 }
 
 .faq details > div {
@@ -1586,7 +1597,7 @@ main {
 }
 
 .faq details > div a {
-  color: var(--royal);
+  color: var(--red-active);
   font-weight: 600;
 }
 
@@ -1615,13 +1626,13 @@ main {
 .cta__glow--a {
   right: -6rem;
   bottom: -6rem;
-  background: rgb(211 47 47 / 0.14);
+  background: rgb(255 255 255 / 0.1);
 }
 
 .cta__glow--b {
   left: -6rem;
   top: -6rem;
-  background: rgb(37 99 235 / 0.14);
+  background: rgb(255 140 120 / 0.14);
 }
 
 .cta h2 {
@@ -1697,7 +1708,7 @@ main {
   color: var(--ink);
   font: inherit;
   font-size: 1rem;
-  caret-color: var(--navy-900);
+  caret-color: var(--red);
   transition:
     border-color 0.2s,
     box-shadow 0.2s,
@@ -1718,7 +1729,7 @@ main {
 .field select:focus,
 .field textarea:focus {
   outline: none;
-  border-color: var(--navy-900);
+  border-color: var(--sky);
   background: var(--white);
   box-shadow: 0 0 0 3px rgb(37 99 235 / 0.18);
 }
@@ -1752,7 +1763,7 @@ main {
 .note svg {
   flex-shrink: 0;
   margin-top: 2px;
-  color: var(--royal);
+  color: var(--sky);
 }
 
 .form__actions {
@@ -1794,7 +1805,7 @@ main {
   justify-content: space-between;
   gap: var(--s-md);
   padding: var(--s-lg);
-  background: var(--navy-950);
+  background: var(--field);
   color: var(--on-dark);
 }
 
@@ -1849,7 +1860,7 @@ main {
   gap: var(--s-md);
   padding: clamp(1.25rem, 3vw, 2rem);
   border-radius: var(--r-card);
-  background: var(--navy-950);
+  background: var(--field);
   color: var(--on-dark);
 }
 
@@ -1860,7 +1871,7 @@ main {
 .bubble {
   padding: 1rem 1.1rem;
   border-radius: 12px 12px 3px 12px;
-  background: #e7ffdb;
+  background: var(--white);
   color: #111b21;
   box-shadow: 0 8px 24px -12px rgb(0 0 0 / 0.5);
 }
@@ -1956,7 +1967,7 @@ main {
   bottom: 12px;
   padding: 0.3rem 0.6rem;
   border-radius: var(--r-chip);
-  background: var(--navy-900);
+  background: var(--field);
   color: var(--white);
   font-size: 0.6875rem;
   font-weight: 700;
@@ -2027,7 +2038,7 @@ main {
 }
 
 .thumb[aria-pressed="true"] {
-  border-color: var(--navy-900);
+  border-color: var(--red);
 }
 
 @media (max-width: 960px) {
@@ -2086,7 +2097,7 @@ main {
   align-items: center;
   gap: 0.5rem;
   margin-top: var(--s-md);
-  color: var(--royal);
+  color: var(--red-active);
   font-size: 0.6875rem;
   font-weight: 700;
   letter-spacing: 0.12em;
@@ -2674,7 +2685,7 @@ main {
   padding: 0.35rem 0.75rem;
   border: 1px solid rgb(255 255 255 / 0.22);
   border-radius: 999px;
-  background: rgb(1 29 53 / 0.45);
+  background: rgb(var(--field-rgb) / 0.45);
   color: var(--on-dark);
   font: inherit;
   font-size: 0.75rem;
@@ -2690,10 +2701,133 @@ main {
 }
 
 .hero-slides__toggle:hover {
-  background: rgb(1 29 53 / 0.7);
+  background: rgb(var(--field-rgb) / 0.7);
   border-color: rgb(255 255 255 / 0.4);
 }
 
 .hero-slides__toggle:active {
   transform: scale(0.95);
+}
+
+
+/* ==========================================================================
+   ON RED: buttons and marks inside red fields (hero, page hero, closing banner,
+   booking steps, phone menu). The booking button turns white so it is still
+   the loudest thing on a red field.
+   ========================================================================== */
+
+:is(.dark, .steps, .mobile-menu) .btn--red {
+  background: var(--white);
+  color: var(--red-active);
+  box-shadow: 0 10px 24px -12px rgb(40 0 0 / 0.55);
+}
+
+:is(.dark, .steps, .mobile-menu) .btn--red:hover {
+  background: #fff1f0;
+  color: var(--field-deep);
+}
+
+:is(.dark, .steps, .mobile-menu) .btn--red:active {
+  background: #ffe1df;
+}
+
+.dark .btn--light {
+  border-color: rgb(255 255 255 / 0.4);
+  background: rgb(255 255 255 / 0.08);
+  color: var(--on-dark);
+}
+
+.dark .btn--light:hover {
+  background: rgb(255 255 255 / 0.18);
+}
+
+.btn--ghost-dark {
+  border-color: rgb(255 255 255 / 0.45);
+}
+
+.dark .place-chip .dot {
+  background: var(--white);
+}
+
+.dark .label {
+  color: var(--on-red-2);
+}
+
+/* The rating stars and red labels stay on light grounds; on light blue they use the deeper red */
+.section--high .label--red,
+.section--low .label--red {
+  color: var(--red-active);
+}
+
+/* ==========================================================================
+   HERO OVERLAY v2 (2026-11-02): less red. The photos show in natural colour;
+   red sits only as a gradient behind the text on the left. Phones, where the
+   text spans the width, use a soft warm-dark wash instead of a red one.
+   ========================================================================== */
+
+.dark__photo img,
+.hero-slides .hero-slide img {
+  opacity: 1;
+  mix-blend-mode: normal;
+}
+
+.hero-slide {
+  mix-blend-mode: normal;
+}
+
+.dark__photo::after {
+  background:
+    linear-gradient(
+      90deg,
+      rgb(var(--field-rgb) / 0.92) 0%,
+      rgb(var(--field-rgb) / 0.82) 32%,
+      rgb(var(--field-rgb) / 0.58) 52%,
+      rgb(var(--field-rgb) / 0.22) 66%,
+      rgb(var(--field-rgb) / 0) 80%
+    ),
+    linear-gradient(to top, rgb(28 10 10 / 0.35) 0%, rgb(28 10 10 / 0) 35%);
+}
+
+@media (max-width: 760px) {
+  .dark__photo::after {
+    background:
+      linear-gradient(to top, rgb(28 10 10 / 0.72) 0%, rgb(28 10 10 / 0.55) 55%, rgb(28 10 10 / 0.3) 100%),
+      linear-gradient(90deg, rgb(var(--field-rgb) / 0.35) 0%, rgb(var(--field-rgb) / 0) 70%);
+  }
+}
+
+/* Trust strip: a clean white band under the photo, red only in the icon discs */
+.dark .trust-bar {
+  border-top: 0;
+  background: var(--white);
+  color: var(--ink);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  box-shadow: 0 -1px 0 var(--line);
+}
+
+.dark .trust-bar .label {
+  color: var(--ink-2);
+}
+
+.dark .trust-bar strong {
+  color: var(--ink);
+}
+
+.dark .trust-bar .trust-bar__icon,
+.dark .trust-bar li:nth-child(even) .trust-bar__icon {
+  background: var(--red);
+  color: var(--white);
+}
+
+.dark .trust-bar a:hover strong {
+  color: var(--red-active);
+}
+
+/* Soft shadow keeps white hero text readable where it crosses a bright part of a photo */
+.dark h1,
+.hero__lede,
+.page-hero p,
+.dark .crumbs {
+  text-shadow: 0 2px 18px rgb(60 0 0 / 0.38), 0 1px 2px rgb(60 0 0 / 0.25);
 }

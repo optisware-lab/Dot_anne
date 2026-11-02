@@ -52,7 +52,7 @@ Unknown, must not be invented: room prices, room count, room categories beyond t
 
 - Name written as DOT ANNE HOME LODGE (wordmark may set it in mixed case for display, but the name is fixed).
 - No official logo exists; a typographic wordmark is acceptable and must not be presented as an official logo.
-- Visual design (client-pinned 2026-10-28, replacing the earlier green/ivory/gold direction): the Google Stitch "Tema Coastal Architectural Hospitality" system. Navy + crimson (crimson only for booking actions) on cool white surfaces, Space Grotesk uppercase headings + Hanken Grotesk body. See DESIGN.md.
+- Visual design: started from the Google Stitch "Tema Coastal Architectural Hospitality" system (2026-10-28); colour order set by the owner on 2026-11-02: red dominant, then white, then light blue, dark blue rare (text ink only). Space Grotesk uppercase headings + Hanken Grotesk body. See DESIGN.md.
 - Hero headline (client-pinned): "Comfortable, Safe & Affordable Accommodation in Golf Estate, Tema".
 
 ## Site Structure
