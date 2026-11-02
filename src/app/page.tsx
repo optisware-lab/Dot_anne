@@ -53,7 +53,9 @@ export default function Home() {
                 <IconClock size={22} />
               </span>
               <div>
-                <span className="label">Front desk</span>
+                <span className="label">
+                  Front desk<span className="hide-sm"> · Tema time</span>
+                </span>
                 <strong>
                   <LiveClock />
                 </strong>

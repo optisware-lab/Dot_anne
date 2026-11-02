@@ -2863,3 +2863,24 @@ main {
     height: 38px;
   }
 }
+
+/* Live clock: one line on wide screens, "Open now" over the ticking time on phones */
+.clock time {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 480px) {
+  .clock > span:first-child,
+  .clock time {
+    display: block;
+  }
+  .clock__sep {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .hide-sm {
+    display: none;
+  }
+}
