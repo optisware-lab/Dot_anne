@@ -12,7 +12,8 @@ export const site = {
   displayName: "Dot Anne Home Lodge",
   shortName: "Dot Anne Lodge",
   type: "Guest House / Bed & Breakfast",
-  url: (process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.dotannelodge.com").replace(/\/$/, ""), // TODO(owner): set the real domain
+  // Live on Vercel. When you buy a domain, set NEXT_PUBLIC_SITE_URL in Vercel (or change this line).
+  url: (process.env.NEXT_PUBLIC_SITE_URL ?? "https://dot-anne.vercel.app").replace(/\/$/, ""),
   locale: "en_GH",
 
   phone: {
