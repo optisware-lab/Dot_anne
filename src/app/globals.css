@@ -2838,3 +2838,28 @@ main {
 .dark .crumbs {
   text-shadow: 0 2px 18px rgb(60 0 0 / 0.38), 0 1px 2px rgb(60 0 0 / 0.25);
 }
+
+/* ---------- Logo (owner's lotus logo, 2026-11-02) ---------- */
+.logo {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  line-height: 0;
+  border-radius: 4px;
+}
+
+.logo img {
+  display: block;
+  width: auto;
+  height: 46px;
+}
+
+.logo--footer img {
+  height: 132px;
+}
+
+@media (max-width: 640px) {
+  .site-header .logo img {
+    height: 38px;
+  }
+}

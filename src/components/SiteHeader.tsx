@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
@@ -68,9 +69,8 @@ export function SiteHeader() {
   return (
     <header className={`site-header${scrolled ? " is-scrolled" : ""}`}>
       <div className="site-header__bar wrap">
-        <Link href="/" className="wordmark" aria-label={`${site.displayName}, home`}>
-          <span className="wordmark__name">Dot Anne</span>
-          <span className="wordmark__sub">Home Lodge • Tema</span>
+        <Link href="/" className="logo" aria-label={`${site.displayName}, home`}>
+          <Image src="/images/logo/logo-lockup.png" alt={site.displayName} width={1322} height={240} priority sizes="280px" />
         </Link>
 
         <nav className="site-nav" aria-label="Main">

@@ -22,7 +22,7 @@ export function lodgeNode() {
     url: abs("/"),
     telephone: site.phone.tel,
     image: gallery.map((p) => abs(p.src)),
-    logo: abs("/icon.svg"),
+    logo: abs("/images/logo/logo-full.png"),
     address: {
       "@type": "PostalAddress",
       streetAddress: site.address.street,

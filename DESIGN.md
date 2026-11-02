@@ -182,6 +182,9 @@ This world started from the Google Stitch design "Tema Coastal Architectural Hos
 - Restrained corners (4 / 6 / 10px), soft ambient shadows, gentle lift on hover.
 - Direct-contact devices are first-class: front-desk phone in the header, WhatsApp preview bubble, mobile action bar.
 
+### Logo
+The owner's lotus logo leads the identity: header uses a horizontal lockup (lotus beside DOT ANNE / HOME LODGE, 46px tall, 38px on phones); the footer shows the full stacked logo (132px); the browser-tab and home-screen icons use the lotus mark on white; the link-preview card puts the full logo on a white panel beside a room photo. Always on white or light blue, never on a red field. Its pink lotus sits naturally beside the site's red; its navy lettering is the one place dark blue appears as a brand colour.
+
 ## Colors
 
 Red first, white second, light blue third; dark blue only as text ink.

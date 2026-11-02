@@ -56,7 +56,7 @@ Unknown, must not be invented: room prices, room count, room categories beyond t
 ## Brand Commitments
 
 - Name written as DOT ANNE HOME LODGE (wordmark may set it in mixed case for display, but the name is fixed).
-- No official logo exists; a typographic wordmark is acceptable and must not be presented as an official logo.
+- Official logo (supplied by the owner 2026-11-02): pink lotus with green leaves, "DOT ANNE" in navy serif capitals, "HOME LODGE" between gold rules, a mirrored lotus below. Original in .assets-src/logo/; site assets in public/images/logo/ (full, header lockup, lotus mark) built by .assets-src/logo.cjs. Place it on white or light-blue grounds only (the navy lettering does not read on red). Do not redraw or recolour it.
 - Visual design: started from the Google Stitch "Tema Coastal Architectural Hospitality" system (2026-10-28); colour order set by the owner on 2026-11-02: red dominant, then white, then light blue, dark blue rare (text ink only). Space Grotesk uppercase headings + Hanken Grotesk body. See DESIGN.md.
 - Hero headline (client-pinned): "Comfortable, Safe & Affordable Accommodation in Golf Estate, Tema".
 

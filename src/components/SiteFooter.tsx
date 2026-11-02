@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { site, whatsappLink } from "@/config/site";
 
@@ -8,9 +9,8 @@ export function SiteFooter() {
       <div className="wrap">
         <div className="footer-grid">
           <div>
-            <Link href="/" className="wordmark" aria-label={`${site.displayName}, home`}>
-              <span className="wordmark__name">Dot Anne</span>
-              <span className="wordmark__sub">Home Lodge • Tema</span>
+            <Link href="/" className="logo logo--footer" aria-label={`${site.displayName}, home`}>
+              <Image src="/images/logo/logo-full.png" alt={site.displayName} width={1000} height={759} sizes="220px" />
             </Link>
             <p style={{ marginTop: "1rem", maxWidth: "34ch" }}>
               Quiet, home-style guest house and bed &amp; breakfast in Golf Estate, Kpone Barrier, Tema, Ghana.
