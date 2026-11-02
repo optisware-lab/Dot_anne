@@ -31,7 +31,7 @@ A quiet, home-style lodge in a residential estate off BOST Road, staffed 24 hour
 - Booking happens by phone or WhatsApp on the same number (+233 24 349 0990 / 233243490990). No online payment, no availability engine.
 - Open 24 hours, 7 days.
 - Google Maps listing: "DOT ANNE HOME LODGE", Plus Code P275+W52 BOST ROAD, Tema; coordinates 5.7153015, 0.0082891; 4.2/5 from 47 reviews (as of Oct 2026).
-- **Open question (2026-11-02):** the owner says the lodge has moved to a new building but has not yet given the new address. The site still shows 473 Golf Estate / P275+W52 until the new address, map pin and directions are supplied.
+- Address confirmed unchanged by the owner (2026-11-02): 473 Golf Estate, Kpone Barrier, off BOST Road, Tema; Plus Code P275+W52. The lodge was rebuilt on the same site.
 - Previously on Booking.com (listing now inactive) and Tripadvisor (no photos).
 
 ## Capabilities and Constraints
