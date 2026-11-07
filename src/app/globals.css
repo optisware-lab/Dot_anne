@@ -1365,54 +1365,6 @@ main {
   line-height: 1.35;
 }
 
-.plus-code {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--s-md);
-  margin-top: var(--s-xs);
-  padding: 0.75rem;
-  border-radius: 8px;
-  background: var(--white);
-}
-
-.plus-code > div {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-}
-
-.plus-code svg {
-  color: var(--red);
-}
-
-.plus-code strong {
-  display: block;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-}
-
-.copy-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35em;
-  min-height: 36px;
-  padding: 0.25rem 0.6rem;
-  border: 0;
-  border-radius: var(--r-chip);
-  background: transparent;
-  color: var(--red-active);
-  font: inherit;
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-
-.copy-btn:hover {
-  background: var(--surface-low);
-}
 
 .checks {
   display: grid;
@@ -2217,7 +2169,6 @@ main {
   transition: transform var(--t-ui) var(--ease-out);
 }
 
-.copy-btn,
 .icon-btn,
 .thumb,
 .menu-toggle,
@@ -2230,7 +2181,6 @@ main {
     transform var(--t-press) var(--ease-out);
 }
 
-.copy-btn:active,
 .icon-btn:active,
 .thumb:active,
 .menu-toggle:active {

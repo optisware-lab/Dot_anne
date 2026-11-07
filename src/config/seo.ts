@@ -119,8 +119,8 @@ export const pages = {
     path: "/location",
     title: "Location & Directions | Lodge at Kpone Barrier, Tema",
     description:
-      "Find Dot Anne Home Lodge at 473, within the Golf Estate & Rasta Village Enclave, Kpone Barrier, off BOST Road, Tema. Plus Code P275+W52.",
-    keywords: [...local, "directions to Golf Estate Tema", "directions to Rasta Village Tema", "P275+W52 Tema", "lodge near me Tema"],
+      "Find Dot Anne Home Lodge within the Golf Estate & Rasta Village Enclave, Kpone Barrier, off BOST Road, Tema. Directions, map and nearby areas.",
+    keywords: [...local, "directions to Golf Estate Tema", "directions to Rasta Village Tema", "lodge near me Tema"],
     h1: "Location & Directions",
   },
   faq: {

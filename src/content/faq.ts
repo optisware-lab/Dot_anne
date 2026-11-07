@@ -16,13 +16,13 @@ export const faqs: Faq[] = [
   },
   {
     q: "Where exactly is Dot Anne Home Lodge?",
-    a: `At 473, within the Golf Estate & Rasta Village Enclave, Kpone Barrier, off BOST Road, Tema, Greater Accra, Ghana. The Google Plus Code is ${site.address.plusCode} Tema, which you can paste into Google Maps or send to your taxi or ride-hailing driver.`,
+    a: "Within the Golf Estate & Rasta Village Enclave, Kpone Barrier, off BOST Road, Tema, Greater Accra, Ghana. Search “Dot Anne Home Lodge” in Google Maps, or share the map pin with your taxi or ride-hailing driver.",
     home: true,
     topic: "location",
   },
   {
     q: "How do I find the lodge from Kpone Barrier?",
-    a: `The Golf Estate & Rasta Village Enclave sits just off BOST Road in the Kpone Barrier area of Tema. Search "Dot Anne Home Lodge" or the Plus Code ${site.address.plusCode} in Google Maps, or call the front desk on ${site.phone.display} and we will guide you or your driver in.`,
+    a: `The Golf Estate & Rasta Village Enclave sits just off BOST Road in the Kpone Barrier area of Tema. Search "Dot Anne Home Lodge" in Google Maps, or call the front desk on ${site.phone.display} and we will guide you or your driver in.`,
     topic: "location",
   },
   {

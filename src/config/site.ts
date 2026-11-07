@@ -28,8 +28,7 @@ export const site = {
   email: null as string | null, // TODO(owner): add a booking email if you have one
 
   address: {
-    street: "473 Golf Estate & Rasta Village Enclave, Kpone Barrier, off BOST Road",
-    plot: "473",
+    street: "Golf Estate & Rasta Village Enclave, Kpone Barrier, off BOST Road",
     estate: "Golf Estate",
     /** The neighbourhood the lodge sits within (owner, 2026-11-07). */
     enclave: "Golf Estate & Rasta Village Enclave",
@@ -40,7 +39,6 @@ export const site = {
     region: "Greater Accra",
     country: "Ghana",
     countryCode: "GH",
-    plusCode: "P275+W52",
   },
   geo: { lat: 5.7153015, lng: 0.0082891 },
   googlePlaceCid: "0x10207f048a6b1501:0x61dc78658b8e6b25",
@@ -48,7 +46,7 @@ export const site = {
     "https://www.google.com/maps/place/DOT+ANNE+HOME+LODGE/@5.7153015,0.0082891,17z/data=!3m1!4b1!4m6!3m5!1s0x10207f048a6b1501:0x61dc78658b8e6b25!8m2!3d5.7153015!4d0.0082891",
   directionsUrl: "https://www.google.com/maps/dir/?api=1&destination=5.7153015,0.0082891",
   mapEmbedUrl:
-    "https://maps.google.com/maps?q=DOT%20ANNE%20HOME%20LODGE%2C%20P275%2BW52%20Tema&z=16&output=embed",
+    "https://maps.google.com/maps?q=5.7153015,0.0082891&z=16&output=embed",
 
   /** Other official listings of the lodge (used as schema.org `sameAs`). */
   sameAs: [

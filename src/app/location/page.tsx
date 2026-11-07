@@ -22,12 +22,12 @@ export default function LocationPage() {
         title={p.h1}
         crumbs={crumbs}
         photo={photos.parking}
-        lede={`473, within the Golf Estate & Rasta Village Enclave, Kpone Barrier, off BOST Road, Tema. Plus Code ${site.address.plusCode}. Open 24 hours, so you can arrive at any time.`}
+        lede="Within the Golf Estate & Rasta Village Enclave, Kpone Barrier, off BOST Road, Tema. Open 24 hours, so you can arrive at any time."
       />
 
       <section className="section" aria-labelledby="map-title">
         <div className="wrap">
-          <LocationBlock headingId="map-title" heading="Address, Plus Code & Map" />
+          <LocationBlock headingId="map-title" heading="Address & Map" />
         </div>
       </section>
 
@@ -36,13 +36,12 @@ export default function LocationPage() {
           <div className="prose" data-reveal="rise">
             <h2 id="getting-title">Getting to the lodge</h2>
             <p>
-              <strong>By taxi or ride-hailing.</strong> Set the destination to “Dot Anne Home Lodge” or paste the Plus Code{" "}
-              {site.address.plusCode} Tema into the app. If the driver is unsure in the enclave, call the desk on{" "}
+              <strong>By taxi or ride-hailing.</strong> Set the destination to “Dot Anne Home Lodge” in the app. If the driver is unsure in the enclave, call the desk on{" "}
               {site.phone.display} and hand the phone over.
             </p>
             <p>
               <strong>Driving yourself.</strong> Head for Kpone Barrier in Tema. The Golf Estate &amp; Rasta Village Enclave sits just
-              off BOST Road; follow Google Maps to plot 473, and park inside the compound.
+              off BOST Road; follow Google Maps to the lodge, and park inside the compound.
             </p>
             <p>
               <strong>Arriving late.</strong> The front desk is staffed 24 hours. Send a WhatsApp with your expected arrival time

@@ -1,6 +1,6 @@
 # DOT ANNE HOME LODGE website
 
-Single-page Next.js site for DOT ANNE HOME LODGE, 473 Golf Estate, Kpone Barrier, off BOST Road, Tema.
+Single-page Next.js site for DOT ANNE HOME LODGE, Golf Estate & Rasta Village Enclave, Kpone Barrier, off BOST Road, Tema.
 Built to turn Google searches into phone calls and WhatsApp booking chats.
 
 ## Run it
@@ -17,7 +17,7 @@ Until then the site uses its Vercel address, https://dot-anne.vercel.app. Every 
 
 ## Edit business details
 
-Everything factual lives in **`src/config/site.ts`**: phone, WhatsApp number, address, Plus Code, map links,
+Everything factual lives in **`src/config/site.ts`**: phone, WhatsApp number, address, map links,
 rating, check-in/out times, amenities and rooms. The page reads only from there.
 
 - **Amenities** appear only when `confirmed: true`. Air conditioning, breakfast, TV and mini fridge are listed
@@ -67,7 +67,7 @@ Page titles, descriptions and keyword clusters live in `src/config/seo.ts`; FAQ 
 
 - Separate pages, each with its own title (under 60 characters), description (under 155), H1, canonical URL and social card.
 - Keywords used naturally in titles, headings, copy and image alt text (no hidden or stuffed keyword lists, which Google penalises).
-- One linked schema.org graph on every page: Hotel / LodgingBusiness / BedAndBreakfast with address, geo, Plus Code map link,
+- One linked schema.org graph on every page: Hotel / LodgingBusiness / BedAndBreakfast with address, geo, map link,
   24h hours, phone, amenities, rating, areas served, booking action; plus WebSite, WebPage, BreadcrumbList, FAQPage,
   HotelRoom and ImageGallery where relevant.
 - Sitemap with image entries, robots.txt, web manifest, `/llms.txt` (plain-text facts for AI search assistants),

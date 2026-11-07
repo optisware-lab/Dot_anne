@@ -20,7 +20,7 @@ Most arrive from a Google search ("lodge in Tema", "guest house Kpone Barrier", 
 
 ## Product Purpose
 
-The website for DOT ANNE HOME LODGE, a guest house / bed-and-breakfast at 473 Golf Estate, Kpone Barrier, off BOST Road, Tema, Greater Accra, Ghana. It exists to turn search visitors into phone calls and WhatsApp booking conversations. Success = more calls to +233 24 349 0990, more WhatsApp chats, more direct bookings, and better local search visibility.
+The website for DOT ANNE HOME LODGE, a guest house / bed-and-breakfast within the Golf Estate & Rasta Village Enclave, Kpone Barrier, off BOST Road, Tema, Greater Accra, Ghana. It exists to turn search visitors into phone calls and WhatsApp booking conversations. Success = more calls to +233 24 349 0990, more WhatsApp chats, more direct bookings, and better local search visibility.
 
 ## Positioning
 
@@ -30,9 +30,10 @@ A quiet, home-style lodge in a residential estate off BOST Road, staffed 24 hour
 
 - Booking happens by phone or WhatsApp on the same number (+233 24 349 0990 / 233243490990). No online payment, no availability engine.
 - Open 24 hours, 7 days.
-- Google Maps listing: "DOT ANNE HOME LODGE", Plus Code P275+W52 BOST ROAD, Tema; coordinates 5.7153015, 0.0082891; 4.2/5 from 47 reviews (as of Oct 2026).
-- Address confirmed unchanged by the owner (2026-11-02): 473 Golf Estate, Kpone Barrier, off BOST Road, Tema; Plus Code P275+W52. The lodge was rebuilt on the same site.
-- Neighbourhood (owner, 2026-11-07): within the Golf Estate & Rasta Village Enclave. Used in copy, schema and keywords; plot, Plus Code and map pin unchanged.
+- Google Maps listing: "DOT ANNE HOME LODGE", Tema; coordinates 5.7153015, 0.0082891; 4.2/5 from 47 reviews (as of Oct 2026).
+- Address confirmed unchanged by the owner (2026-11-02): Golf Estate, Kpone Barrier, off BOST Road, Tema. The lodge was rebuilt on the same site.
+- Neighbourhood (owner, 2026-11-07): within the Golf Estate & Rasta Village Enclave. Used in copy, schema and keywords; map pin unchanged.
+- The owner asked (2026-11-07) that the plot number and the Google Plus Code are not shown anywhere on the site.
 - Previously on Booking.com (listing now inactive) and Tripadvisor (no photos).
 
 ## Capabilities and Constraints

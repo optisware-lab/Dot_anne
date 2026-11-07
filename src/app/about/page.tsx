@@ -32,7 +32,7 @@ export default function AboutPage() {
               A home-style lodge in Golf Estate &amp; Rasta Village
             </h2>
             <p>
-              Dot Anne Home Lodge is a guest house and bed &amp; breakfast at No. 473, within the Golf Estate &amp; Rasta Village
+              Dot Anne Home Lodge is a guest house and bed &amp; breakfast within the Golf Estate &amp; Rasta Village
               Enclave in the Kpone Barrier area of Tema, Greater Accra. The rooms are quiet and air-conditioned, off a bright tiled hallway, with
               parking inside the compound.
             </p>

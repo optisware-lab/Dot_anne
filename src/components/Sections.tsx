@@ -3,7 +3,6 @@ import Link from "next/link";
 import { amenities, confirmedAmenities, gallery, photos, shownRooms, site, whatsappLink } from "@/config/site";
 import type { Faq } from "@/content/faq";
 import { BookButton } from "./Booking";
-import { CopyButton } from "./CopyButton";
 import { RollNumber } from "./RollNumber";
 import {
   IconArrow,
@@ -81,7 +80,7 @@ const pillars = [
     label: "Location",
     title: "A convenient Tema location",
     text: "Within the Golf Estate & Rasta Village Enclave, just off BOST Road at Kpone Barrier: a calm base for work or family visits in Tema and Kpone.",
-    foot: `${site.address.plusCode} BOST Road`,
+    foot: "Off BOST Road, Kpone Barrier",
     footClass: "label--royal",
   },
   {
@@ -392,17 +391,7 @@ export function LocationBlock({ headingId = "location-title", heading = "Locatio
 
         <div className="address-card">
           <span className="label">Lodge address</span>
-          <address>473 Golf Estate &amp; Rasta Village Enclave, Kpone Barrier, off BOST Road, Tema, Greater Accra, Ghana</address>
-          <div className="plus-code">
-            <div>
-              <IconPin size={20} />
-              <div>
-                <span className="label">Google Plus Code</span>
-                <strong>{site.address.plusCode} BOST Road, Tema</strong>
-              </div>
-            </div>
-            <CopyButton value={`${site.address.plusCode} Tema, Ghana`} label="Copy" />
-          </div>
+          <address>Golf Estate &amp; Rasta Village Enclave, Kpone Barrier, off BOST Road, Tema, Greater Accra, Ghana</address>
         </div>
 
         <ul className="checks" data-reveal="stagger">
@@ -412,7 +401,7 @@ export function LocationBlock({ headingId = "location-title", heading = "Locatio
           </li>
           <li>
             <IconCheckCircle size={18} />
-            <span>Send your taxi or ride-hailing driver the Plus Code {site.address.plusCode}, or search “Dot Anne Home Lodge” in Google Maps.</span>
+            <span>Search “Dot Anne Home Lodge” in Google Maps, or share the map pin with your taxi or ride-hailing driver.</span>
           </li>
           <li>
             <IconCheckCircle size={18} />
@@ -450,7 +439,7 @@ export function LocationBlock({ headingId = "location-title", heading = "Locatio
           </span>
           <div>
             <strong>Dot Anne Home Lodge</strong>
-            <span>473 Golf Estate, Tema</span>
+            <span>Golf Estate &amp; Rasta Village, Tema</span>
           </div>
         </div>
       </div>
@@ -534,7 +523,7 @@ export function CtaBanner({ heading = "Planning a stay in Tema?" }: { heading?: 
         </div>
         <div className="cta__meta">
           <span>
-            <IconPin size={16} /> 473 Golf Estate, Tema
+            <IconPin size={16} /> Golf Estate &amp; Rasta Village, Tema
           </span>
           <span>
             <IconClock size={16} /> Desk open 24/7

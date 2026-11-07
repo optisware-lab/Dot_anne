@@ -24,15 +24,13 @@ export function SiteFooter() {
           <div>
             <h2>Location &amp; Access</h2>
             <address>
-              473 Golf Estate &amp;
+              Golf Estate &amp;
               <br />
               Rasta Village Enclave
               <br />
               Kpone Barrier, off BOST Road
               <br />
               Tema, Greater Accra, Ghana
-              <br />
-              <strong style={{ color: "var(--ink)" }}>Plus Code: {site.address.plusCode}</strong>
             </address>
             <p style={{ marginTop: "0.75rem" }}>
               <Link className="text-link" href="/location">

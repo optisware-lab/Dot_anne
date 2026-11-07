@@ -45,8 +45,8 @@ export function ContactBooking() {
             <a href={site.directionsUrl} target="_blank" rel="noopener">
               <IconPin size={20} />
               <div>
-                <strong>473 Golf Estate &amp; Rasta Village, Tema</strong>
-                <span>Plus Code {site.address.plusCode} · get directions</span>
+                <strong>Golf Estate &amp; Rasta Village, Tema</strong>
+                <span>Kpone Barrier, off BOST Road · get directions</span>
               </div>
             </a>
           </li>
