@@ -21,24 +21,25 @@ export default function AboutPage() {
       <PageHero
         title={p.h1}
         crumbs={crumbs}
-        photo={photos.lounge}
-        lede="A home-style guest house in the quiet Golf Estate at Kpone Barrier, Tema, with a front desk that answers at any hour."
+        photo={photos.reception}
+        lede="A home-style guest house within the Golf Estate & Rasta Village Enclave at Kpone Barrier, Tema, with a front desk that answers at any hour."
       />
 
       <section className="section" aria-labelledby="story-title">
         <div className="wrap split">
           <div className="prose">
             <h2 id="story-title" data-reveal="mask">
-              A home-style lodge in Golf Estate
+              A home-style lodge in Golf Estate &amp; Rasta Village
             </h2>
             <p>
-              Dot Anne Home Lodge is a guest house and bed &amp; breakfast at No. 473, Golf Estate, in the Kpone Barrier area of
-              Tema, Greater Accra. The rooms are quiet and air-conditioned, off a bright tiled hallway, with flower beds along the
-              room wing and parking inside the compound.
+              Dot Anne Home Lodge is a guest house and bed &amp; breakfast at No. 473, within the Golf Estate &amp; Rasta Village
+              Enclave in the Kpone Barrier area of Tema, Greater Accra. The rooms are quiet and air-conditioned, off a bright tiled hallway, with
+              parking inside the compound.
             </p>
             <p>
               We keep it simple: a clean room, your own bathroom with a shower, free Wi-Fi, a place to park inside the
-              compound, and a front desk that answers the phone and the gate 24 hours a day.
+              compound, and a front desk that answers the phone and the gate 24 hours a day. There is also a conference hall
+              for meetings and a laundry for guests.
             </p>
             <p>
               Guests come for work in Tema and Kpone, to visit family, or to rest before an early start. You book by talking
@@ -51,8 +52,8 @@ export default function AboutPage() {
             </p>
           </div>
           <figure className="photo" data-reveal="shutter">
-            <Image src={photos.hallway.src} alt={photos.hallway.alt} fill sizes="(min-width: 960px) 50vw, 100vw" />
-            <figcaption>{photos.hallway.caption}</figcaption>
+            <Image src={photos.front.src} alt={photos.front.alt} fill sizes="(min-width: 960px) 50vw, 100vw" />
+            <figcaption>{photos.front.caption}</figcaption>
           </figure>
         </div>
       </section>

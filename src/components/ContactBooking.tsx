@@ -45,7 +45,7 @@ export function ContactBooking() {
             <a href={site.directionsUrl} target="_blank" rel="noopener">
               <IconPin size={20} />
               <div>
-                <strong>473 Golf Estate, Tema</strong>
+                <strong>473 Golf Estate &amp; Rasta Village, Tema</strong>
                 <span>Plus Code {site.address.plusCode} · get directions</span>
               </div>
             </a>

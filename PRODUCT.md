@@ -32,6 +32,7 @@ A quiet, home-style lodge in a residential estate off BOST Road, staffed 24 hour
 - Open 24 hours, 7 days.
 - Google Maps listing: "DOT ANNE HOME LODGE", Plus Code P275+W52 BOST ROAD, Tema; coordinates 5.7153015, 0.0082891; 4.2/5 from 47 reviews (as of Oct 2026).
 - Address confirmed unchanged by the owner (2026-11-02): 473 Golf Estate, Kpone Barrier, off BOST Road, Tema; Plus Code P275+W52. The lodge was rebuilt on the same site.
+- Neighbourhood (owner, 2026-11-07): within the Golf Estate & Rasta Village Enclave. Used in copy, schema and keywords; plot, Plus Code and map pin unchanged.
 - Previously on Booking.com (listing now inactive) and Tripadvisor (no photos).
 
 ## Capabilities and Constraints
@@ -40,6 +41,11 @@ Confirmed by the owner (2026-10-26):
 - Private bathrooms
 - Free Wi-Fi
 - On-site parking
+
+Confirmed by the owner (2026-11-07):
+- Conference hall
+- Laundry
+(Signboards in the front photo also mention a restaurant, bar and pool: not confirmed, kept off the site.)
 
 Confirmed by the owner (2026-11-02), visible in the new room photos:
 - Air conditioning
@@ -67,7 +73,7 @@ Multi-page for search: / (home), /rooms, /gallery, /about, /location, /faq, /con
 ## Evidence on Hand
 
 - Six owner photos of the current building (2026-11-02): two double rooms, a room with desk/TV/fridge/kettle, a room seen from the door, the hallway, the ironing station.
-- Five earlier photos from the lodge's Google Maps listing that the owner says still show the lodge: front garden, a bedroom, two bathrooms, guest lounge. Owner must confirm rights before launch. Provenance in `public/images/property/SOURCES.md`.
+- Two earlier photos from the lodge's Google Maps listing that the owner says still show the lodge: a bedroom and a shower room (the guest lounge, flower beds and private bathroom photos were removed on 2026-11-07 at the owner's request). Owner must confirm rights before launch. Provenance in `public/images/property/SOURCES.md`.
 - Removed everywhere (2026-11-02): the courtyard photo with the green-roofed bungalow and parked car, which shows a demolished building. Never use it again.
 - Rating 4.2/5 from 47 Google reviews (owner-supplied, matches Google Maps Oct 2026).
 - No testimonials, no prices, no room inventory, no certifications (e.g. Ghana Tourism Authority) on hand. Do not fabricate any of these. The Stitch comp included invented testimonials, a GTA badge and AI photos; all were deliberately left out.

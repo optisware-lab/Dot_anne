@@ -12,6 +12,7 @@
 export const nearbyAreas = [
   "Kpone Barrier",
   "Golf Estate",
+  "Rasta Village",
   "Golf City",
   "Kpone",
   "Tema Community 25",
@@ -43,6 +44,9 @@ const local = [
   "guest house Kpone Barrier",
   "accommodation in Golf Estate Tema",
   "Golf Estate lodge",
+  "lodge in Rasta Village Tema",
+  "guest house in Rasta Village Kpone",
+  "accommodation in Golf Estate and Rasta Village",
   "Golf City Tema hotel",
   "lodge near BOST Road",
   "hotel off BOST Road Kpone",
@@ -68,6 +72,9 @@ const intent = [
   "lodge with free Wi-Fi Tema",
   "book lodge on WhatsApp Tema",
   "deluxe double room Tema",
+  "conference hall in Tema",
+  "lodge with conference room Kpone",
+  "lodge with laundry service Tema",
 ];
 
 export const keywords = { brand, core, local, intent, all: [...brand, ...core, ...local, ...intent] };
@@ -80,7 +87,7 @@ export const pages = {
     path: "/",
     title: "Dot Anne Home Lodge | Guest House in Golf Estate, Tema",
     description:
-      "Affordable, quiet lodge at Golf Estate, Kpone Barrier, off BOST Road, Tema. Private bathrooms, free Wi-Fi, parking, 24/7 desk. Book: 024 349 0990.",
+      "Affordable lodge in the Golf Estate & Rasta Village Enclave, Kpone Barrier, Tema. Private bathrooms, Wi-Fi, parking, 24/7 desk. Call 024 349 0990.",
     keywords: [...brand, ...core.slice(0, 8), ...local.slice(0, 6), ...intent.slice(0, 4)],
     h1: "Comfortable, Safe & Affordable Accommodation in Golf Estate, Tema",
   },
@@ -96,31 +103,31 @@ export const pages = {
     path: "/gallery",
     title: "Photos of Dot Anne Home Lodge, Golf Estate, Tema",
     description:
-      "Real photos of Dot Anne Home Lodge: air-conditioned guest rooms, private bathrooms, the hallway and lounge at Golf Estate, Kpone Barrier, Tema.",
-    keywords: ["Dot Anne Home Lodge photos", "Tema lodge pictures", "Golf Estate Tema guest house photos", "Kpone Barrier lodge rooms"],
+      "Real photos of Dot Anne Home Lodge: the building, reception, air-conditioned rooms, private bathrooms and parking in the Golf Estate & Rasta Village Enclave.",
+    keywords: ["Dot Anne Home Lodge photos", "Tema lodge pictures", "Golf Estate Tema guest house photos", "Rasta Village Tema lodge photos", "Kpone Barrier lodge rooms"],
     h1: "Photo Gallery",
   },
   about: {
     path: "/about",
     title: "About Dot Anne Home Lodge | Home-Style Lodge in Tema",
     description:
-      "A home-style guest house in the quiet Golf Estate at Kpone Barrier, Tema. Clean, air-conditioned rooms, private bathrooms and a front desk open 24 hours.",
-    keywords: [...brand, "home-style lodge Tema", "guest house in Golf Estate Tema", "quiet lodge Kpone Barrier", ...core.slice(0, 4)],
+      "A home-style guest house in the Golf Estate & Rasta Village Enclave, Kpone Barrier, Tema. Air-conditioned rooms, private bathrooms, 24-hour front desk.",
+    keywords: [...brand, "home-style lodge Tema", "guest house in Golf Estate Tema", "guest house in Rasta Village Tema", "quiet lodge Kpone Barrier", ...core.slice(0, 4)],
     h1: "About Dot Anne Home Lodge",
   },
   location: {
     path: "/location",
     title: "Location & Directions | Lodge at Kpone Barrier, Tema",
     description:
-      "Find Dot Anne Home Lodge at 473 Golf Estate, Kpone Barrier, off BOST Road, Tema. Plus Code P275+W52. Directions, map and nearby areas.",
-    keywords: [...local, "directions to Golf Estate Tema", "P275+W52 Tema", "lodge near me Tema"],
+      "Find Dot Anne Home Lodge at 473, within the Golf Estate & Rasta Village Enclave, Kpone Barrier, off BOST Road, Tema. Plus Code P275+W52.",
+    keywords: [...local, "directions to Golf Estate Tema", "directions to Rasta Village Tema", "P275+W52 Tema", "lodge near me Tema"],
     h1: "Location & Directions",
   },
   faq: {
     path: "/faq",
     title: "FAQ | Booking, Check-in & Directions | Dot Anne Lodge",
     description:
-      "Answers about booking, late arrivals, rates, parking, Wi-Fi and finding Dot Anne Home Lodge at Kpone Barrier, Tema.",
+      "Answers about booking, late arrivals, rates, parking, Wi-Fi, the conference hall, laundry and finding Dot Anne Home Lodge at Kpone Barrier, Tema.",
     keywords: ["Tema lodge questions", "late check-in Tema", "how to book lodge Tema", ...intent.slice(0, 6)],
     h1: "Frequently Asked Questions",
   },

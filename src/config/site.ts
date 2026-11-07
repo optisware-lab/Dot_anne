@@ -28,9 +28,11 @@ export const site = {
   email: null as string | null, // TODO(owner): add a booking email if you have one
 
   address: {
-    street: "473 Golf Estate, Kpone Barrier, off BOST Road",
+    street: "473 Golf Estate & Rasta Village Enclave, Kpone Barrier, off BOST Road",
     plot: "473",
     estate: "Golf Estate",
+    /** The neighbourhood the lodge sits within (owner, 2026-11-07). */
+    enclave: "Golf Estate & Rasta Village Enclave",
     landmark: "Kpone Barrier",
     road: "BOST Road",
     city: "Tema",
@@ -87,6 +89,9 @@ export const amenities = [
   { id: "fridge", label: "Mini fridge", detail: "A small fridge in the room for drinks and snacks.", confirmed: true },
   { id: "kettle", label: "Kettle & tea tray", detail: "Electric kettle with cups for hot drinks.", confirmed: true },
   { id: "iron", label: "Iron & ironing table", detail: "Press your clothes before a meeting or a night out.", confirmed: true },
+  // Confirmed by the owner on 2026-11-07:
+  { id: "conference", label: "Conference hall", detail: "A hall for meetings, workshops and small events. Ask the desk to book it.", confirmed: true },
+  { id: "laundry", label: "Laundry", detail: "Laundry for guests. Ask the front desk for details.", confirmed: true },
   // Waiting for the owner to confirm:
   { id: "breakfast", label: "Breakfast", detail: "Breakfast served each morning.", confirmed: false },
 ] as const;
@@ -96,6 +101,47 @@ export type AmenityId = (typeof amenities)[number]["id"];
 export type Photo = { src: string; alt: string; w: number; h: number; caption?: string; place?: string };
 
 const P = {
+  // Owner photos (2026-11-07)
+  front: {
+    src: "/images/property/lodge-front.jpg",
+    alt: "Front of Dot Anne Home Lodge at dusk: a modern two-storey building with a rooftop terrace, gated forecourt, flower planters and lodge signboards, in the Golf Estate & Rasta Village Enclave, Tema",
+    w: 1448,
+    h: 1086,
+    caption: "The lodge",
+    place: "Golf Estate & Rasta Village",
+  },
+  reception: {
+    src: "/images/property/reception.jpg",
+    alt: "Wooden reception desk and a navy sofa by a blue curtain at the front desk of Dot Anne Home Lodge",
+    w: 1672,
+    h: 941,
+    caption: "Reception",
+    place: "Front desk",
+  },
+  roomTvFridge: {
+    src: "/images/property/room-tv-fridge.jpg",
+    alt: "Bright tiled room with a wall-mounted flat-screen TV, a fridge and a sliding window at Dot Anne Home Lodge",
+    w: 1672,
+    h: 941,
+    caption: "TV & fridge",
+    place: "Inside the lodge",
+  },
+  parking: {
+    src: "/images/property/parking.jpg",
+    alt: "Parking area at Dot Anne Home Lodge with the lodge signboard on the boundary wall and a parked SUV",
+    w: 1672,
+    h: 941,
+    caption: "Parking",
+    place: "Outside",
+  },
+  wallArt: {
+    src: "/images/property/wall-art.jpg",
+    alt: "Framed forest waterfall picture on a grey wall at Dot Anne Home Lodge",
+    w: 1672,
+    h: 941,
+    caption: "Wall art",
+    place: "Inside the lodge",
+  },
   // Owner photos of the current building (2026-11-02)
   roomBed: {
     src: "/images/property/room-double-bed.jpg",
@@ -146,14 +192,6 @@ const P = {
     place: "For guests",
   },
   // Earlier photos of rooms still in use (from the Google Maps listing)
-  garden: {
-    src: "/images/property/garden-frontage.jpg",
-    alt: "Flower beds along the guest room wing at Dot Anne Home Lodge, Kpone Barrier",
-    w: 1600,
-    h: 900,
-    caption: "Flower beds",
-    place: "Room wing",
-  },
   bedroom: {
     src: "/images/property/bedroom-double.jpg",
     alt: "Double room at Dot Anne Home Lodge, Tema, with a double bed, wardrobe and ceiling fan",
@@ -161,14 +199,6 @@ const P = {
     h: 1500,
     caption: "Double room",
     place: "Guest room",
-  },
-  bathroom: {
-    src: "/images/property/bathroom-shower.jpg",
-    alt: "Private en-suite bathroom with a glass shower enclosure and fresh towel at Dot Anne Home Lodge",
-    w: 2000,
-    h: 1500,
-    caption: "Private bathroom",
-    place: "En-suite",
   },
   bathroom2: {
     src: "/images/property/bathroom-vanity.jpg",
@@ -178,31 +208,25 @@ const P = {
     caption: "Shower room",
     place: "En-suite",
   },
-  lounge: {
-    src: "/images/property/guest-lounge.jpg",
-    alt: "Guest lounge with leather sofas and a TV at Dot Anne Home Lodge, Golf Estate",
-    w: 2000,
-    h: 1500,
-    caption: "Guest lounge",
-    place: "Main house",
-  },
 } satisfies Record<string, Photo>;
 
 export const photos = P;
 
 /** Every real photo of the lodge, in gallery order (newest building photos first). */
 export const gallery: Photo[] = [
+  P.front,
   P.roomBed,
+  P.reception,
   P.roomDesk,
   P.hallway,
   P.roomGold,
-  P.lounge,
+  P.roomTvFridge,
+  P.parking,
+  P.bathroom2,
   P.roomEntrance,
-  P.bathroom,
-  P.garden,
+  P.wallArt,
   P.ironing,
   P.bedroom,
-  P.bathroom2,
 ];
 
 /**
@@ -222,7 +246,7 @@ export const rooms = [
     bed: "Double bed",
     price: null as string | null, // e.g. "GH₵ 450 / night"
     features: ["bathroom", "ac", "wifi", "tv", "fridge", "kettle", "parking"] as AmenityId[],
-    photos: [P.roomBed, P.roomDesk, P.roomEntrance, P.roomGold, P.bathroom, P.bathroom2] as Photo[],
+    photos: [P.roomBed, P.roomDesk, P.roomEntrance, P.roomGold, P.bathroom2] as Photo[],
   },
   // Suggested categories from the brief. Not confirmed; hidden until the owner fills them in.
   { id: "standard", name: "Standard Room", show: false, tag: "", summary: "", sleeps: null, bed: "", price: null, features: [] as AmenityId[], photos: [] as Photo[] },

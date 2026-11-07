@@ -25,7 +25,7 @@ export default function RoomsPage() {
         title={p.h1}
         crumbs={crumbs}
         photo={photos.roomBed}
-        lede="Quiet, clean rooms with a private bathroom, free Wi-Fi and parking inside the compound, at Golf Estate, Kpone Barrier."
+        lede="Quiet, clean rooms with a private bathroom, free Wi-Fi and parking inside the compound, in the Golf Estate & Rasta Village Enclave, Kpone Barrier."
       />
 
       {shownRooms.map((r) => (

@@ -12,8 +12,8 @@ const crumbs = [
   { name: "Gallery", path: "/gallery" },
 ];
 
-// Rows that always fill the grid: wide+narrow, three, narrow+wide, wide+narrow, wide+narrow (the portrait bathroom lands in a tall narrow slot)
-const layout = ["shot--a", "shot--b", "shot--c", "shot--c", "shot--c", "shot--b", "shot--a", "shot--a", "shot--b", "shot--a", "shot--b"];
+// Rows that always fill the grid: wide+narrow, three, narrow+wide, wide+narrow, wide+narrow, narrow+wide (the portrait bathroom lands in a tall narrow slot)
+const layout = ["shot--a", "shot--b", "shot--c", "shot--c", "shot--c", "shot--b", "shot--a", "shot--a", "shot--b", "shot--a", "shot--b", "shot--b", "shot--a"];
 
 export default function GalleryPage() {
   const p = pages.gallery;
@@ -22,8 +22,8 @@ export default function GalleryPage() {
       <PageHero
         title={p.h1}
         crumbs={crumbs}
-        photo={photos.garden}
-        lede="Real photos of Dot Anne Home Lodge in Golf Estate, Tema: the air-conditioned guest rooms, the hallway, the lounge, the private bathrooms and the ironing station."
+        photo={photos.front}
+        lede="Real photos of Dot Anne Home Lodge in the Golf Estate & Rasta Village Enclave, Tema: the building, reception, air-conditioned rooms, private bathrooms and parking."
       />
       <section className="section" aria-label="Photos">
         <div className="wrap">

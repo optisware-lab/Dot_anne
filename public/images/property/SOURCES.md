@@ -15,6 +15,21 @@ All photos in this folder show DOT ANNE HOME LODGE.
 
 Originals are in `.assets-src/owner-2026-11/` (not deployed). Edits: resized and recompressed only.
 
+## Supplied by the owner (2026-11-07)
+
+The owner confirmed the front photo shows the lodge as it stands today.
+
+| File | Shows |
+|---|---|
+| lodge-front.jpg | Front of the lodge at dusk: two storeys, rooftop terrace, gated forecourt, signboards |
+| reception.jpg | Reception desk and navy sofa |
+| room-tv-fridge.jpg | Tiled room with wall-mounted TV and fridge |
+| parking.jpg | Parking area with the lodge signboard (car number plate blurred) |
+| wall-art.jpg | Framed waterfall picture on a grey wall |
+
+Originals are in `.assets-src/owner-2026-11-07/` (gitignored: the parking original shows an unblurred number plate).
+Edits: plate blurred, recompressed. The share card `public/images/og.jpg` is rebuilt by `.assets-src/og.cjs`.
+
 ## From the lodge's public Google Maps listing (collected 2026-10-26)
 
 The owner confirmed on 2026-11-02 that these still show the current lodge.
@@ -22,13 +37,13 @@ Before launch, confirm the lodge owns them or has the photographer's permission 
 
 | File | Shows | Original (`lh3.googleusercontent.com/gps-cs-s/…`) | Edits |
 |---|---|---|---|
-| garden-frontage.jpg | Flower beds along the room wing | ANWiy9T50Izq… | Resized |
 | bedroom-double.jpg | Guest bedroom with double bed | ANWiy9RBAuSP… | Resized |
-| bathroom-shower.jpg | Private bathroom with shower enclosure | ANWiy9RJrMxf… | Resized |
 | bathroom-vanity.jpg | Private bathroom, second angle | ANWiy9RVqUWd… | Resized |
-| guest-lounge.jpg | Shared guest lounge | ANWiy9QbgYNB… | Resized |
 
 ## Removed
+
+- **guest-lounge.jpg** (leather sofas, TV), **garden-frontage.jpg** (flower beds) and **bathroom-shower.jpg** (private bathroom)
+  were removed from the whole site on 2026-11-07 at the owner's request.
 
 - **exterior-courtyard.jpg** (courtyard, green-roofed bungalow, parked car) was removed from the whole site on
   2026-11-02: the owner confirmed it shows an old building that has since been demolished. It should also be removed

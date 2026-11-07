@@ -2884,3 +2884,18 @@ main {
     display: none;
   }
 }
+
+/* Amenity grid: stretch a lone last card so the final row never leaves a gap */
+@media (min-width: 1081px) {
+  .amenity-grid-3 > :last-child:nth-child(3n + 2) {
+    grid-column: span 2;
+  }
+  .amenity-grid-3 > :last-child:nth-child(3n + 1) {
+    grid-column: 1 / -1;
+  }
+}
+@media (min-width: 641px) and (max-width: 1080px) {
+  .amenity-grid-3 > :last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+  }
+}

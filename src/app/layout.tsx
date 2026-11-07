@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: { default: "Dot Anne Home Lodge | Guest House in Golf Estate, Tema", template: "%s | Dot Anne Home Lodge" },
   description:
-    "Affordable, quiet lodge at Golf Estate, Kpone Barrier, off BOST Road, Tema. Private bathrooms, free Wi-Fi, parking, 24/7 desk.",
+    "Affordable lodge in the Golf Estate & Rasta Village Enclave, Kpone Barrier, off BOST Road, Tema. Private bathrooms, Wi-Fi, parking, 24/7 desk.",
   applicationName: site.displayName,
   authors: [{ name: site.displayName, url: site.url }],
   creator: site.displayName,

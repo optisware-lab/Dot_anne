@@ -5,7 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name: site.displayName,
     short_name: site.shortName,
-    description: "Guest house in Golf Estate, Kpone Barrier, Tema. Open 24/7. Call or WhatsApp to book.",
+    description: "Guest house in the Golf Estate & Rasta Village Enclave, Kpone Barrier, Tema. Open 24/7. Call or WhatsApp to book.",
     start_url: "/",
     display: "standalone",
     background_color: "#ffffff",

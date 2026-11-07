@@ -18,7 +18,7 @@ export function lodgeNode() {
     name: site.displayName,
     alternateName: [site.name, site.shortName, "Dot Anne Lodge Tema"],
     description:
-      "Home-style guest house and bed & breakfast at 473 Golf Estate, Kpone Barrier, off BOST Road, Tema, Ghana. Private bathrooms, free Wi-Fi, on-site parking and a front desk open 24 hours.",
+      "Home-style guest house and bed & breakfast at 473, within the Golf Estate & Rasta Village Enclave, Kpone Barrier, off BOST Road, Tema, Ghana. Private bathrooms, free Wi-Fi, on-site parking, a conference hall, laundry and a front desk open 24 hours.",
     url: abs("/"),
     telephone: site.phone.tel,
     image: gallery.map((p) => abs(p.src)),

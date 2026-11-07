@@ -13,7 +13,7 @@ export function SiteFooter() {
               <Image src="/images/logo/logo-full.png" alt={site.displayName} width={1000} height={759} sizes="220px" />
             </Link>
             <p style={{ marginTop: "1rem", maxWidth: "34ch" }}>
-              Quiet, home-style guest house and bed &amp; breakfast in Golf Estate, Kpone Barrier, Tema, Ghana.
+              Quiet, home-style guest house and bed &amp; breakfast in the Golf Estate &amp; Rasta Village Enclave, Kpone Barrier, Tema, Ghana.
             </p>
             <span className="open-line">
               <span className="dot dot--live dot--pulse" aria-hidden="true" />
@@ -24,7 +24,9 @@ export function SiteFooter() {
           <div>
             <h2>Location &amp; Access</h2>
             <address>
-              473 Golf Estate
+              473 Golf Estate &amp;
+              <br />
+              Rasta Village Enclave
               <br />
               Kpone Barrier, off BOST Road
               <br />

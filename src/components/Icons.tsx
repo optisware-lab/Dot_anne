@@ -256,6 +256,21 @@ export const IconIron = (p: P) => (
   </Base>
 );
 
+export const IconHall = (p: P) => (
+  <Base {...p}>
+    <path d="M4 4.5h16M5 4.5v9h14v-9M12 13.5v3M8.5 20l3.5-3.5 3.5 3.5" />
+    <path d="M8.5 10.5l2.5-2.5 2 2 2.5-3" />
+  </Base>
+);
+
+export const IconLaundry = (p: P) => (
+  <Base {...p}>
+    <rect x="4.5" y="3" width="15" height="18" rx="2" />
+    <path d="M4.5 7h15M7.5 5h.01M10 5h.01" />
+    <circle cx="12" cy="14" r="4" />
+  </Base>
+);
+
 export const amenityIcon = {
   bathroom: IconShower,
   wifi: IconWifi,
@@ -267,4 +282,6 @@ export const amenityIcon = {
   fridge: IconBox,
   kettle: IconKettle,
   iron: IconIron,
+  conference: IconHall,
+  laundry: IconLaundry,
 } as const;

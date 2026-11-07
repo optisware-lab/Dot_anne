@@ -21,8 +21,8 @@ export default function LocationPage() {
       <PageHero
         title={p.h1}
         crumbs={crumbs}
-        photo={photos.garden}
-        lede={`473 Golf Estate, Kpone Barrier, off BOST Road, Tema. Plus Code ${site.address.plusCode}. Open 24 hours, so you can arrive at any time.`}
+        photo={photos.parking}
+        lede={`473, within the Golf Estate & Rasta Village Enclave, Kpone Barrier, off BOST Road, Tema. Plus Code ${site.address.plusCode}. Open 24 hours, so you can arrive at any time.`}
       />
 
       <section className="section" aria-labelledby="map-title">
@@ -37,12 +37,12 @@ export default function LocationPage() {
             <h2 id="getting-title">Getting to the lodge</h2>
             <p>
               <strong>By taxi or ride-hailing.</strong> Set the destination to “Dot Anne Home Lodge” or paste the Plus Code{" "}
-              {site.address.plusCode} Tema into the app. If the driver is unsure in Golf Estate, call the desk on{" "}
+              {site.address.plusCode} Tema into the app. If the driver is unsure in the enclave, call the desk on{" "}
               {site.phone.display} and hand the phone over.
             </p>
             <p>
-              <strong>Driving yourself.</strong> Head for Kpone Barrier in Tema. Golf Estate sits just off BOST Road; follow
-              Google Maps to plot 473, and park inside the compound.
+              <strong>Driving yourself.</strong> Head for Kpone Barrier in Tema. The Golf Estate &amp; Rasta Village Enclave sits just
+              off BOST Road; follow Google Maps to plot 473, and park inside the compound.
             </p>
             <p>
               <strong>Arriving late.</strong> The front desk is staffed 24 hours. Send a WhatsApp with your expected arrival time
@@ -52,8 +52,8 @@ export default function LocationPage() {
           <div className="prose" data-reveal="rise">
             <h2>Nearby neighbourhoods</h2>
             <p>
-              The lodge is in the Kpone Barrier area of Tema, in the Kpone-Katamanso district of Greater Accra, inside the
-              residential Golf Estate just off BOST Road.
+              The lodge is within the Golf Estate &amp; Rasta Village Enclave, just off BOST Road in the Kpone Barrier area of Tema,
+              in the Kpone-Katamanso district of Greater Accra.
             </p>
             <p>
               It is a convenient base if you are visiting Kpone, Golf City, Tema Community 25 or Ashaiman, or working in the

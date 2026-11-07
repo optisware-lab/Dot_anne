@@ -19,6 +19,7 @@ export default function Home() {
       <section className="dark hero" aria-labelledby="hero-title">
         <HeroSlideshow
           slides={[
+            { ...photos.front, position: "50% 45%" },
             { ...photos.roomBed, position: "50% 55%" },
             { ...photos.roomGold, position: "60% 50%" },
             { ...photos.roomDesk, position: "55% 50%" },
@@ -29,7 +30,7 @@ export default function Home() {
             <div className="hero__copy">
               <span className="place-chip">
                 <span className="dot dot--pulse" aria-hidden="true" />
-                Golf Estate • Tema • Ghana
+                Golf Estate &amp; Rasta Village • Tema
               </span>
               <h1 id="hero-title">{p.h1}</h1>
               <p className="hero__lede">

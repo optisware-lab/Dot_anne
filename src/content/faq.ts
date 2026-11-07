@@ -16,13 +16,13 @@ export const faqs: Faq[] = [
   },
   {
     q: "Where exactly is Dot Anne Home Lodge?",
-    a: `At 473 Golf Estate, Kpone Barrier, off BOST Road, Tema, Greater Accra, Ghana. The Google Plus Code is ${site.address.plusCode} Tema, which you can paste into Google Maps or send to your taxi or ride-hailing driver.`,
+    a: `At 473, within the Golf Estate & Rasta Village Enclave, Kpone Barrier, off BOST Road, Tema, Greater Accra, Ghana. The Google Plus Code is ${site.address.plusCode} Tema, which you can paste into Google Maps or send to your taxi or ride-hailing driver.`,
     home: true,
     topic: "location",
   },
   {
     q: "How do I find the lodge from Kpone Barrier?",
-    a: `Golf Estate sits just off BOST Road in the Kpone Barrier area of Tema. Search "Dot Anne Home Lodge" or the Plus Code ${site.address.plusCode} in Google Maps, or call the front desk on ${site.phone.display} and we will guide you or your driver in.`,
+    a: `The Golf Estate & Rasta Village Enclave sits just off BOST Road in the Kpone Barrier area of Tema. Search "Dot Anne Home Lodge" or the Plus Code ${site.address.plusCode} in Google Maps, or call the front desk on ${site.phone.display} and we will guide you or your driver in.`,
     topic: "location",
   },
   {
@@ -61,13 +61,23 @@ export const faqs: Faq[] = [
     topic: "stay",
   },
   {
+    q: "Do you have a conference hall?",
+    a: `Yes. The lodge has a conference hall for meetings, workshops and small events. Call or WhatsApp ${site.phone.display} to book it and ask for the rate.`,
+    topic: "stay",
+  },
+  {
+    q: "Is there a laundry service?",
+    a: "Yes. Laundry is available for guests. Ask the front desk for details when you check in.",
+    topic: "stay",
+  },
+  {
     q: "Can I check in late at night?",
     a: `Yes. Because the desk is staffed around the clock you can arrive at any hour. Let the lodge know your arrival time when you book, or call ${site.phone.display} on the way.`,
     topic: "stay",
   },
   {
     q: "Which areas is the lodge close to?",
-    a: "The lodge is in the Kpone Barrier area of Tema, in Golf Estate off BOST Road. It is a convenient base if you are visiting Kpone, Golf City, Tema Community 25, Ashaiman or the Tema industrial and port areas.",
+    a: "The lodge is within the Golf Estate & Rasta Village Enclave, off BOST Road in the Kpone Barrier area of Tema. It is a convenient base if you are visiting Kpone, Golf City, Tema Community 25, Ashaiman or the Tema industrial and port areas.",
     topic: "location",
   },
 ];

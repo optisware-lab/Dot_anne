@@ -175,7 +175,7 @@ Colour order (owner's direction, 2026-11-02): **red leads, then white, then ligh
 This world started from the Google Stitch design "Tema Coastal Architectural Hospitality" and was grounded in the property: real photographs instead of renders, inline SVG line icons instead of an icon font, and no testimonial or badge furniture. The Google rating appears as a measured score card linking out to the reviews.
 
 **Key Characteristics:**
-- Photo heroes on every page: the lodge photo in natural colour, under a soft neutral shade behind the text with only a light crimson tint (fading out by about 80% of the width) plus a soft text shadow; phones use a warm-dark wash. The home hero crossfades between the guest room and the lounge over a white trust strip with red icon discs.
+- Photo heroes on every page: the lodge photo in natural colour, under a soft neutral shade behind the text with only a light crimson tint (fading out by about 80% of the width) plus a soft text shadow; phones use a warm-dark wash. The home hero crossfades from the lodge front to the guest rooms over a white trust strip with red icon discs.
 - White main ground; light-blue bands (#eef5ff → #c4dbfa) for section rhythm; hairline #dbe7f8 dividers.
 - Uppercase Space Grotesk headings at -0.02em to -0.03em; Hanken Grotesk body.
 - Booking actions: red on white grounds, white on red fields. Secondary actions: white with a red outline.

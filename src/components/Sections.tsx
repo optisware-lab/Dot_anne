@@ -80,7 +80,7 @@ const pillars = [
     icon: IconRoute,
     label: "Location",
     title: "A convenient Tema location",
-    text: "In the quiet Golf Estate, just off BOST Road at Kpone Barrier: a calm base for work or family visits in Tema and Kpone.",
+    text: "Within the Golf Estate & Rasta Village Enclave, just off BOST Road at Kpone Barrier: a calm base for work or family visits in Tema and Kpone.",
     foot: `${site.address.plusCode} BOST Road`,
     footClass: "label--royal",
   },
@@ -274,7 +274,7 @@ export function GalleryBento({ heading = "Visual Lodge Gallery", link = true }: 
               {heading}
             </h2>
           </div>
-          <p>Every photo was taken at the lodge: the guest rooms, the hallway, the lounge and the private bathrooms.</p>
+          <p>Every photo was taken at the lodge: the building, the reception, the guest rooms and the private bathrooms.</p>
         </div>
         <div className="bento">
           {cells.map(({ p, cls, sizes }) => (
@@ -355,7 +355,7 @@ export function RatingAmenities() {
           </p>
         </div>
         <div>
-          <h3 className="included-title">Included with every stay</h3>
+          <h3 className="included-title">Amenities &amp; services</h3>
           <div className="grid-3 amenity-grid-3" data-reveal="stagger">
             {confirmedAmenities.map((a) => {
               const Icon = amenityIcon[a.id];
@@ -388,11 +388,11 @@ export function LocationBlock({ headingId = "location-title", heading = "Locatio
         <H id={headingId} data-reveal="mask">
           {heading}
         </H>
-        <p className="lede">In the quiet residential Golf Estate, reached from Kpone Barrier and just off BOST Road.</p>
+        <p className="lede">Within the Golf Estate &amp; Rasta Village Enclave, reached from Kpone Barrier and just off BOST Road.</p>
 
         <div className="address-card">
           <span className="label">Lodge address</span>
-          <address>473 Golf Estate, Kpone Barrier, off BOST Road, Tema, Greater Accra, Ghana</address>
+          <address>473 Golf Estate &amp; Rasta Village Enclave, Kpone Barrier, off BOST Road, Tema, Greater Accra, Ghana</address>
           <div className="plus-code">
             <div>
               <IconPin size={20} />
@@ -408,7 +408,7 @@ export function LocationBlock({ headingId = "location-title", heading = "Locatio
         <ul className="checks" data-reveal="stagger">
           <li>
             <IconCheckCircle size={18} />
-            <span>Head for Kpone Barrier in Tema; Golf Estate sits just off BOST Road.</span>
+            <span>Head for Kpone Barrier in Tema; the Golf Estate &amp; Rasta Village Enclave sits just off BOST Road.</span>
           </li>
           <li>
             <IconCheckCircle size={18} />
@@ -438,7 +438,7 @@ export function LocationBlock({ headingId = "location-title", heading = "Locatio
           Open the map in Google Maps
         </a>
         <iframe
-          title="Map showing Dot Anne Home Lodge at Golf Estate, Kpone Barrier, Tema"
+          title="Map showing Dot Anne Home Lodge in the Golf Estate & Rasta Village Enclave, Kpone Barrier, Tema"
           src={site.mapEmbedUrl}
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"

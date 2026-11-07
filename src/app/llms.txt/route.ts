@@ -8,7 +8,7 @@ export const dynamic = "force-static";
 export function GET() {
   const body = `# ${site.displayName}
 
-> Guest house / bed & breakfast at 473 Golf Estate, Kpone Barrier, off BOST Road, Tema, Greater Accra, Ghana. Front desk open 24 hours. Book by phone or WhatsApp: ${site.phone.display}.
+> Guest house / bed & breakfast at 473, within the Golf Estate & Rasta Village Enclave, Kpone Barrier, off BOST Road, Tema, Greater Accra, Ghana. Front desk open 24 hours. Book by phone or WhatsApp: ${site.phone.display}.
 
 ## Facts
 - Address: ${site.address.street}, ${site.address.city}, ${site.address.region}, ${site.address.country}
