@@ -42,6 +42,9 @@ export default function AboutPage() {
               for meetings and a laundry for guests.
             </p>
             <p>
+              The lodge is led by its {site.ceo.title}, {site.ceo.name}. Post can be sent to {site.address.poBox}.
+            </p>
+            <p>
               Guests come for work in Tema and Kpone, to visit family, or to rest before an early start. You book by talking
               to the lodge directly, by phone or WhatsApp on {site.phone.display}.
             </p>

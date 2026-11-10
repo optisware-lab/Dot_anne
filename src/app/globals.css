@@ -1374,6 +1374,16 @@ main {
   background: var(--white);
 }
 
+.address-card__po {
+  margin: 0;
+  color: var(--ink-2);
+  font-size: 0.875rem;
+}
+
+.address-card__po .label {
+  margin-right: 0.35rem;
+}
+
 .address-card__gps svg {
   flex: none;
   color: var(--red);

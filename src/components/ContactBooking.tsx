@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { site, whatsappLink } from "@/config/site";
 import { BookingForm } from "./BookingForm";
-import { IconChat, IconClock, IconPhone, IconPin } from "./Icons";
+import { IconChat, IconClock, IconMail, IconPhone, IconPin, IconUser } from "./Icons";
 
 /** Contact page: booking form beside a live preview of the WhatsApp message and the direct lines. */
 export function ContactBooking() {
@@ -49,6 +49,24 @@ export function ContactBooking() {
                 <span>GPS {site.address.gps} · get directions</span>
               </div>
             </a>
+          </li>
+          <li>
+            <div className="direct-item">
+              <IconMail size={20} />
+              <div>
+                <strong>{site.address.poBox}</strong>
+                <span>Postal address</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div className="direct-item">
+              <IconUser size={20} />
+              <div>
+                <strong>{site.ceo.name}</strong>
+                <span>{site.ceo.title}</span>
+              </div>
+            </div>
           </li>
           <li>
             <div className="direct-item">

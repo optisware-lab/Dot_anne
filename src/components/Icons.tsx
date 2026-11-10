@@ -271,6 +271,20 @@ export const IconLaundry = (p: P) => (
   </Base>
 );
 
+export const IconUser = (p: P) => (
+  <Base {...p}>
+    <circle cx="12" cy="8" r="3.5" />
+    <path d="M5 20a7 7 0 0 1 14 0" />
+  </Base>
+);
+
+export const IconMail = (p: P) => (
+  <Base {...p}>
+    <rect x="3.5" y="5.5" width="17" height="13" rx="2" />
+    <path d="m4 7 8 6 8-6" />
+  </Base>
+);
+
 export const amenityIcon = {
   bathroom: IconShower,
   wifi: IconWifi,

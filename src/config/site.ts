@@ -26,6 +26,8 @@ export const site = {
     greeting: "Hello Dot Anne Home Lodge, I would like to book a room.",
   },
   email: null as string | null, // TODO(owner): add a booking email if you have one
+  /** Confirmed by the owner (2026-11-10). */
+  ceo: { name: "Newlove Franklin Alorvor", title: "CEO" },
 
   address: {
     street: "Golf Estate & Rasta Village Enclave, Kpone Barrier, off BOST Road",
@@ -41,6 +43,9 @@ export const site = {
     countryCode: "GH",
     /** GhanaPost GPS digital address (owner, 2026-11-10). */
     gps: "GK-0187-4107",
+    /** Postal address (owner, 2026-11-10). */
+    poBox: "P.O. Box CO 4976, Tema",
+    poBoxNumber: "CO 4976",
   },
   geo: { lat: 5.7153015, lng: 0.0082891 },
   googlePlaceCid: "0x10207f048a6b1501:0x61dc78658b8e6b25",

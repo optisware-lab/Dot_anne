@@ -34,6 +34,7 @@ A quiet, home-style lodge in a residential estate off BOST Road, staffed 24 hour
 - Address confirmed unchanged by the owner (2026-11-02): Golf Estate, Kpone Barrier, off BOST Road, Tema. The lodge was rebuilt on the same site.
 - Neighbourhood (owner, 2026-11-07): within the Golf Estate & Rasta Village Enclave. Used in copy, schema and keywords; map pin unchanged.
 - GhanaPost GPS address (owner, 2026-11-10): GK-0187-4107. Shown on the address card, footer, contact, location page, FAQ and schema (postalCode).
+- Postal address (owner, 2026-11-10): P.O. Box CO 4976, Tema. CEO: Newlove Franklin Alorvor. Shown on the footer, contact page, about page, location address card and in schema (postOfficeBoxNumber, employee).
 - The owner asked that the old postal address and the Google Plus Code are not shown anywhere on the site.
 - Previously on Booking.com (listing now inactive) and Tripadvisor (no photos).
 

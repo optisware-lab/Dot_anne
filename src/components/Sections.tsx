@@ -399,6 +399,9 @@ export function LocationBlock({ headingId = "location-title", heading = "Locatio
               <strong className="tabular">{site.address.gps}</strong>
             </div>
           </div>
+          <p className="address-card__po">
+            <span className="label">Postal address</span> {site.address.poBox}
+          </p>
         </div>
 
         <ul className="checks" data-reveal="stagger">

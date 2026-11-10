@@ -15,6 +15,9 @@ export function SiteFooter() {
             <p style={{ marginTop: "1rem", maxWidth: "34ch" }}>
               Quiet, home-style guest house and bed &amp; breakfast in the Golf Estate &amp; Rasta Village Enclave, Kpone Barrier, Tema, Ghana.
             </p>
+            <p style={{ marginTop: "0.75rem" }}>
+              {site.ceo.title}: <strong style={{ color: "var(--ink)" }}>{site.ceo.name}</strong>
+            </p>
             <span className="open-line">
               <span className="dot dot--live dot--pulse" aria-hidden="true" />
               Reception open 24/7 · 365 days
@@ -33,6 +36,8 @@ export function SiteFooter() {
               Tema, Greater Accra, Ghana
               <br />
               <strong style={{ color: "var(--ink)" }}>GPS: {site.address.gps}</strong>
+              <br />
+              {site.address.poBox}
             </address>
             <p style={{ marginTop: "0.75rem" }}>
               <Link className="text-link" href="/location">
