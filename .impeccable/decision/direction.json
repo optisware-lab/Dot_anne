@@ -8,13 +8,13 @@
       "label": "The Estate Plan",
       "kicker": "THE ROLL",
       "lineage": "Tema's numbered town plan and surveyors' estate plot sheets",
-      "thesis": "The site is a plan sheet for one plot: No. 473, Golf Estate, and every section brings you closer to its gate.",
+      "thesis": "The site is a plan sheet for one plot: the lodge in Golf Estate, and every section brings you closer to its gate.",
       "palette": ["#1E3A2C", "#F5F0E4", "#B8955A", "#24272B"],
       "materials": ["plan-sheet title blocks", "hairline survey rules", "real photos of the lodge", "a gold route line"],
-      "viewport": "Full-bleed photo of the real courtyard; headline and booking actions set in a plan-sheet title block holding plot number, Plus Code, phone and a live 'front desk open' clock.",
+      "viewport": "Full-bleed photo of the real courtyard; headline and booking actions set in a plan-sheet title block holding phone and a live 'front desk open' clock.",
       "risk": "If the plan language is overdone it reads as a surveyor's site, not a warm lodge; photos must carry the warmth.",
       "raised": [
-        {"from": "notation-diagram-systems-orienteering-map", "raise": "Directions become a numbered course: Kpone Barrier, BOST Road, Golf Estate, No. 473, each control paired with a description row."},
+        {"from": "notation-diagram-systems-orienteering-map", "raise": "Directions become a numbered course: Kpone Barrier, BOST Road, Golf Estate, the lodge, each control paired with a description row."},
         {"from": "paper-folds-pleats-deployable-akari-light-sculpture", "raise": "The light is the state: a live Tema clock shows the front desk open at any hour, made for late arrivals."},
         {"from": "medium-native-algorave-source-floor", "raise": "Changes are visible before they happen: the booking form shows the exact WhatsApp message as you type it."},
         {"from": "digital-design-canon-mondo-tech-utopian-spread", "raise": "Total palette commitment: rules, icons, map and buttons in the four inks only, no stray greys."},
@@ -24,7 +24,7 @@
       "wireframe": {"cols": 12, "rows": 10, "regions": [
         {"label": "nav + Book", "x": 0, "y": 0, "w": 12, "h": 1},
         {"label": "real courtyard photo, full bleed", "x": 0, "y": 1, "w": 12, "h": 7},
-        {"label": "title block: headline, CTAs, plot 473, clock", "x": 0, "y": 4, "w": 6, "h": 4, "accent": true},
+        {"label": "title block: headline, CTAs, the lodge, clock", "x": 0, "y": 4, "w": 6, "h": 4, "accent": true},
         {"label": "info strip: 24/7, Golf Estate, 4.2 rating, WhatsApp", "x": 0, "y": 8, "w": 12, "h": 2}
       ]}
     },

@@ -12,6 +12,7 @@ export function GET() {
 
 ## Facts
 - Address: ${site.address.street}, ${site.address.city}, ${site.address.region}, ${site.address.country}
+- GhanaPost GPS address: ${site.address.gps}
 - Coordinates: ${site.geo.lat}, ${site.geo.lng}
 - Phone and WhatsApp: ${site.phone.display}
 - Hours: ${site.hours.label}

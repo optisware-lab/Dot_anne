@@ -392,6 +392,13 @@ export function LocationBlock({ headingId = "location-title", heading = "Locatio
         <div className="address-card">
           <span className="label">Lodge address</span>
           <address>Golf Estate &amp; Rasta Village Enclave, Kpone Barrier, off BOST Road, Tema, Greater Accra, Ghana</address>
+          <div className="address-card__gps">
+            <IconPin size={20} />
+            <div>
+              <span className="label">GhanaPost GPS address</span>
+              <strong className="tabular">{site.address.gps}</strong>
+            </div>
+          </div>
         </div>
 
         <ul className="checks" data-reveal="stagger">
@@ -401,7 +408,7 @@ export function LocationBlock({ headingId = "location-title", heading = "Locatio
           </li>
           <li>
             <IconCheckCircle size={18} />
-            <span>Search “Dot Anne Home Lodge” in Google Maps, or share the map pin with your taxi or ride-hailing driver.</span>
+            <span>Give your taxi or ride-hailing driver the GPS address {site.address.gps}, or search “Dot Anne Home Lodge” in Google Maps.</span>
           </li>
           <li>
             <IconCheckCircle size={18} />

@@ -46,7 +46,7 @@ export function ContactBooking() {
               <IconPin size={20} />
               <div>
                 <strong>Golf Estate &amp; Rasta Village, Tema</strong>
-                <span>Kpone Barrier, off BOST Road · get directions</span>
+                <span>GPS {site.address.gps} · get directions</span>
               </div>
             </a>
           </li>

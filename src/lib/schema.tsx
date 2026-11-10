@@ -28,6 +28,7 @@ export function lodgeNode() {
       streetAddress: site.address.street,
       addressLocality: site.address.city,
       addressRegion: site.address.region,
+      postalCode: site.address.gps,
       addressCountry: site.address.countryCode,
     },
     geo: { "@type": "GeoCoordinates", latitude: site.geo.lat, longitude: site.geo.lng },

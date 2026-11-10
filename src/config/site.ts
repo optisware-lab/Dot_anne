@@ -39,6 +39,8 @@ export const site = {
     region: "Greater Accra",
     country: "Ghana",
     countryCode: "GH",
+    /** GhanaPost GPS digital address (owner, 2026-11-10). */
+    gps: "GK-0187-4107",
   },
   geo: { lat: 5.7153015, lng: 0.0082891 },
   googlePlaceCid: "0x10207f048a6b1501:0x61dc78658b8e6b25",

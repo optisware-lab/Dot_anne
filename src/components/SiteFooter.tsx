@@ -31,6 +31,8 @@ export function SiteFooter() {
               Kpone Barrier, off BOST Road
               <br />
               Tema, Greater Accra, Ghana
+              <br />
+              <strong style={{ color: "var(--ink)" }}>GPS: {site.address.gps}</strong>
             </address>
             <p style={{ marginTop: "0.75rem" }}>
               <Link className="text-link" href="/location">

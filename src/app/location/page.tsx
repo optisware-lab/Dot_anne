@@ -22,12 +22,12 @@ export default function LocationPage() {
         title={p.h1}
         crumbs={crumbs}
         photo={photos.parking}
-        lede="Within the Golf Estate & Rasta Village Enclave, Kpone Barrier, off BOST Road, Tema. Open 24 hours, so you can arrive at any time."
+        lede={`Within the Golf Estate & Rasta Village Enclave, Kpone Barrier, off BOST Road, Tema. GhanaPost GPS: ${site.address.gps}. Open 24 hours, so you can arrive at any time.`}
       />
 
       <section className="section" aria-labelledby="map-title">
         <div className="wrap">
-          <LocationBlock headingId="map-title" heading="Address & Map" />
+          <LocationBlock headingId="map-title" heading="Address, GPS & Map" />
         </div>
       </section>
 
@@ -36,7 +36,8 @@ export default function LocationPage() {
           <div className="prose" data-reveal="rise">
             <h2 id="getting-title">Getting to the lodge</h2>
             <p>
-              <strong>By taxi or ride-hailing.</strong> Set the destination to “Dot Anne Home Lodge” in the app. If the driver is unsure in the enclave, call the desk on{" "}
+              <strong>By taxi or ride-hailing.</strong> Set the destination to “Dot Anne Home Lodge” in the app, or give the driver the GPS address{" "}
+              {site.address.gps}. If the driver is unsure in the enclave, call the desk on{" "}
               {site.phone.display} and hand the phone over.
             </p>
             <p>

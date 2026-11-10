@@ -33,7 +33,8 @@ A quiet, home-style lodge in a residential estate off BOST Road, staffed 24 hour
 - Google Maps listing: "DOT ANNE HOME LODGE", Tema; coordinates 5.7153015, 0.0082891; 4.2/5 from 47 reviews (as of Oct 2026).
 - Address confirmed unchanged by the owner (2026-11-02): Golf Estate, Kpone Barrier, off BOST Road, Tema. The lodge was rebuilt on the same site.
 - Neighbourhood (owner, 2026-11-07): within the Golf Estate & Rasta Village Enclave. Used in copy, schema and keywords; map pin unchanged.
-- The owner asked (2026-11-07) that the plot number and the Google Plus Code are not shown anywhere on the site.
+- GhanaPost GPS address (owner, 2026-11-10): GK-0187-4107. Shown on the address card, footer, contact, location page, FAQ and schema (postalCode).
+- The owner asked that the old postal address and the Google Plus Code are not shown anywhere on the site.
 - Previously on Booking.com (listing now inactive) and Tripadvisor (no photos).
 
 ## Capabilities and Constraints
