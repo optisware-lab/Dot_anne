@@ -80,7 +80,7 @@ const pillars = [
     label: "Location",
     title: "A convenient Tema location",
     text: "Within the Golf Estate & Rasta Village Enclave, just off BOST Road at Kpone Barrier: a calm base for work or family visits in Tema and Kpone.",
-    foot: "Off BOST Road, Kpone Barrier",
+    foot: "Golf Estate & Rasta Village Enclave",
     footClass: "label--royal",
   },
   {

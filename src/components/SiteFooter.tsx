@@ -80,7 +80,7 @@ export function SiteFooter() {
                 <Link href="/about">About the lodge</Link>
               </li>
               <li>
-                <Link href="/location">Lodge at Kpone Barrier</Link>
+                <Link href="/location">Lodge in Golf Estate &amp; Rasta Village</Link>
               </li>
               <li>
                 <Link href="/faq">Questions &amp; answers</Link>

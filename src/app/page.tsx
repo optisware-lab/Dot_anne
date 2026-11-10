@@ -34,7 +34,7 @@ export default function Home() {
               </span>
               <h1 id="hero-title">{p.h1}</h1>
               <p className="hero__lede">
-                Experience quiet, home-style lodging off BOST Road with 24/7 service and convenient access to Kpone Barrier.
+                Quiet, home-style lodging in the Golf Estate &amp; Rasta Village Enclave, Kpone Barrier, off BOST Road, Tema, with a front desk open 24/7.
               </p>
               <div className="hero__ctas">
                 <BookButton className="btn btn--red btn--lg">Book Your Stay Now</BookButton>
@@ -68,7 +68,7 @@ export default function Home() {
               </span>
               <div>
                 <span className="label">Location</span>
-                <strong>Off BOST Road, Kpone Barrier</strong>
+                <strong>Golf Estate &amp; Rasta Village Enclave, Kpone Barrier</strong>
               </div>
             </li>
             {site.rating.show && (

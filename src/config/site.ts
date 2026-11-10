@@ -161,7 +161,7 @@ const P = {
   },
   roomGold: {
     src: "/images/property/room-gold-curtains.jpg",
-    alt: "Double room with gold curtains, air conditioning and a ceiling fan at Dot Anne Home Lodge, Golf Estate",
+    alt: "Double room with gold curtains, air conditioning and a ceiling fan at Dot Anne Home Lodge, Golf Estate & Rasta Village",
     w: 2000,
     h: 1125,
     caption: "Double room",

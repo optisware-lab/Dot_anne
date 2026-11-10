@@ -60,7 +60,7 @@ export default function LocationPage() {
               Tema industrial and port areas. Not sure how far your appointment is? Call the desk and ask.
             </p>
             <div className="btn-row" style={{ marginTop: "1.5rem" }}>
-              <BookButton className="btn btn--red">Book a room near Kpone Barrier</BookButton>
+              <BookButton className="btn btn--red">Book a room in Golf Estate &amp; Rasta Village</BookButton>
             </div>
           </div>
         </div>

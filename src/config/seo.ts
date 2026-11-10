@@ -85,25 +85,25 @@ type PageSeo = { path: string; title: string; description: string; keywords: str
 export const pages = {
   home: {
     path: "/",
-    title: "Dot Anne Home Lodge | Guest House in Golf Estate, Tema",
+    title: "Dot Anne Home Lodge | Golf Estate & Rasta Village, Tema",
     description:
       "Affordable lodge in the Golf Estate & Rasta Village Enclave, Kpone Barrier, Tema. Private bathrooms, Wi-Fi, parking, 24/7 desk. Call 024 349 0990.",
     keywords: [...brand, ...core.slice(0, 8), ...local.slice(0, 6), ...intent.slice(0, 4)],
-    h1: "Comfortable, Safe & Affordable Accommodation in Golf Estate, Tema",
+    h1: "Comfortable, Safe & Affordable Accommodation in Golf Estate & Rasta Village, Tema",
   },
   rooms: {
     path: "/rooms",
     title: "Rooms & Rates | Deluxe Double Room in Tema | Dot Anne",
     description:
-      "Deluxe double room with private shower, free Wi-Fi and parking at Dot Anne Home Lodge, Kpone Barrier, Tema. Ask for today's rate by WhatsApp or phone.",
+      "Deluxe double room with private shower, Wi-Fi and parking at Dot Anne Home Lodge, Golf Estate & Rasta Village, Tema. Ask today's rate by WhatsApp.",
     keywords: ["rooms in Tema", "deluxe double room Tema", "room rates Tema lodge", "hotel room Kpone Barrier", ...intent.slice(6, 12), ...core.slice(5, 9)],
     h1: "Rooms & Accommodation in Tema",
   },
   gallery: {
     path: "/gallery",
-    title: "Photos of Dot Anne Home Lodge, Golf Estate, Tema",
+    title: "Photos | Dot Anne Home Lodge, Golf Estate & Rasta Village",
     description:
-      "Real photos of Dot Anne Home Lodge: the building, reception, air-conditioned rooms, private bathrooms and parking in the Golf Estate & Rasta Village Enclave.",
+      "Real photos of Dot Anne Home Lodge: the building, reception, air-conditioned rooms, bathrooms and parking in the Golf Estate & Rasta Village Enclave.",
     keywords: ["Dot Anne Home Lodge photos", "Tema lodge pictures", "Golf Estate Tema guest house photos", "Rasta Village Tema lodge photos", "Kpone Barrier lodge rooms"],
     h1: "Photo Gallery",
   },
@@ -117,7 +117,7 @@ export const pages = {
   },
   location: {
     path: "/location",
-    title: "Location & Directions | Lodge at Kpone Barrier, Tema",
+    title: "Directions | Golf Estate & Rasta Village, Kpone Barrier",
     description:
       "Find Dot Anne Home Lodge within the Golf Estate & Rasta Village Enclave, Kpone Barrier, off BOST Road, Tema. GhanaPost GPS: GK-0187-4107.",
     keywords: [...local, "directions to Golf Estate Tema", "directions to Rasta Village Tema", "GK-0187-4107", "GhanaPost GPS GK-0187-4107", "lodge near me Tema"],
@@ -127,7 +127,7 @@ export const pages = {
     path: "/faq",
     title: "FAQ | Booking, Check-in & Directions | Dot Anne Lodge",
     description:
-      "Answers about booking, late arrivals, rates, parking, Wi-Fi, the conference hall, laundry and finding Dot Anne Home Lodge at Kpone Barrier, Tema.",
+      "Answers on booking, late arrivals, rates, parking, Wi-Fi, conference hall, laundry and finding Dot Anne Home Lodge in Golf Estate & Rasta Village, Tema.",
     keywords: ["Tema lodge questions", "late check-in Tema", "how to book lodge Tema", ...intent.slice(0, 6)],
     h1: "Frequently Asked Questions",
   },
@@ -135,7 +135,7 @@ export const pages = {
     path: "/contact",
     title: "Book a Room | Call or WhatsApp | Dot Anne Home Lodge Tema",
     description:
-      "Book Dot Anne Home Lodge in Golf Estate, Tema: call or WhatsApp +233 24 349 0990, any time of day or night. Send your dates and get today's rate.",
+      "Book Dot Anne Home Lodge in Golf Estate & Rasta Village, Tema: call or WhatsApp +233 24 349 0990, day or night. Send your dates for today's rate.",
     keywords: ["book lodge Tema", "book hotel Kpone Barrier", "Dot Anne Home Lodge phone number", "Tema lodge WhatsApp", ...intent.slice(10, 12)],
     h1: "Book Your Stay",
   },

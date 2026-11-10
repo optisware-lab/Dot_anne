@@ -24,7 +24,7 @@ const body = Hanken_Grotesk({
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
-  title: { default: "Dot Anne Home Lodge | Guest House in Golf Estate, Tema", template: "%s | Dot Anne Home Lodge" },
+  title: { default: "Dot Anne Home Lodge | Golf Estate & Rasta Village, Tema", template: "%s | Dot Anne Home Lodge" },
   description:
     "Affordable lodge in the Golf Estate & Rasta Village Enclave, Kpone Barrier, off BOST Road, Tema. Private bathrooms, Wi-Fi, parking, 24/7 desk.",
   applicationName: site.displayName,
