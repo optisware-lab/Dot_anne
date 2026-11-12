@@ -2,12 +2,12 @@ import { photos, site } from "@/config/site";
 import { pages } from "@/config/seo";
 import { homeFaqs } from "@/content/faq";
 import { pageMetadata } from "@/lib/meta";
-import { JsonLdScript, pageGraph } from "@/lib/schema";
+import { JsonLdScript, pageGraph, videoNode } from "@/lib/schema";
 import { BookButton } from "@/components/Booking";
 import { LiveClock } from "@/components/LiveClock";
 import { HeroSlideshow } from "@/components/HeroSlideshow";
 import { IconCar, IconClock, IconPhone, IconPin, IconStar } from "@/components/Icons";
-import { CtaBanner, FaqSection, GalleryBento, LocationBlock, Pillars, RatingAmenities, RoomsSection } from "@/components/Sections";
+import { CtaBanner, FaqSection, GalleryBento, LocationBlock, Pillars, RatingAmenities, RoomsSection, VideoTour } from "@/components/Sections";
 
 export const metadata = pageMetadata("home");
 
@@ -100,6 +100,9 @@ export default function Home() {
       {/* 2. Why choose */}
       <Pillars />
 
+      {/* Video tour */}
+      <VideoTour />
+
       {/* 3. Rooms */}
       <RoomsSection />
 
@@ -127,6 +130,7 @@ export default function Home() {
           path: p.path,
           title: p.title,
           description: p.description,
+          extra: [videoNode()],
         })}
       />
     </>

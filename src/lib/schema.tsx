@@ -1,4 +1,4 @@
-import { confirmedAmenities, gallery, shownRooms, site } from "@/config/site";
+import { confirmedAmenities, gallery, promoVideo, shownRooms, site } from "@/config/site";
 import { nearbyAreas } from "@/config/seo";
 
 /**
@@ -181,6 +181,22 @@ export function galleryNode() {
       creditText: site.displayName,
       copyrightNotice: site.displayName,
     })),
+  };
+}
+
+export function videoNode() {
+  return {
+    "@type": "VideoObject",
+    "@id": abs("/#video-tour"),
+    name: promoVideo.title,
+    description: promoVideo.description,
+    thumbnailUrl: abs(promoVideo.poster),
+    contentUrl: abs(promoVideo.src),
+    uploadDate: promoVideo.uploadDate,
+    duration: promoVideo.duration,
+    width: promoVideo.w,
+    height: promoVideo.h,
+    about: { "@id": LODGE },
   };
 }
 

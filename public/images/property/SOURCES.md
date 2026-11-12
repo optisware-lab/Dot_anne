@@ -40,6 +40,12 @@ Before launch, confirm the lodge owns them or has the photographer's permission 
 | bedroom-double.jpg | Guest bedroom with double bed | ANWiy9RBAuSP… | Resized |
 | bathroom-vanity.jpg | Private bathroom, second angle | ANWiy9RVqUWd… | Resized |
 
+## Video
+
+- **/video/dot-anne-tour.mp4** (54 s) and its cover **/video/dot-anne-tour-poster.jpg**: the owner's promo video
+  "Dot Anne Home Lodge - Promo 16x9 new.mp4" (2026-11-08), re-encoded to 1280x720 H.264 (about 8 MB, from 78 MB).
+  The original is not in the repo.
+
 ## Removed
 
 - **guest-lounge.jpg** (leather sofas, TV), **garden-frontage.jpg** (flower beds) and **bathroom-shower.jpg** (private bathroom)

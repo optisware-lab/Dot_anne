@@ -2,8 +2,8 @@ import Image from "next/image";
 import { gallery, photos } from "@/config/site";
 import { pages } from "@/config/seo";
 import { pageMetadata } from "@/lib/meta";
-import { JsonLdScript, galleryNode, pageGraph } from "@/lib/schema";
-import { CtaBanner, PageHero } from "@/components/Sections";
+import { JsonLdScript, galleryNode, pageGraph, videoNode } from "@/lib/schema";
+import { CtaBanner, PageHero, VideoTour } from "@/components/Sections";
 
 export const metadata = pageMetadata("gallery");
 
@@ -43,8 +43,9 @@ export default function GalleryPage() {
           </p>
         </div>
       </section>
+      <VideoTour heading="Video Tour" tone="section--low" />
       <CtaBanner heading="Like what you see?" />
-      <JsonLdScript data={pageGraph({ path: p.path, title: p.title, description: p.description, crumbs, extra: [galleryNode()] })} />
+      <JsonLdScript data={pageGraph({ path: p.path, title: p.title, description: p.description, crumbs, extra: [galleryNode(), videoNode()] })} />
     </>
   );
 }

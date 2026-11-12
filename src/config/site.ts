@@ -217,6 +217,19 @@ const P = {
 
 export const photos = P;
 
+/** Owner's promo video (2026-11-08), compressed to 720p for the web. Original kept outside the repo. */
+export const promoVideo = {
+  src: "/video/dot-anne-tour.mp4",
+  poster: "/video/dot-anne-tour-poster.jpg",
+  w: 1280,
+  h: 720,
+  duration: "PT54S",
+  uploadDate: "2026-11-08",
+  title: "Dot Anne Home Lodge video tour",
+  description:
+    "A one-minute tour of Dot Anne Home Lodge in the Golf Estate & Rasta Village Enclave, Tema: the building, reception, hallways, air-conditioned rooms and tiled bathrooms.",
+};
+
 /** Every real photo of the lodge, in gallery order (newest building photos first). */
 export const gallery: Photo[] = [
   P.front,

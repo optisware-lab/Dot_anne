@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { amenities, confirmedAmenities, gallery, photos, shownRooms, site, whatsappLink } from "@/config/site";
+import { amenities, confirmedAmenities, gallery, photos, promoVideo, shownRooms, site, whatsappLink } from "@/config/site";
 import type { Faq } from "@/content/faq";
 import { BookButton } from "./Booking";
 import { RollNumber } from "./RollNumber";
@@ -248,6 +248,41 @@ export function RoomsSection({ more = true }: { more?: boolean }) {
             </Link>
           </p>
         )}
+      </div>
+    </section>
+  );
+}
+
+/* ------------------------------------------------------------------ */
+/* Video tour                                                          */
+/* ------------------------------------------------------------------ */
+
+export function VideoTour({ heading = "Take a One-Minute Tour", tone = "section--high" }: { heading?: string; tone?: string }) {
+  return (
+    <section className={`section ${tone}`} aria-labelledby="tour-title">
+      <div className="wrap">
+        <div className="sec-head">
+          <div>
+            <h2 id="tour-title" data-reveal="mask">
+              {heading}
+            </h2>
+          </div>
+          <p>See the lodge before you book: the building, reception, hallways, rooms and bathrooms, filmed at the lodge.</p>
+        </div>
+        <figure className="video-tour" data-reveal="rise">
+          <video
+            controls
+            playsInline
+            preload="none"
+            poster={promoVideo.poster}
+            width={promoVideo.w}
+            height={promoVideo.h}
+            aria-label={promoVideo.title}
+          >
+            <source src={promoVideo.src} type="video/mp4" />
+            <a href={promoVideo.src}>Watch the video tour of Dot Anne Home Lodge</a>
+          </video>
+        </figure>
       </div>
     </section>
   );
